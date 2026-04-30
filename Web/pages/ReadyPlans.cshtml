@@ -1,0 +1,34 @@
+@page
+@model eg_travil.pages.ReadyPlansModel
+@{
+    ViewData["Title"] = "Ready Plans";
+}
+
+<div class="bg-slate-50 dark:bg-[#0F172A] min-h-screen py-16 px-4 transition-colors duration-300">
+    <div class="max-w-7xl mx-auto mt-16">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+            @foreach (var plan in Model.ReadyPlans)
+            {
+                <div class="bg-white dark:bg-white/5 backdrop-blur-sm rounded-[2rem] shadow-sm border border-gray-100 dark:border-white/10 overflow-hidden flex flex-col hover:shadow-xl transition-all duration-300">
+                    <div class="h-64 relative">
+                        <img src="@(plan.PhotoPath ?? "https://images.unsplash.com/photo-1503177119275-0aa32b3a9368?w=800")"
+                             class="w-full h-full object-cover" />
+                    </div>
+                    
+                    <div class="p-8 flex-grow flex flex-col">
+                        <h3 class="text-2xl font-bold text-navy dark:text-white mb-2">@plan.Title</h3>
+                        <p class="text-gray-600 dark:text-gray-300 line-clamp-3 text-sm mb-8">@plan.Description</p>
+                        
+                        <div class="mt-auto">
+                            @* Updated navigation link *@
+                            <a asp-page="/PlanDetials" asp-route-id="@plan.Id"
+                                   class="block w-full text-center py-4 bg-navy dark:bg-white/10 text-white rounded-2xl font-bold hover:bg-orange dark:hover:bg-orange transition-colors duration-200">
+                                View Plan
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
+</div>

@@ -1,0 +1,665 @@
+@page
+@model eg_travil.Pages.MyPlansModel
+@{
+    ViewData["Title"] = "My Saved Plans";
+}
+
+<style>
+    .day-card {
+        background: var(--bg-card, rgba(255,255,255,0.9));
+        color: var(--text-color, #212529);
+        border-radius: 1.5rem;
+        padding: 2rem;
+        box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+        margin-bottom: 2rem;
+        transition: all 0.3s ease;
+        border: 1px solid rgba(0,0,0,0.05);
+    }
+    
+    html.dark .day-card {
+        --bg-card: rgba(30, 41, 59, 0.85);
+        --text-color: #f8fafc;
+        border: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .timeline-item {
+        position: relative;
+        padding-left: 2rem;
+        border-left: 2px dashed #dee2e6;
+        margin-left: 1rem;
+        margin-bottom: 2rem;
+    }
+    
+    html.dark .timeline-item {
+        border-left-color: rgba(255,255,255,0.2);
+    }
+
+    .timeline-dot {
+        position: absolute;
+        left: -0.6rem;
+        top: 0;
+        width: 1.1rem;
+        height: 1.1rem;
+        background: #F7931A;
+        border: 3px solid white;
+        border-radius: 50%;
+    }
+    
+    html.dark .timeline-dot {
+        border-color: #1E293B;
+    }
+
+    .activity-box {
+        display: flex;
+        gap: 1.5rem;
+        background: var(--bg-card, rgba(255,255,255,0.95));
+        color: var(--text-color, #212529);
+        padding: 1rem;
+        border-radius: 1rem;
+        border: 1px solid var(--border-color, #eee);
+        transition: all 0.3s ease;
+    }
+    
+    html.dark .activity-box {
+        --bg-card: rgba(255, 255, 255, 0.05);
+        --text-color: #f8fafc;
+        --border-color: rgba(255, 255, 255, 0.1);
+    }
+</style>
+
+<div class="min-h-screen bg-slate-50 dark:bg-[#0F172A] py-12 px-4 transition-colors duration-300">
+    <div class="max-w-6xl mx-auto">
+        <h2 class="text-3xl font-bold text-navy dark:text-white mb-8 text-center">My Saved Plans</h2>
+        
+        <div id="plansList" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <!-- Plans will be loaded here dynamically -->
+        </div>
+        
+        <div id="loadingIndicator" class="text-center text-gray-500 dark:text-gray-400 py-10">
+            Loading your plans...
+        </div>
+        <div id="noPlansMessage" class="hidden text-center text-gray-500 dark:text-gray-400 py-10">
+            You haven't saved any plans yet. Go to the <a href="/planner" class="text-orange hover:underline">Planner</a> to create one!
+        </div>
+    </div>
+</div>
+
+<!-- Plan Modal -->
+<div id="planModal" class="hidden fixed inset-0 z-50 overflow-y-auto bg-black/50 backdrop-blur-sm flex items-center justify-center p-4">
+    <div class="bg-white dark:bg-[#1E293B] rounded-2xl w-full max-w-4xl max-h-[90vh] overflow-y-auto shadow-2xl relative">
+        <div class="sticky top-0 bg-white/90 dark:bg-[#1E293B]/90 backdrop-blur-md p-4 border-b border-gray-200 dark:border-white/10 flex justify-between items-center z-10">
+            <h3 id="modalTitle" class="text-2xl font-bold text-navy dark:text-white">Plan Details</h3>
+            <div class="flex items-center gap-2">
+                <button onclick="downloadPdf()"
+                        id="pdf-btn"
+                        class="flex items-center gap-2 bg-orange hover:bg-orange/90 text-white text-sm font-bold px-4 py-2 rounded-xl shadow-md shadow-orange/20 transition-all hover:shadow-lg active:scale-95">
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                              d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/>
+                    </svg>
+                    PDF
+                </button>
+                <button onclick="closeModal()" class="text-gray-500 hover:text-red-500 transition-colors">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+                </button>
+            </div>
+        </div>
+        <div class="p-6">
+            <div id="modalContent" class="w-full">
+                <!-- Plan content will be rendered here -->
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Review Modal -->
+<div id="reviewModal" class="hidden fixed inset-0 z-50 overflow-y-auto bg-black/60 backdrop-blur-sm flex items-center justify-center p-4">
+    <div class="bg-white dark:bg-[#1E293B] rounded-2xl w-full max-w-md shadow-2xl p-8">
+        <div class="flex justify-between items-center mb-6">
+            <h3 class="text-2xl font-bold text-navy dark:text-white">Rate Your Trip ⭐</h3>
+            <button onclick="closeReview()" class="text-gray-400 hover:text-red-500 transition-colors">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
+            </button>
+        </div>
+
+        <!-- Star picker -->
+        <p class="text-sm text-gray-500 dark:text-gray-400 mb-3">How was your trip?</p>
+        <div id="star-picker" class="flex gap-2 mb-5">
+            <button onclick="setRating(1)" class="star-btn text-4xl text-gray-300 hover:text-yellow-400 transition-colors leading-none">★</button>
+            <button onclick="setRating(2)" class="star-btn text-4xl text-gray-300 hover:text-yellow-400 transition-colors leading-none">★</button>
+            <button onclick="setRating(3)" class="star-btn text-4xl text-gray-300 hover:text-yellow-400 transition-colors leading-none">★</button>
+            <button onclick="setRating(4)" class="star-btn text-4xl text-gray-300 hover:text-yellow-400 transition-colors leading-none">★</button>
+            <button onclick="setRating(5)" class="star-btn text-4xl text-gray-300 hover:text-yellow-400 transition-colors leading-none">★</button>
+        </div>
+
+        <!-- Feedback text -->
+        <textarea id="review-text"
+                  rows="4"
+                  placeholder="Tell us about your experience (optional)..."
+                  class="w-full rounded-xl border border-gray-200 dark:border-white/10 bg-gray-50 dark:bg-slate-700 text-navy dark:text-white placeholder-gray-400 px-4 py-3 text-sm mb-5 resize-none focus:outline-none focus:ring-2 focus:ring-orange/40"></textarea>
+
+        <p id="review-feedback" class="text-sm mb-3 hidden"></p>
+
+        <button onclick="submitReview()"
+                id="review-submit-btn"
+                class="w-full bg-orange hover:bg-orange/90 text-white font-bold py-3 rounded-xl shadow-md shadow-orange/20 transition-all hover:shadow-lg active:scale-95">
+            Submit Review
+        </button>
+    </div>
+</div>
+
+@section Scripts {
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+    <script>
+        let savedPlans = [];
+
+        document.addEventListener('DOMContentLoaded', async () => {
+            const token = localStorage.getItem('token');
+            if (!token) {
+                window.location.href = '/Login';
+                return;
+            }
+
+            try {
+                const response = await fetch('/api/Profile/my-plans', {
+                    headers: { 'Authorization': `Bearer ${token}` }
+                });
+
+                document.getElementById('loadingIndicator').classList.add('hidden');
+
+                if (response.ok) {
+                    savedPlans = await response.json();
+                    renderPlans();
+                } else {
+                    document.getElementById('plansList').innerHTML = '<p class="text-red-500">Failed to load plans.</p>';
+                }
+            } catch (err) {
+                console.error("Error fetching plans:", err);
+                document.getElementById('loadingIndicator').classList.add('hidden');
+                document.getElementById('plansList').innerHTML = '<p class="text-red-500">Network error while loading plans.</p>';
+            }
+        });
+
+        function renderPlans() {
+            const container = document.getElementById('plansList');
+            const noPlansMsg = document.getElementById('noPlansMessage');
+            
+            if (savedPlans.length === 0) {
+                noPlansMsg.classList.remove('hidden');
+                return;
+            }
+
+            container.innerHTML = '';
+            const now = new Date();
+            savedPlans.forEach((plan, index) => {
+                const date      = new Date(plan.createdAt).toLocaleDateString();
+                const endDate   = plan.tripEndDate ? new Date(plan.tripEndDate) : null;
+                let tripOver = false;
+                if (endDate) {
+                    const today = new Date(now.getFullYear(), now.getMonth(), now.getDate());
+                    const endDay = new Date(endDate.getFullYear(), endDate.getMonth(), endDate.getDate());
+                    tripOver = today >= endDay;
+                }
+                const hasReview = plan.reviewRating != null;
+
+                // Star display for reviewed plans
+                const starsHtml = hasReview
+                    ? `<p class="text-orange text-sm font-bold mb-1">${'★'.repeat(plan.reviewRating)}${'☆'.repeat(5 - plan.reviewRating)}</p>`
+                    : '';
+
+                // End date info line
+                const endDateHtml = endDate
+                    ? `<p class="text-xs ${tripOver ? 'text-green-500' : 'text-gray-400'} mb-1">
+                          ${tripOver ? '✓ Trip completed' : `Ends: ${endDate.toLocaleDateString()}`}
+                       </p>`
+                    : '';
+
+                // Review button state
+                const reviewBtn = tripOver
+                    ? `<button onclick="openReview(${index})"
+                               class="w-full mt-2 flex items-center justify-center gap-2 bg-yellow-400 hover:bg-yellow-500 text-navy font-bold py-2 rounded-lg transition-colors text-sm">
+                           ⭐ ${hasReview ? 'Edit Review' : 'Leave a Review'}
+                       </button>`
+                    : endDate
+                        ? `<button disabled title="Available after trip ends"
+                                   class="w-full mt-2 flex items-center justify-center gap-2 bg-gray-100 dark:bg-white/5 text-gray-400 font-bold py-2 rounded-lg text-sm cursor-not-allowed">
+                               ⭐ Review (unlocks ${endDate.toLocaleDateString()})
+                           </button>`
+                        : '';
+
+                const card = document.createElement('div');
+                card.className = "bg-white dark:bg-white/5 backdrop-blur-xl border border-gray-200 dark:border-white/10 rounded-2xl overflow-hidden shadow-lg hover:shadow-xl hover:scale-[1.02] transition-all duration-300 p-6 flex flex-col";
+                // Budget total badge from planData
+                let budgetBadge = '';
+                try {
+                    if (plan.planData) {
+                        const pd = JSON.parse(plan.planData);
+                        if (pd.budget && pd.budget.total) {
+                            budgetBadge = `<p class="text-xs font-bold text-orange mb-1">💰 Est. ${pd.budget.total}</p>`;
+                        }
+                    }
+                } catch(e) {}
+
+                card.innerHTML = `
+                    <h3 class="text-xl font-bold text-navy dark:text-white mb-1 line-clamp-2">${plan.title}</h3>
+                    ${starsHtml}
+                    <p class="text-sm text-gray-500 dark:text-gray-400 mb-1">Created: ${date}</p>
+                    ${budgetBadge}
+                    ${endDateHtml}
+                    <div class="flex-grow"></div>
+                    <button onclick="viewPlan(${index})" class="w-full mt-3 bg-orange/10 hover:bg-orange text-orange hover:text-white py-2 rounded-lg font-medium transition-colors">
+                        View Plan
+                    </button>
+                    ${reviewBtn}
+                `;
+                container.appendChild(card);
+            });
+
+        }
+
+        function viewPlan(index) {
+            const plan = savedPlans[index];
+            document.getElementById('modalTitle').textContent = plan.title;
+
+            const badgeColors = {
+                morning:   'bg-blue-100 text-blue-800 dark:bg-blue-900/50 dark:text-blue-300',
+                lunch:     'bg-yellow-100 text-yellow-800 dark:bg-yellow-900/50 dark:text-yellow-300',
+                afternoon: 'bg-orange-100 text-orange-800 dark:bg-orange-900/50 dark:text-orange-300',
+                dinner:    'bg-indigo-100 text-indigo-800 dark:bg-indigo-900/50 dark:text-indigo-300',
+            };
+
+            let html = '';
+
+            // ── Overview block from ML ─────────────────────────────────
+            try {
+                if (plan.planData) {
+                    const pd = JSON.parse(plan.planData);
+                    if (pd.overview) {
+                        html += `<div class="mb-5 p-4 bg-orange/10 border-l-4 border-orange text-navy dark:text-white rounded-r-lg italic text-base">&ldquo;${pd.overview}&rdquo;</div>`;
+                    }
+                    if (pd.budget && (pd.budget.total || pd.budget.accommodation || pd.budget.food || pd.budget.activities)) {
+                        html += `<div class="mb-6 p-5 bg-white dark:bg-slate-800 rounded-xl border border-gray-100 dark:border-white/10">
+                            <h4 class="text-lg font-bold text-navy dark:text-white mb-3 flex items-center gap-2">💰 Budget Breakdown</h4>
+                            <div class="grid grid-cols-2 sm:grid-cols-4 gap-3">`;
+                        if (pd.budget.total)         html += `<div class="p-3 bg-gray-50 dark:bg-white/5 rounded-lg"><p class="text-xs text-gray-500 dark:text-gray-400 mb-1">Total</p><p class="font-bold text-orange">${pd.budget.total}</p></div>`;
+                        if (pd.budget.accommodation) html += `<div class="p-3 bg-gray-50 dark:bg-white/5 rounded-lg"><p class="text-xs text-gray-500 dark:text-gray-400 mb-1">Hotel</p><p class="font-semibold text-navy dark:text-white">${pd.budget.accommodation}</p></div>`;
+                        if (pd.budget.food)          html += `<div class="p-3 bg-gray-50 dark:bg-white/5 rounded-lg"><p class="text-xs text-gray-500 dark:text-gray-400 mb-1">Food</p><p class="font-semibold text-navy dark:text-white">${pd.budget.food}</p></div>`;
+                        if (pd.budget.activities)    html += `<div class="p-3 bg-gray-50 dark:bg-white/5 rounded-lg"><p class="text-xs text-gray-500 dark:text-gray-400 mb-1">Activities</p><p class="font-semibold text-navy dark:text-white">${pd.budget.activities}</p></div>`;
+                        html += `</div></div>`;
+                    }
+                }
+            } catch(e) {}
+
+            // ── Hotel card ─────────────────────────────────────────────
+            if (plan.hotelName) {
+                const paid = plan.isPaid
+                    ? `<span class="inline-flex items-center gap-1 bg-green-100 dark:bg-green-900/40 text-green-700 dark:text-green-300 text-xs font-bold px-3 py-1 rounded-full">✓ Paid</span>`
+                    : '';
+                html += `
+                <div class="mb-6 p-5 bg-gradient-to-r from-blue-50 to-indigo-50 dark:from-slate-700 dark:to-slate-700/80 rounded-xl border border-blue-100 dark:border-white/10 flex justify-between items-start gap-4">
+                    <div>
+                        <p class="text-xs font-semibold text-blue-500 dark:text-blue-400 uppercase tracking-wider mb-1">🏨 Recommended Hotel</p>
+                        <p class="font-bold text-navy dark:text-white text-lg leading-tight">${plan.hotelName}</p>
+                        ${plan.hotelDetails ? `<p class="text-gray-500 dark:text-gray-400 text-sm mt-1">${plan.hotelDetails}</p>` : ''}
+                    </div>
+                    <div class="flex flex-col items-end gap-2 flex-shrink-0">${paid}</div>
+                </div>`;
+            }
+
+            // ── Activities timeline ────────────────────────────────────
+            if (plan.activities && plan.activities.length > 0) {
+                // Group by day
+                const days = {};
+                plan.activities.forEach(a => {
+                    if (!days[a.dayNumber]) days[a.dayNumber] = [];
+                    days[a.dayNumber].push(a);
+                });
+
+                html += `<h3 class="text-xl font-bold text-navy dark:text-white mb-4 flex items-center gap-2">📅 Itinerary</h3>`;
+
+                Object.keys(days).sort((a,b)=>+a-+b).forEach(dayNum => {
+                    html += `<div class="day-card mb-4">
+                        <div class="flex items-center mb-4 pb-3 border-b border-gray-100 dark:border-white/10">
+                            <h4 class="text-lg font-bold text-navy dark:text-white m-0">Day ${dayNum}</h4>
+                        </div>`;
+
+                    days[dayNum].forEach(act => {
+                        const label = act.timeLabel
+                            ? act.timeLabel.charAt(0).toUpperCase() + act.timeLabel.slice(1)
+                            : '';
+                        const badge = badgeColors[act.timeLabel?.toLowerCase()] || 'bg-gray-100 text-gray-800';
+
+                        // Transport connector (shown ABOVE the activity box, skip for first of day)
+                        const transportHtml = act.transport
+                            ? `<div class="flex items-center gap-2 ml-4 mb-1 mt-1">
+                                   <div class="flex-shrink-0 w-5 h-5 rounded-full bg-gray-100 dark:bg-slate-700 flex items-center justify-center text-xs">↓</div>
+                                   <span class="text-xs text-gray-400 dark:text-gray-500 italic">${act.transport}</span>
+                               </div>`
+                            : '';
+
+                        html += `
+                        ${transportHtml}
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="activity-box">
+                                <div class="flex-grow">
+                                    <div class="flex justify-between items-start mb-1 gap-2">
+                                        <h5 class="font-bold text-navy dark:text-white text-base m-0 leading-tight">${act.place}</h5>
+                                        <div class="flex gap-1 flex-shrink-0 flex-wrap justify-end">
+                                            ${label ? `<span class="${badge} text-xs font-bold px-2 py-0.5 rounded">${label}</span>` : ''}
+                                            ${act.ticketPrice ? `<span class="bg-orange/10 text-orange text-xs font-bold px-2 py-0.5 rounded">${act.ticketPrice}</span>` : ''}
+                                        </div>
+                                    </div>
+                                    ${act.scheduledTime ? `<p class="text-gray-400 text-xs mb-1">🕐 ${act.scheduledTime}</p>` : ''}
+                                    ${act.description ? `<p class="text-gray-600 dark:text-gray-300 text-sm m-0">${act.description}</p>` : ''}
+                                </div>
+                            </div>
+                        </div>`;
+                    });
+                    html += `</div>`;
+                });
+
+                // ── Places to Visit cards with images ─────────────────
+                const sightseeingActs = plan.activities.filter(a => a.sequenceOrder !== 2 && a.sequenceOrder !== 4);
+                const unique = [...new Map(sightseeingActs.map(a => [a.place, a])).values()];
+                if (unique.length > 0) {
+                    html += `<h3 class="text-xl font-bold text-navy dark:text-white mb-4 mt-6 flex items-center gap-2">🗺️ Places to Visit</h3>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">`;
+                    unique.forEach((a, i) => {
+                        const seed = a.place.split('').reduce((acc, c) => acc + c.charCodeAt(0), 0) % 1000;
+                        const imgUrl = `https://picsum.photos/seed/${seed}/400/200`;
+                        let placeDetails = '';
+                        try {
+                            const parsed = JSON.parse(plan.planData);
+                            const placeData = parsed.places?.find(p => p.name === a.place);
+                            if (placeData) {
+                                if (placeData.rating) placeDetails += `<p class="text-xs text-yellow-500 font-semibold mb-0.5">⭐ ${placeData.rating}</p>`;
+                                if (placeData.address) placeDetails += `<p class="text-xs text-gray-500 dark:text-gray-400 mb-0.5">📍 ${placeData.address}</p>`;
+                                if (placeData.timings) placeDetails += `<p class="text-xs text-gray-500 dark:text-gray-400 mb-0.5">🕐 ${placeData.timings}</p>`;
+                            }
+                        } catch(e) {}
+                        html += `
+                        <div class="bg-white dark:bg-slate-800 rounded-xl overflow-hidden border border-gray-100 dark:border-white/10 shadow-sm flex flex-col">
+                            <div class="relative h-32 bg-gray-200 dark:bg-slate-700 overflow-hidden">
+                                <img src="${imgUrl}"
+                                     class="w-full h-full object-cover"
+                                     alt="${a.place}"
+                                     loading="lazy"
+                                     onerror="this.parentElement.style.display='none'">
+                                <div class="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent"></div>
+                            </div>
+                            <div class="p-3">
+                                <div class="flex justify-between items-start gap-2 mb-1">
+                                    <span class="font-bold text-navy dark:text-white text-sm">${a.place}</span>
+                                    ${a.ticketPrice ? `<span class="text-orange text-xs font-bold whitespace-nowrap">${a.ticketPrice}</span>` : ''}
+                                </div>
+                                ${placeDetails}
+                            </div>
+                        </div>`;
+                    });
+                    html += `</div>`;
+                }
+
+                // ── Restaurants section ────────────────────────────────
+                try {
+                    if (plan.planData) {
+                        const parsed = JSON.parse(plan.planData);
+                        if (parsed.restaurants && Array.isArray(parsed.restaurants) && parsed.restaurants.length > 0) {
+                            html += `<h3 class="text-xl font-bold text-navy dark:text-white mb-4 mt-6 flex items-center gap-2">🍽️ Recommended Restaurants</h3>
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">`;
+                            parsed.restaurants.slice(0, 6).forEach(rest => {
+                                const seed = rest.name.split('').reduce((acc, c) => acc + c.charCodeAt(0), 0) % 1000;
+                                const imgUrl = `https://picsum.photos/seed/${seed}/400/200`;
+                                html += `
+                                <div class="bg-white dark:bg-slate-800 rounded-xl overflow-hidden border border-gray-100 dark:border-white/10 shadow-sm flex flex-col">
+                                    <div class="relative h-32 bg-gray-200 dark:bg-slate-700 overflow-hidden">
+                                        <img src="${imgUrl}"
+                                             class="w-full h-full object-cover"
+                                             alt="${rest.name}"
+                                             loading="lazy"
+                                             onerror="this.parentElement.style.display='none'">
+                                        <div class="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent"></div>
+                                    </div>
+                                    <div class="p-3">
+                                        <div class="flex justify-between items-start gap-2 mb-1">
+                                            <span class="font-bold text-navy dark:text-white text-sm">${rest.name}</span>
+                                            ${rest.avgPrice ? `<span class="text-orange text-xs font-bold whitespace-nowrap">${rest.avgPrice}</span>` : ''}
+                                        </div>
+                                        ${rest.cuisines ? `<p class="text-xs text-gray-500 dark:text-gray-400 mb-0.5">🍴 ${rest.cuisines}</p>` : ''}
+                                        ${rest.location ? `<p class="text-xs text-gray-500 dark:text-gray-400">📍 ${rest.location}</p>` : ''}
+                                    </div>
+                                </div>`;
+                            });
+                            html += `</div>`;
+                        }
+                    }
+                } catch(e) {}
+
+                // ── Expert Tips from planData JSON ────────────────────
+                try {
+                    if (plan.planData) {
+                        const parsed = JSON.parse(plan.planData);
+                        if (parsed.tips && Array.isArray(parsed.tips) && parsed.tips.length > 0) {
+                            html += `<div class="mb-6 p-5 bg-orange/5 dark:bg-orange/10 rounded-xl border border-orange/20 dark:border-orange/30">
+                                <h3 class="text-xl font-bold text-navy dark:text-white mb-3 flex items-center gap-2">💡 Expert Tips</h3>
+                                <ul class="space-y-2">`;
+                            parsed.tips.forEach(tip => {
+                                html += `<li class="flex items-start gap-2 text-navy dark:text-gray-300 text-sm">
+                                    <span class="text-orange mt-0.5 flex-shrink-0">•</span>
+                                    <span>${tip}</span>
+                                </li>`;
+                            });
+                            html += `</ul></div>`;
+                        }
+                    }
+                } catch(e) {}
+
+            } else if (plan.planData) {
+                // Fallback: render raw content as markdown
+                try { html = marked.parse(plan.planData); } catch(e) { html = plan.planData; }
+            }
+
+            // ── To-Do List (localStorage per plan) ────────────────────
+            html += `<div class="mb-6 p-5 bg-white dark:bg-slate-800 rounded-xl border border-gray-100 dark:border-white/10 shadow-sm">
+                <h3 class="text-xl font-bold text-navy dark:text-white mb-3 flex items-center gap-2">📝 My To-Do List</h3>
+                <div class="flex gap-2 mb-3">
+                    <input type="text" id="todo-input" placeholder="Add a task..."
+                           class="flex-grow rounded-lg border border-gray-200 dark:border-white/10 bg-gray-50 dark:bg-slate-700 text-navy dark:text-white placeholder-gray-400 px-3 py-2 text-sm">
+                    <button id="todo-add-btn" class="bg-orange hover:bg-orange/90 text-white px-4 py-2 rounded-lg font-bold text-lg leading-none transition-colors">+</button>
+                </div>
+                <ul id="todo-list" class="space-y-2"></ul>
+            </div>`;
+
+            if (!html) html = '<p class="text-gray-500">No plan data available.</p>';
+
+            document.getElementById('modalContent').innerHTML = html;
+            document.getElementById('planModal').classList.remove('hidden');
+            document.body.style.overflow = 'hidden';
+
+            // Init To-Do list after DOM is updated
+            // Key matches _TripResult.cshtml: `todo_plan_${planId}` (stable, survives renames)
+            const storageKey = `todo_plan_${plan.id}`;
+            const legacyKey  = `todo_list_${plan.title}`;
+            const list   = document.getElementById('todo-list');
+            const input  = document.getElementById('todo-input');
+            const addBtn = document.getElementById('todo-add-btn');
+
+            // Migrate todos written with old title-based key
+            if (!localStorage.getItem(storageKey) && localStorage.getItem(legacyKey)) {
+                localStorage.setItem(storageKey, localStorage.getItem(legacyKey));
+            }
+
+            let todos = JSON.parse(localStorage.getItem(storageKey) || '[]');
+
+            function renderTodos() {
+                list.innerHTML = '';
+                if (!todos.length) {
+                    list.innerHTML = '<p class="text-sm text-gray-400 italic">No tasks yet.</p>';
+                    return;
+                }
+                todos.forEach((todo, idx) => {
+                    const li = document.createElement('li');
+                    li.className = 'flex items-center gap-3 group';
+                    li.innerHTML = `
+                        <input type="checkbox" ${todo.done ? 'checked' : ''}
+                               class="w-4 h-4 accent-orange cursor-pointer flex-shrink-0">
+                        <span class="flex-grow text-sm text-navy dark:text-gray-300 ${todo.done ? 'line-through text-gray-400' : ''}">${todo.text}</span>
+                        <button class="text-red-400 opacity-0 group-hover:opacity-100 transition-opacity font-bold px-1">×</button>`;
+                    li.querySelector('input').onchange = e => { todos[idx].done = e.target.checked; save(); renderTodos(); };
+                    li.querySelector('button').onclick = () => { todos.splice(idx, 1); save(); renderTodos(); };
+                    list.appendChild(li);
+                });
+            }
+            function save() { localStorage.setItem(storageKey, JSON.stringify(todos)); }
+            function addTodo() {
+                const t = input.value.trim();
+                if (t) { todos.push({text: t, done: false}); input.value = ''; save(); renderTodos(); }
+            }
+            addBtn.onclick = addTodo;
+            input.onkeydown = e => { if (e.key === 'Enter') addTodo(); };
+            renderTodos();
+        }
+
+        // ── Review modal ───────────────────────────────────────────────
+        let _reviewPlanIndex = null;
+        let _selectedRating  = 0;
+
+        function openReview(index) {
+            _reviewPlanIndex = index;
+            const plan = savedPlans[index];
+            _selectedRating = plan.reviewRating || 0;
+            document.getElementById('review-text').value = plan.reviewText || '';
+            updateStarUI(_selectedRating);
+            document.getElementById('review-feedback').className = 'text-sm mb-3 hidden';
+            document.getElementById('review-feedback').textContent = '';
+            document.getElementById('reviewModal').classList.remove('hidden');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeReview() {
+            document.getElementById('reviewModal').classList.add('hidden');
+            document.body.style.overflow = '';
+        }
+
+        function setRating(n) {
+            _selectedRating = n;
+            updateStarUI(n);
+        }
+
+        function updateStarUI(n) {
+            document.querySelectorAll('.star-btn').forEach((btn, i) => {
+                btn.classList.toggle('text-yellow-400', i < n);
+                btn.classList.toggle('text-gray-300',   i >= n);
+            });
+        }
+
+        async function submitReview() {
+            if (_selectedRating === 0) {
+                showReviewMsg('Please select a star rating.', false);
+                return;
+            }
+            const plan   = savedPlans[_reviewPlanIndex];
+            const btn    = document.getElementById('review-submit-btn');
+            const text   = document.getElementById('review-text').value.trim();
+            const token  = localStorage.getItem('token');
+
+            btn.disabled    = true;
+            btn.textContent = 'Submitting…';
+
+            try {
+                const res = await fetch(`/api/Profile/review/${plan.id}`, {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                        'Authorization': `Bearer ${token}`
+                    },
+                    body: JSON.stringify({ rating: _selectedRating, reviewText: text })
+                });
+                const data = await res.json();
+                if (data.success) {
+                    // Update local state so card re-renders with stars
+                    savedPlans[_reviewPlanIndex].reviewRating = _selectedRating;
+                    savedPlans[_reviewPlanIndex].reviewText   = text;
+                    renderPlans();
+                    showReviewMsg('✓ Review saved! Thank you.', true);
+                    setTimeout(closeReview, 1500);
+                } else {
+                    showReviewMsg(data.message || 'Something went wrong.', false);
+                    btn.disabled    = false;
+                    btn.textContent = 'Submit Review';
+                }
+            } catch {
+                showReviewMsg('Network error. Please try again.', false);
+                btn.disabled    = false;
+                btn.textContent = 'Submit Review';
+            }
+        }
+
+        function showReviewMsg(msg, success) {
+            const el = document.getElementById('review-feedback');
+            el.textContent = msg;
+            el.className   = `text-sm mb-3 ${success ? 'text-green-600 dark:text-green-400' : 'text-red-500'}`;
+        }
+
+        function closeModal() {
+            document.getElementById('planModal').classList.add('hidden');
+            document.body.style.overflow = '';
+        }
+
+
+        function downloadPdf() {
+            const btn   = document.getElementById('pdf-btn');
+            const title = document.getElementById('modalTitle').textContent.trim();
+            const src   = document.getElementById('modalContent');
+
+            if (!src) return;
+
+            // Disable button while generating
+            btn.disabled = true;
+            btn.innerHTML = `<svg class="w-4 h-4 animate-spin" fill="none" viewBox="0 0 24 24">
+                <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"/>
+                <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8v8z"/>
+            </svg> Generating…`;
+
+            // Clone content and force light-mode styles for clean PDF rendering
+            const clone = src.cloneNode(true);
+            clone.style.cssText = 'padding:24px; font-family:sans-serif; color:#1e293b; background:#fff;';
+
+            // Strip dark-mode Tailwind classes so text is black on white
+            clone.querySelectorAll('[class]').forEach(el => {
+                el.className = el.className
+                    .split(' ')
+                    .filter(c => !c.startsWith('dark:'))
+                    .join(' ');
+            });
+
+            // Remove the todo input/button from PDF (not useful in static doc)
+            clone.querySelectorAll('#todo-input, #todo-add-btn').forEach(e => e.remove());
+
+            // Add plan title as PDF heading
+            const heading = document.createElement('h1');
+            heading.textContent = title;
+            heading.style.cssText = 'font-size:22px;font-weight:700;margin-bottom:16px;color:#1e293b;border-bottom:2px solid #F7931A;padding-bottom:8px;';
+            clone.prepend(heading);
+
+            const opt = {
+                margin:      [12, 12, 12, 12],
+                filename:    `${title.replace(/[^a-z0-9 ]/gi, '_')}.pdf`,
+                image:       { type: 'jpeg', quality: 0.95 },
+                html2canvas: { scale: 2, useCORS: true, logging: false },
+                jsPDF:       { unit: 'mm', format: 'a4', orientation: 'portrait' },
+                pagebreak:   { mode: ['avoid-all', 'css', 'legacy'] }
+            };
+
+            html2pdf().set(opt).from(clone).save().finally(() => {
+                btn.disabled = false;
+                btn.innerHTML = `<svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                          d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/>
+                </svg> PDF`;
+            });
+        }
+
+    </script>
+}

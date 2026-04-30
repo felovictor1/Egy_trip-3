@@ -1,0 +1,6 @@
+@eg_travil_HostAddress = http://localhost:5147
+
+GET {{eg_travil_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

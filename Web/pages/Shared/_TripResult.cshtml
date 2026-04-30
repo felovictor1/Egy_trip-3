@@ -1,0 +1,813 @@
+@model eg_travil.models.TripPlan
+
+@{
+    var trip = Newtonsoft.Json.JsonConvert.DeserializeObject<dynamic>(Model.Content);
+}
+
+<style>
+    .result-container {
+        min-height: 100vh;
+        padding-bottom: 5rem;
+    }
+
+    .hero-banner {
+        position: relative;
+        height: 400px;
+        width: 100%;
+        overflow: hidden;
+        border-radius: 0 0 2rem 2rem;
+    }
+
+    .hero-banner img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .hero-overlay {
+        position: absolute;
+        inset: 0;
+        background: linear-gradient(to top, rgba(0,0,0,0.8), transparent);
+        display: flex;
+        align-items: flex-end;
+        padding: 3rem;
+        color: white;
+    }
+
+    .hero-text-box {
+        background: rgba(0, 0, 0, 0.5);
+        border-radius: 15px;
+        padding: 20px;
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+        border: 1px solid rgba(255,255,255,0.1);
+    }
+
+    .day-card {
+        background: var(--bg-card, rgba(255,255,255,0.9));
+        color: var(--text-color, #212529);
+        border-radius: 1.5rem;
+        padding: 2rem;
+        box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+        margin-bottom: 2rem;
+        transition: all 0.3s ease;
+        border: 1px solid rgba(0,0,0,0.05);
+    }
+    
+    html.dark .day-card {
+        --bg-card: rgba(30, 41, 59, 0.85);
+        --text-color: #f8fafc;
+        border: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .timeline-item {
+        position: relative;
+        padding-left: 2rem;
+        border-left: 2px dashed #dee2e6;
+        margin-left: 1rem;
+        margin-bottom: 2rem;
+    }
+    
+    html.dark .timeline-item {
+        border-left-color: rgba(255,255,255,0.2);
+    }
+
+    .timeline-dot {
+        position: absolute;
+        left: -0.6rem;
+        top: 0;
+        width: 1.1rem;
+        height: 1.1rem;
+        background: #F7931A;
+        border: 3px solid white;
+        border-radius: 50%;
+    }
+    
+    html.dark .timeline-dot {
+        border-color: #1E293B;
+    }
+
+    .activity-box {
+        display: flex;
+        gap: 1.5rem;
+        background: var(--bg-card, rgba(255,255,255,0.95));
+        color: var(--text-color, #212529);
+        padding: 1rem;
+        border-radius: 1rem;
+        border: 1px solid var(--border-color, #eee);
+        transition: all 0.3s ease;
+    }
+    
+    html.dark .activity-box {
+        --bg-card: rgba(255, 255, 255, 0.05);
+        --text-color: #f8fafc;
+        --border-color: rgba(255, 255, 255, 0.1);
+    }
+</style>
+
+<script src="https://cdn.jsdelivr.net/npm/sortablejs@latest/Sortable.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+
+<div class="result-container bg-slate-50 dark:bg-[#0F172A] transition-colors duration-300"
+     id="trip-result-container"
+     data-start-date="@Model.StartDate"
+     data-destination="@Model.PrimaryDestination"
+     data-days="@Model.TripDays">
+    @* Hero Section *@
+    <div class="hero-banner shadow-xl">
+        <img src="https://images.unsplash.com/photo-1572252009286-268acec5ca0a?w=1200" alt="Egypt" />
+        <div class="hero-overlay">
+            <div class="hero-text-box">
+                <span class="inline-block bg-orange text-white text-xs font-bold px-3 py-1 rounded-full mb-3 shadow-md">YOUR PERSONAL ITINERARY</span>
+                <h1 class="text-4xl md:text-5xl font-bold text-white mb-2 font-display">@Model.TripTitle</h1>
+            </div>
+        </div>
+    </div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-8">
+        
+        @if (trip.overview != null && !string.IsNullOrEmpty(trip.overview.ToString()))
+        {
+            <div class="mb-6 p-4 bg-orange/10 border-l-4 border-orange text-navy dark:text-white rounded-r-lg italic text-lg shadow-sm">
+                "@trip.overview"
+            </div>
+        }
+
+        <div class="flex flex-col lg:flex-row gap-8 mt-8">
+            @* Left: Itinerary *@
+            <div class="lg:w-2/3">
+                
+                @if (trip.budget != null)
+                {
+                    <div class="mb-8 p-6 bg-white dark:bg-slate-800 rounded-xl shadow-sm border border-gray-100 dark:border-white/10">
+                        <h3 class="text-xl font-bold text-navy dark:text-white mb-4 flex items-center gap-2"><span>💰</span> Budget Breakdown</h3>
+                        <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                            @if (trip.budget.total != null)
+                            {
+                                <div class="p-3 bg-gray-50 dark:bg-white/5 rounded-lg">
+                                    <p class="text-xs text-gray-500 dark:text-gray-400 mb-1">Total</p>
+                                    <p class="font-bold text-orange text-lg">@trip.budget.total @(trip.budget.currency ?? "EGP")</p>
+                                </div>
+                            }
+                            @if (trip.budget.accommodation != null)
+                            {
+                                <div class="p-3 bg-gray-50 dark:bg-white/5 rounded-lg">
+                                    <p class="text-xs text-gray-500 dark:text-gray-400 mb-1">Accommodation</p>
+                                    <p class="font-semibold text-navy dark:text-white">@trip.budget.accommodation</p>
+                                </div>
+                            }
+                            @if (trip.budget.food != null)
+                            {
+                                <div class="p-3 bg-gray-50 dark:bg-white/5 rounded-lg">
+                                    <p class="text-xs text-gray-500 dark:text-gray-400 mb-1">Food</p>
+                                    <p class="font-semibold text-navy dark:text-white">@trip.budget.food</p>
+                                </div>
+                            }
+                            @if (trip.budget.activities != null)
+                            {
+                                <div class="p-3 bg-gray-50 dark:bg-white/5 rounded-lg">
+                                    <p class="text-xs text-gray-500 dark:text-gray-400 mb-1">Activities</p>
+                                    <p class="font-semibold text-navy dark:text-white">@trip.budget.activities</p>
+                                </div>
+                            }
+                        </div>
+                    </div>
+                }
+
+                @{
+                    string hotelNameStr = "";
+                    string hotelCostStr = trip.budget?.accommodation != null ? trip.budget.accommodation.ToString() : null;
+                    
+                    if (trip.hotel != null && !string.IsNullOrEmpty(trip.hotel.ToString())) hotelNameStr = trip.hotel.ToString();
+                    else if (trip.recommendedHotel != null && !string.IsNullOrEmpty(trip.recommendedHotel.ToString())) hotelNameStr = trip.recommendedHotel.ToString();
+                    else if (trip.hotels != null && trip.hotels.Count > 0) {
+                        hotelNameStr = trip.hotels[0].name?.ToString() ?? "";
+                        if (string.IsNullOrEmpty(hotelCostStr) && trip.hotels[0].avgPrice != null) {
+                            hotelCostStr = trip.hotels[0].avgPrice.ToString() + " EGP/night";
+                        }
+                    }
+
+                    // ✅ Fallback to Markdown-parsed hotel data
+                    if (string.IsNullOrEmpty(hotelNameStr) && !string.IsNullOrEmpty(Model.HotelName))
+                    {
+                        hotelNameStr = Model.HotelName;
+                        if (string.IsNullOrEmpty(hotelCostStr) && !string.IsNullOrEmpty(Model.HotelDetails))
+                            hotelCostStr = Model.HotelDetails;
+                    }
+                }
+
+                @if (!string.IsNullOrEmpty(hotelNameStr))
+                {
+                    <div class="mb-8 p-6 bg-gradient-to-r from-blue-50 to-indigo-50 dark:from-slate-800 dark:to-slate-800/80 rounded-xl shadow-md border border-blue-100 dark:border-white/10">
+                        <div class="flex justify-between items-center mb-2">
+                            <h3 class="text-xl font-bold text-navy dark:text-white m-0 flex items-center gap-2"><span>🏨</span> Recommended Hotel</h3>
+                            @if (!string.IsNullOrEmpty(hotelCostStr))
+                            {
+                                <span class="bg-blue-100 text-blue-800 dark:bg-blue-900/50 dark:text-blue-300 text-sm font-bold px-3 py-1 rounded-full">Cost: @hotelCostStr</span>
+                            }
+                        </div>
+                        <p class="text-gray-700 dark:text-gray-300 text-lg mb-4">@hotelNameStr</p>
+
+                        @* Pay button — only visible after the plan is saved *@
+                        @if (Model.SavedPlanId.HasValue)
+                        {
+                            @if (Model.IsPaid)
+                            {
+                                <div class="inline-flex items-center gap-2 bg-green-100 dark:bg-green-900/40 text-green-700 dark:text-green-300 font-bold px-5 py-2.5 rounded-xl border border-green-200 dark:border-green-700">
+                                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/></svg>
+                                    Hotel Paid ✓
+                                </div>
+                            }
+                            else
+                            {
+                                <a href="/Payment/CreateCheckoutSession?savedPlanId=@Model.SavedPlanId"
+                                   id="pay-hotel-btn"
+                                   class="inline-flex items-center gap-2 bg-gradient-to-r from-orange to-amber-500 hover:from-amber-500 hover:to-orange text-white font-bold px-6 py-2.5 rounded-xl shadow-lg shadow-orange/30 transition-all hover:shadow-xl hover:scale-105 active:scale-100">
+                                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 10h18M7 15h1m4 0h1m-7 4h12a3 3 0 003-3V8a3 3 0 00-3-3H6a3 3 0 00-3 3v8a3 3 0 003 3z"/></svg>
+                                    Pay for Hotel 💳
+                                </a>
+                            }
+                        }
+                    </div>
+                }
+
+
+                @* Restaurants Section *@
+                @{
+                    var restaurants = new List<dynamic>();
+                    try {
+                        if (trip.restaurants != null && trip.restaurants.Count > 0) {
+                            restaurants = trip.restaurants;
+                        }
+                    } catch { }
+                }
+                @if (restaurants.Count > 0)
+                {
+                    <div class="mb-8 p-6 bg-white dark:bg-slate-800 rounded-xl shadow-sm border border-gray-100 dark:border-white/10">
+                        <h3 class="text-xl font-bold text-navy dark:text-white mb-4 flex items-center gap-2"><span>🍽️</span> Recommended Restaurants</h3>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                            @foreach (var rest in restaurants)
+                            {
+                                var restName = rest.name ?? rest.Name ?? "";
+                                var restCuisines = rest.cuisines ?? rest.Cuisines ?? "";
+                                var restPrice = rest.avgPrice ?? rest.AvgPrice ?? rest.price ?? rest.Price ?? "";
+                                var restLocation = rest.location ?? rest.Location ?? "";
+
+                                <div class="p-4 bg-gray-50 dark:bg-white/5 rounded-lg border border-gray-100 dark:border-white/10">
+                                    <h4 class="font-bold text-navy dark:text-white mb-1">@restName</h4>
+                                    @if (!string.IsNullOrEmpty(restCuisines.ToString()))
+                                    {
+                                        <p class="text-sm text-gray-600 dark:text-gray-400 mb-1">@restCuisines</p>
+                                    }
+                                    @if (!string.IsNullOrEmpty(restLocation.ToString()))
+                                    {
+                                        <p class="text-xs text-gray-500 dark:text-gray-500 mb-2">📍 @restLocation</p>
+                                    }
+                                    @if (!string.IsNullOrEmpty(restPrice.ToString()))
+                                    {
+                                        <p class="text-sm font-semibold text-orange">Avg: @restPrice</p>
+                                    }
+                                </div>
+                            }
+                        </div>
+                    </div>
+                }
+
+                @if (Model.Activities != null && Model.Activities.Any())
+                {
+                    <div class="flex flex-col md:flex-row justify-between items-start md:items-center mt-8 mb-6 gap-4">
+                        <h3 class="text-2xl font-bold text-navy dark:text-white flex items-center gap-2 m-0"><span>📅</span> Itinerary Timeline</h3>
+                        @if (Model.SavedPlanId.HasValue)
+                        {
+                            <button id="save-trip-order" class="bg-orange hover:bg-orange/90 text-white font-bold py-2 px-4 rounded-lg shadow-md transition-colors flex items-center gap-2">
+                                <span>💾</span> Save Trip Order
+                            </button>
+                        }
+                    </div>
+
+                    <form id="antiforgery-form">
+                        @Html.AntiForgeryToken()
+                    </form>
+
+                    @foreach (var dayNum in Model.Activities.Select(a => a.DayNumber).Distinct().OrderBy(d => d))
+                    {
+                        <div class="day-card">
+                            <div class="flex justify-between items-center mb-6 border-b border-gray-100 dark:border-white/10 pb-4">
+                                <h4 class="text-xl font-bold text-navy dark:text-white m-0">Day @dayNum</h4>
+                                <span class="weather-badge" data-day="@dayNum"
+                                      style="display:none"
+                                      class="flex items-center gap-2 text-sm font-medium text-gray-600 dark:text-gray-300 bg-blue-50 dark:bg-blue-900/30 px-3 py-1 rounded-full">
+                                </span>
+                            </div>
+
+                            <div class="sortable-day-container" data-day="@dayNum">
+                                @foreach (var act in Model.Activities.Where(a => a.DayNumber == dayNum).OrderBy(a => a.SequenceOrder))
+                                {
+                                    string timeLabel = !string.IsNullOrEmpty(act.TimeLabel) ? char.ToUpper(act.TimeLabel[0]) + act.TimeLabel.Substring(1) : "";
+                                    string badgeColor = act.TimeLabel?.ToLower() switch {
+                                        "morning" => "bg-blue-100 text-blue-800 dark:bg-blue-900/50 dark:text-blue-300",
+                                        "lunch" => "bg-yellow-100 text-yellow-800 dark:bg-yellow-900/50 dark:text-yellow-300",
+                                        "afternoon" => "bg-orange-100 text-orange-800 dark:bg-orange-900/50 dark:text-orange-300",
+                                        "dinner" => "bg-indigo-100 text-indigo-800 dark:bg-indigo-900/50 dark:text-indigo-300",
+                                        _ => "bg-gray-100 text-gray-800"
+                                    };
+
+                                    @* Transport connector — shown between stops, hidden for the first activity *@
+                                    @if (!string.IsNullOrEmpty(act.Transport))
+                                    {
+                                        <div class="flex items-center gap-2 ml-4 mb-1 mt-1">
+                                            <div class="flex-shrink-0 w-5 h-5 rounded-full bg-gray-100 dark:bg-slate-700 flex items-center justify-center text-xs text-gray-500 dark:text-gray-400">↓</div>
+                                            <span class="text-xs text-gray-400 dark:text-gray-500 italic">@act.Transport</span>
+                                        </div>
+                                    }
+
+                                    <div class="timeline-item" data-activity-id="@act.Id">
+                                        <div class="timeline-dot"></div>
+                                        <div class="activity-box cursor-move hover:shadow-md border border-transparent hover:border-orange/30">
+                                            <div class="flex-grow">
+                                                <div class="flex justify-between items-start mb-2">
+                                                    <h5 class="font-bold text-lg text-navy dark:text-white m-0 leading-tight">@act.Place</h5>
+                                                    <div class="flex items-center gap-2 ml-2">
+                                                        <span class="@badgeColor text-xs font-bold px-2 py-0.5 rounded whitespace-nowrap">
+                                                            @timeLabel
+                                                        </span>
+                                                        @if (!string.IsNullOrEmpty(act.ScheduledTime))
+                                                        {
+                                                            <span class="text-sm font-medium text-gray-600 dark:text-gray-300 whitespace-nowrap">
+                                                                <i class="bi bi-clock"></i> @act.ScheduledTime
+                                                            </span>
+                                                        }
+                                                    </div>
+                                                </div>
+                                                <p class="text-gray-600 dark:text-gray-300 text-sm m-0 leading-relaxed">@act.Description</p>
+                                                @if (!string.IsNullOrEmpty(act.TicketPrice))
+                                                {
+                                                    string displayCost = act.TicketPrice;
+                                                    if (double.TryParse(displayCost, out double parsedCost))
+                                                    {
+                                                        displayCost = $"{parsedCost} EGP";
+                                                    }
+                                                    else if (!displayCost.Contains("EGP", StringComparison.OrdinalIgnoreCase) && !displayCost.Contains("Free", StringComparison.OrdinalIgnoreCase) && displayCost.Length < 15)
+                                                    {
+                                                        displayCost = $"{displayCost} EGP";
+                                                    }
+
+                                                    <p class="text-muted small mt-2 mb-0">
+                                                        <i class="bi bi-tag-fill"></i> Cost: @displayCost
+                                                    </p>
+                                                }
+                                            </div>
+                                            <div class="flex items-center text-gray-400 hover:text-orange transition-colors cursor-grab">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="8" y1="6" x2="21" y2="6"></line><line x1="8" y1="12" x2="21" y2="12"></line><line x1="8" y1="18" x2="21" y2="18"></line><line x1="3" y1="6" x2="3.01" y2="6"></line><line x1="3" y1="12" x2="3.01" y2="12"></line><line x1="3" y1="18" x2="3.01" y2="18"></line></svg>
+                                            </div>
+                                        </div>
+                                    </div>
+                                }
+                            </div>
+                        </div>
+                    }
+                }
+
+                @if (Model.Activities != null && Model.Activities.Any())
+                {
+                    <div class="mt-8 p-6 bg-orange/5 dark:bg-orange/10 rounded-xl border border-orange/20 dark:border-orange/30">
+                        <h3 class="text-xl font-bold text-navy dark:text-white mb-4 flex items-center gap-2"><span>💡</span> Expert Tips</h3>
+                        <ul class="space-y-3 text-navy dark:text-gray-300">
+                            @if (trip.tips != null && trip.tips.Count > 0)
+                            {
+                                @foreach (var tip in trip.tips)
+                                {
+                                    <li class="flex items-start gap-3"><span class="text-orange mt-0.5 text-lg">•</span><span class="leading-relaxed">@tip</span></li>
+                                }
+                            }
+                            else
+                            {
+                                <li class="flex items-start gap-3"><span class="text-orange mt-0.5 text-lg">•</span><span class="leading-relaxed">Book museum tickets online in advance to avoid long queues, especially for the Grand Egyptian Museum.</span></li>
+                                <li class="flex items-start gap-3"><span class="text-orange mt-0.5 text-lg">•</span><span class="leading-relaxed">Carry Egyptian Pounds (EGP) in cash — many local restaurants and sites don't accept cards.</span></li>
+                                <li class="flex items-start gap-3"><span class="text-orange mt-0.5 text-lg">•</span><span class="leading-relaxed">Dress modestly when visiting religious sites like mosques and churches; carry a light scarf.</span></li>
+                                <li class="flex items-start gap-3"><span class="text-orange mt-0.5 text-lg">•</span><span class="leading-relaxed">Visit outdoor sites (temples, valleys) early morning to beat the heat and the crowds.</span></li>
+                                <li class="flex items-start gap-3"><span class="text-orange mt-0.5 text-lg">•</span><span class="leading-relaxed">Negotiate taxi/tuk-tuk fares before you ride — agree on a price upfront to avoid surprises.</span></li>
+                                <li class="flex items-start gap-3"><span class="text-orange mt-0.5 text-lg">•</span><span class="leading-relaxed">Stay hydrated and apply sunscreen generously — Egypt's sun is intense, especially in Luxor and Aswan.</span></li>
+                            }
+                        </ul>
+                    </div>
+                }
+            </div>
+
+            @* Right: Sidebar *@
+            <div class="lg:w-1/3">
+                <div class="sticky top-24">
+                    <button onclick="window.print()" class="w-full bg-navy dark:bg-white/10 hover:bg-orange text-white py-3 mb-6 font-bold rounded-xl transition-all shadow-md">
+                        🖨️ Print / Save PDF
+                    </button>
+
+                    <div class="mb-6 p-6 bg-white dark:bg-slate-800 rounded-xl shadow-sm border border-gray-100 dark:border-white/10" id="todo-container" data-trip-title="@Model.TripTitle" data-plan-id="@Model.SavedPlanId">
+                        <h3 class="text-xl font-bold text-navy dark:text-white mb-4 flex items-center gap-2"><span>📝</span> My To-Do List</h3>
+                        
+                        <div class="flex gap-2 mb-4">
+                            <input type="text" id="todo-input" class="flex-grow rounded-lg border-gray-300 dark:border-white/10 dark:bg-slate-700 dark:text-white focus:border-orange focus:ring-orange text-sm p-2" placeholder="Add a new task...">
+                            <button id="todo-add-btn" class="bg-orange hover:bg-orange/90 text-white px-3 py-2 rounded-lg font-bold text-sm transition-colors">+</button>
+                        </div>
+                        <ul id="todo-list" class="space-y-3"></ul>
+                    </div>
+
+                    <script>
+                        document.addEventListener('DOMContentLoaded', function() {
+                            const container = document.getElementById('todo-container');
+                            if (!container) return;
+
+                            const planId    = container.getAttribute('data-plan-id');
+                            const tripTitle = container.getAttribute('data-trip-title');
+                            // Use stable id-based key; fall back to title for plans saved before this change
+                            const storageKey     = planId ? `todo_plan_${planId}` : `todo_list_${tripTitle}`;
+                            const legacyKey      = `todo_list_${tripTitle}`;
+
+                            const input = document.getElementById('todo-input');
+                            const addBtn = document.getElementById('todo-add-btn');
+                            const list = document.getElementById('todo-list');
+
+                            // Migrate todos written with old title-based key to new id-based key
+                            if (planId && !localStorage.getItem(storageKey) && localStorage.getItem(legacyKey)) {
+                                localStorage.setItem(storageKey, localStorage.getItem(legacyKey));
+                            }
+
+                            let todos = JSON.parse(localStorage.getItem(storageKey) || '[]');
+                            
+                            function renderTodos() {
+                                list.innerHTML = '';
+                                if (todos.length === 0) {
+                                    list.innerHTML = '<p class="text-sm text-gray-500 italic">No tasks added yet.</p>';
+                                    return;
+                                }
+                                
+                                todos.forEach((todo, index) => {
+                                    const li = document.createElement('li');
+                                    li.className = "flex items-center gap-3 group";
+                                    
+                                    const checkbox = document.createElement('input');
+                                    checkbox.type = 'checkbox';
+                                    checkbox.checked = todo.completed;
+                                    checkbox.className = "w-5 h-5 text-orange rounded border-gray-300 focus:ring-orange accent-orange cursor-pointer flex-shrink-0";
+                                    checkbox.addEventListener('change', () => {
+                                        todos[index].completed = checkbox.checked;
+                                        saveTodos();
+                                        renderTodos();
+                                    });
+                                    
+                                    const span = document.createElement('span');
+                                    span.className = `text-navy dark:text-gray-300 transition-all flex-grow text-sm ${todo.completed ? 'line-through text-gray-400' : ''}`;
+                                    span.textContent = todo.text;
+                                    
+                                    const deleteBtn = document.createElement('button');
+                                    deleteBtn.innerHTML = '×';
+                                    deleteBtn.className = "text-red-500 opacity-0 group-hover:opacity-100 transition-opacity font-bold text-xl px-2 hover:bg-red-50 dark:hover:bg-red-900/30 rounded";
+                                    deleteBtn.addEventListener('click', () => {
+                                        todos.splice(index, 1);
+                                        saveTodos();
+                                        renderTodos();
+                                    });
+                                    
+                                    li.appendChild(checkbox);
+                                    li.appendChild(span);
+                                    li.appendChild(deleteBtn);
+                                    list.appendChild(li);
+                                });
+                            }
+                            
+                            function saveTodos() {
+                                localStorage.setItem(storageKey, JSON.stringify(todos));
+                            }
+                            
+                            function addTodo() {
+                                const text = input.value.trim();
+                                if (text) {
+                                    todos.push({ text: text, completed: false });
+                                    input.value = '';
+                                    saveTodos();
+                                    renderTodos();
+                                }
+                            }
+                            
+                            addBtn.addEventListener('click', addTodo);
+                            input.addEventListener('keypress', (e) => {
+                                if (e.key === 'Enter') addTodo();
+                            });
+                            
+                            renderTodos();
+                        });
+                    </script>
+
+
+
+                    @{
+                        var uniquePlaces = Model.Activities?
+                            .Where(a => a.SequenceOrder != 2 && a.SequenceOrder != 4)
+                            .GroupBy(a => a.Place)
+                            .Select(g => g.First())
+                            .ToList();
+
+                        // Extract places and restaurants from trip object
+                        List<dynamic> mlPlaces = new();
+                        List<dynamic> mlRestaurants = new();
+                        try {
+                            // trip.places is a JArray, convert to List<dynamic>
+                            if (trip?.places != null) {
+                                if (trip.places is Newtonsoft.Json.Linq.JArray placesArray) {
+                                    mlPlaces = placesArray.ToObject<List<dynamic>>();
+                                } else {
+                                    mlPlaces = (List<dynamic>)trip.places;
+                                }
+                            }
+                            // trip.restaurants is a JArray, convert to List<dynamic>
+                            if (trip?.restaurants != null) {
+                                if (trip.restaurants is Newtonsoft.Json.Linq.JArray restaurantsArray) {
+                                    mlRestaurants = restaurantsArray.ToObject<List<dynamic>>();
+                                } else {
+                                    mlRestaurants = (List<dynamic>)trip.restaurants;
+                                }
+                            }
+                        } catch { }
+                    }
+
+                    @if (uniquePlaces != null && uniquePlaces.Any())
+                    {
+                        <div class="mb-6 bg-white dark:bg-slate-800 rounded-xl shadow-sm border border-gray-100 dark:border-white/10 overflow-hidden">
+                            <div class="p-5 border-b border-gray-100 dark:border-white/10">
+                                <h3 class="text-xl font-bold text-navy dark:text-white m-0 flex items-center gap-2"><span>🗺️</span> Places to Visit</h3>
+                            </div>
+                            <div class="flex flex-col">
+                                @foreach (var act in uniquePlaces)
+                                {
+                                    var imgSrc = !string.IsNullOrEmpty(act.ImageUrl)
+                                        ? act.ImageUrl
+                                        : $"https://source.unsplash.com/400x200/?egypt,{Uri.EscapeDataString(act.Place)}";
+                                    <div class="bg-white dark:bg-slate-800 border-b border-gray-100 dark:border-white/5 last:border-0 flex flex-col overflow-hidden">
+                                        <img src="@imgSrc"
+                                             class="w-full h-32 object-cover"
+                                             alt="@act.Place"
+                                             onerror="this.style.display='none'"
+                                             loading="lazy" />
+                                        <div class="p-4">
+                                            <div class="flex justify-between items-start gap-2">
+                                                <div class="flex-grow">
+                                                    <h4 class="font-bold text-navy dark:text-white text-sm mb-1 leading-tight">@act.Place</h4>
+                                                    @{
+                                                        var placeData = mlPlaces.FirstOrDefault(p => (p?.name?.ToString() ?? "").Equals(act.Place, StringComparison.OrdinalIgnoreCase));
+                                                    }
+                                                    @if (placeData != null)
+                                                    {
+                                                        var rating = placeData.rating ?? placeData.Rating ?? "";
+                                                        var timings = placeData.timings ?? placeData.Timings ?? "";
+                                                        var address = placeData.address ?? placeData.Address ?? "";
+
+                                                        @if (!string.IsNullOrEmpty(rating.ToString()))
+                                                        {
+                                                            <p class="text-xs text-yellow-500 font-semibold mb-0.5">⭐ @rating</p>
+                                                        }
+                                                        @if (!string.IsNullOrEmpty(address.ToString()))
+                                                        {
+                                                            <p class="text-xs text-gray-500 dark:text-gray-400 mb-0.5">📍 @address</p>
+                                                        }
+                                                        @if (!string.IsNullOrEmpty(timings.ToString()))
+                                                        {
+                                                            <p class="text-xs text-gray-500 dark:text-gray-400 mb-0.5">🕐 @timings</p>
+                                                        }
+                                                    }
+                                                </div>
+                                                @if (!string.IsNullOrEmpty(act.TicketPrice))
+                                                {
+                                                    <span class="text-orange text-xs font-bold whitespace-nowrap">@act.TicketPrice</span>
+                                                }
+                                            </div>
+                                        </div>
+                                    </div>
+                                }
+                            </div>
+                        </div>
+                    }
+
+                    @if (mlRestaurants.Any())
+                    {
+                        <div class="mb-6 bg-white dark:bg-slate-800 rounded-xl shadow-sm border border-gray-100 dark:border-white/10 overflow-hidden">
+                            <div class="p-5 border-b border-gray-100 dark:border-white/10">
+                                <h3 class="text-xl font-bold text-navy dark:text-white m-0 flex items-center gap-2"><span>🍽️</span> Recommended Restaurants</h3>
+                            </div>
+                            <div class="flex flex-col">
+                                @foreach (var rest in mlRestaurants.Take(6))
+                                {
+                                    var restName = rest?.name?.ToString() ?? "";
+                                    var imgSrc = !string.IsNullOrEmpty(rest?.imageUrl?.ToString())
+                                        ? rest.imageUrl.ToString()
+                                        : $"https://source.unsplash.com/400x200/?egypt,restaurant,{Uri.EscapeDataString(restName)}";
+                                    <div class="bg-white dark:bg-slate-800 border-b border-gray-100 dark:border-white/5 last:border-0 flex flex-col overflow-hidden">
+                                        <img src="@imgSrc"
+                                             class="w-full h-32 object-cover"
+                                             alt="@restName"
+                                             onerror="this.style.display='none'"
+                                             loading="lazy" />
+                                        <div class="p-4">
+                                            <div class="flex justify-between items-start gap-2">
+                                                <div class="flex-grow">
+                                                    <h4 class="font-bold text-navy dark:text-white text-sm mb-1 leading-tight">@restName</h4>
+                                                    @if (!string.IsNullOrEmpty(rest?.cuisines?.ToString()))
+                                                    {
+                                                        <p class="text-gray-500 dark:text-gray-400 text-xs mb-1">🍴 @rest.cuisines</p>
+                                                    }
+                                                    @if (!string.IsNullOrEmpty(rest?.location?.ToString()))
+                                                    {
+                                                        <p class="text-gray-500 dark:text-gray-400 text-xs mb-1">📍 @rest.location</p>
+                                                    }
+                                                </div>
+                                                @if (!string.IsNullOrEmpty(rest?.avgPrice?.ToString()))
+                                                {
+                                                    <span class="text-orange text-xs font-bold whitespace-nowrap">@rest.avgPrice</span>
+                                                }
+                                            </div>
+                                        </div>
+                                    </div>
+                                }
+                            </div>
+                        </div>
+                    }
+                </div>
+            </div>
+        </div>
+
+        @* Only show raw AI output if we have NO structured activities to display *@
+        @if ((trip.itinerary == null) && (Model.Activities == null || !Model.Activities.Any()))
+        {
+            if (trip.content != null && !string.IsNullOrEmpty(trip.content.ToString()))
+            {
+                <div class="mt-12 p-8 bg-white dark:bg-slate-800 rounded-2xl shadow-lg border border-gray-100 dark:border-white/10">
+                    <h3 class="text-2xl font-bold text-navy dark:text-white mb-6 flex items-center gap-2"><span>🤖</span> Full AI Response Details</h3>
+                    <div id="markdown-content" class="text-gray-800 dark:text-gray-300 leading-relaxed" style="font-family: inherit;">
+                        <style>
+                            #markdown-content h1, #markdown-content h2, #markdown-content h3 { font-weight: bold; margin-top: 1.5rem; margin-bottom: 1rem; color: inherit; }
+                            #markdown-content h1 { font-size: 1.8rem; }
+                            #markdown-content h2 { font-size: 1.5rem; }
+                            #markdown-content h3 { font-size: 1.25rem; }
+                            #markdown-content p { margin-bottom: 1rem; }
+                            #markdown-content ul { list-style-type: disc; padding-left: 2rem; margin-bottom: 1rem; }
+                            #markdown-content li { margin-bottom: 0.5rem; }
+                            #markdown-content strong { font-weight: bold; color: inherit; }
+                        </style>
+                    </div>
+                </div>
+            }
+        }
+    </div>
+</div>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        // Render Raw AI Output
+        var rawMarkdown = @Html.Raw(Newtonsoft.Json.JsonConvert.SerializeObject(trip.content != null ? trip.content.ToString() : ""));
+        if (rawMarkdown && rawMarkdown.trim() !== '') {
+            var mdContainer = document.getElementById('markdown-content');
+            if (mdContainer) {
+                // Keep the style tag inside by appending the HTML
+                var renderedHtml = marked.parse(rawMarkdown);
+                mdContainer.innerHTML = mdContainer.innerHTML + renderedHtml;
+            }
+        }
+
+        // Initialize SortableJS
+        const containers = document.querySelectorAll('.sortable-day-container');
+        containers.forEach(container => {
+            new Sortable(container, {
+                group: 'shared', // set both lists to same group
+                animation: 150,
+                ghostClass: 'opacity-50',
+                dragClass: 'shadow-2xl',
+                handle: '.activity-box'
+            });
+        });
+
+        // Handle Save Order
+        const saveBtn = document.getElementById('save-trip-order');
+        if (saveBtn) {
+            saveBtn.addEventListener('click', async function() {
+                saveBtn.disabled = true;
+                const originalText = saveBtn.innerHTML;
+                saveBtn.innerHTML = '<span>⏳</span> Saving...';
+
+                const updates = [];
+                const dayContainers = document.querySelectorAll('.sortable-day-container');
+                
+                dayContainers.forEach(container => {
+                    const dayNum = parseInt(container.getAttribute('data-day'));
+                    const items = container.querySelectorAll('.timeline-item');
+                    
+                    items.forEach((item, index) => {
+                        const activityId = parseInt(item.getAttribute('data-activity-id'));
+                        if (activityId > 0) {
+                            updates.push({
+                                ActivityId: activityId,
+                                NewDay: dayNum,
+                                NewOrder: index + 1
+                            });
+                        }
+                    });
+                });
+
+                if (updates.length === 0) {
+                    alert("No valid activities found to save.");
+                    saveBtn.innerHTML = originalText;
+                    saveBtn.disabled = false;
+                    return;
+                }
+
+                // Get Antiforgery Token
+                const token = document.querySelector('#antiforgery-form input[name="__RequestVerificationToken"]')?.value;
+
+                try {
+                    const response = await fetch('?handler=SaveTripEdit', {
+                        method: 'POST',
+                        headers: {
+                            'Content-Type': 'application/json',
+                            'RequestVerificationToken': token || ''
+                        },
+                        body: JSON.stringify(updates)
+                    });
+
+                    const result = await response.json();
+                    if (result.success) {
+                        saveBtn.innerHTML = '<span>✅</span> Saved!';
+                        saveBtn.classList.remove('bg-orange', 'hover:bg-orange/90');
+                        saveBtn.classList.add('bg-green-600', 'hover:bg-green-700');
+                        
+                        setTimeout(() => {
+                            saveBtn.innerHTML = originalText;
+                            saveBtn.classList.remove('bg-green-600', 'hover:bg-green-700');
+                            saveBtn.classList.add('bg-orange', 'hover:bg-orange/90');
+                            saveBtn.disabled = false;
+                        }, 3000);
+                    } else {
+                        throw new Error(result.message || "Unknown error occurred");
+                    }
+                } catch (error) {
+                    console.error('Save failed:', error);
+                    alert('Failed to save trip order: ' + error.message);
+                                                    saveBtn.innerHTML = originalText;
+                    saveBtn.disabled = false;
+                }
+            });
+        }
+        // ── Weather Widget ────────────────────────────────────────────────────────
+        (async function loadWeather() {
+            const container   = document.getElementById('trip-result-container');
+            if (!container) return;
+
+            const destination = container.dataset.destination;
+            const startDate   = container.dataset.startDate;
+            const days        = parseInt(container.dataset.days) || 3;
+
+            if (!destination || !startDate) return;
+
+            try {
+                const params = new URLSearchParams({
+                    handler:     'Weather',
+                    destination: destination,
+                    startDate:   startDate,
+                    days:        Math.min(days, 14)
+                });
+
+                const res  = await fetch(`/Planner?${params}`);
+                if (!res.ok) return;
+                const data = await res.json();     // Array of DailyWeatherDto
+                if (!Array.isArray(data) || data.length === 0) return;
+
+                // Match by DayNumber (server-tagged) — immune to array length variations
+                document.querySelectorAll('.weather-badge').forEach(badge => {
+                    const dayNum = parseInt(badge.dataset.day);
+                    const w      = data.find(d => d.dayNumber === dayNum);
+                    if (!w) return;
+
+                    const rainHtml = w.rainChance > 20
+                        ? `<span class="text-blue-500">💧${w.rainChance}%</span>`
+                        : '';
+
+                    badge.innerHTML = `
+                        <img src="${w.iconUrl}" alt="${w.condition}" class="w-7 h-7" />
+                        <span class="font-semibold">${Math.round(w.maxTempC)}°C</span>
+                        <span class="text-xs text-gray-400">/ ${Math.round(w.minTempC)}°C</span>
+                        <span class="text-xs hidden sm:inline">${w.condition}</span>
+                        ${rainHtml}
+                    `;
+                    badge.style.display        = 'flex';
+                    badge.style.alignItems     = 'center';
+                    badge.style.gap            = '6px';
+                    badge.style.fontSize       = '0.85rem';
+                    badge.style.background     = 'rgba(59,130,246,0.08)';
+                    badge.style.borderRadius   = '999px';
+                    badge.style.padding        = '2px 10px';
+                    badge.style.border         = '1px solid rgba(59,130,246,0.15)';
+                });
+
+            } catch (e) {
+                // Silent — weather is optional; never break the page
+                console.warn('[Weather]', e);
+            }
+        })();
+    });
+</script>

@@ -1,0 +1,294 @@
+@page
+@model eg_travil.Pages.AdminDashboardModel
+@{
+    ViewData["Title"] = "Admin Dashboard";
+}
+
+<div class="pt-24 pb-12 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 min-h-screen">
+    <div class="flex justify-between items-center mb-8">
+        <h1 class="text-3xl font-bold text-navy dark:text-white">Admin Dashboard</h1>
+        <button onclick="logout()" class="px-4 py-2 bg-red-600 hover:bg-red-700 text-white rounded-lg transition-colors">Logout Admin</button>
+    </div>
+
+    <!-- Stats Grid -->
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8" id="stats-grid">
+        <div class="bg-white dark:bg-navy/50 p-6 rounded-xl shadow-lg border border-gray-100 dark:border-white/10">
+            <h3 class="text-gray-500 dark:text-gray-400 text-sm font-medium">Total Responses</h3>
+            <p class="text-4xl font-bold text-orange mt-2" id="stat-total">-</p>
+        </div>
+        <div class="bg-white dark:bg-navy/50 p-6 rounded-xl shadow-lg border border-gray-100 dark:border-white/10">
+            <h3 class="text-gray-500 dark:text-gray-400 text-sm font-medium">Average Trip Days</h3>
+            <p class="text-4xl font-bold text-navy dark:text-white mt-2" id="stat-avg-days">-</p>
+        </div>
+        <div class="bg-white dark:bg-navy/50 p-6 rounded-xl shadow-lg border border-gray-100 dark:border-white/10">
+            <h3 class="text-gray-500 dark:text-gray-400 text-sm font-medium">Top Destination</h3>
+            <p class="text-2xl font-bold text-navy dark:text-white mt-2 truncate" id="stat-top-dest">-</p>
+        </div>
+    </div>
+
+    <!-- Charts / Tables area -->
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-8">
+        <!-- Popular Destinations -->
+        <div class="bg-white dark:bg-navy/50 p-6 rounded-xl shadow-lg border border-gray-100 dark:border-white/10">
+            <h2 class="text-xl font-bold text-navy dark:text-white mb-4">Popular Destinations</h2>
+            <div class="overflow-x-auto">
+                <table class="min-w-full text-left">
+                    <thead>
+                        <tr class="text-sm font-semibold text-gray-500 dark:text-gray-400 border-b border-gray-200 dark:border-white/10">
+                            <th class="py-3 px-4">Destination</th>
+                            <th class="py-3 px-4 text-right">Count</th>
+                        </tr>
+                    </thead>
+                    <tbody id="destinations-table" class="text-navy dark:text-gray-300">
+                        <tr><td colspan="2" class="py-4 text-center">Loading...</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <!-- Popular Budgets -->
+        <div class="bg-white dark:bg-navy/50 p-6 rounded-xl shadow-lg border border-gray-100 dark:border-white/10">
+            <h2 class="text-xl font-bold text-navy dark:text-white mb-4">Budget Preferences</h2>
+            <div class="space-y-4" id="budgets-list">
+                <p class="text-center text-gray-500">Loading...</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Recent Responses Table -->
+    <div class="bg-white dark:bg-navy/50 p-6 rounded-xl shadow-lg border border-gray-100 dark:border-white/10">
+        <div class="flex justify-between items-center mb-4">
+            <h2 class="text-xl font-bold text-navy dark:text-white">Recent Responses</h2>
+            <div class="flex gap-2">
+                <form method="post" asp-page-handler="ExportCsv">
+                    <button type="submit" class="px-4 py-2 bg-green-600 hover:bg-green-700 text-white font-semibold rounded-lg shadow transition-colors">
+                        Download CSV
+                    </button>
+                </form>
+                <form method="post" asp-page-handler="ClearAllTrips">
+                    <button type="submit" onclick="return confirm('Are you sure you want to delete ALL trips?');" class="px-4 py-2 bg-red-600 hover:bg-red-700 text-white font-semibold rounded-lg shadow transition-colors">
+                        Wipe All Trips
+                    </button>
+                </form>
+            </div>
+        </div>
+        <div class="overflow-x-auto">
+            <table class="min-w-full text-left whitespace-nowrap">
+                <thead>
+                    <tr class="text-sm font-semibold text-gray-500 dark:text-gray-400 border-b border-gray-200 dark:border-white/10">
+                        <th class="py-3 px-4">Email</th>
+                        <th class="py-3 px-4">Destinations</th>
+                        <th class="py-3 px-4">Days</th>
+                        <th class="py-3 px-4">Budget</th>
+                        <th class="py-3 px-4">Created At</th>
+                        <th class="py-3 px-4 text-center">Actions</th>
+                    </tr>
+                </thead>
+                <tbody class="text-navy dark:text-gray-300 divide-y divide-gray-100 dark:divide-white/10">
+                    @if (Model.RecentResponses != null && Model.RecentResponses.Any())
+                    {
+                        @foreach (var resp in Model.RecentResponses)
+                        {
+                            <tr class="hover:bg-gray-50 dark:hover:bg-white/5 transition-colors">
+                                <td class="py-3 px-4">@(resp.User?.Email ?? resp.Email ?? "Anonymous")</td>
+                                <td class="py-3 px-4 truncate max-w-xs">@(resp.Destinations ?? "-")</td>
+                                <td class="py-3 px-4">@resp.Days</td>
+                                <td class="py-3 px-4">@(resp.Budget ?? "-")</td>
+                                <td class="py-3 px-4 text-sm text-gray-500">@resp.CreatedAt.ToLocalTime().ToString("g")</td>
+                                <td class="py-3 px-4 text-center">
+                                    <form method="post" asp-page-handler="DeleteTrip" asp-route-id="@resp.Id" class="inline">
+                                        <button type="submit" class="px-3 py-1 bg-red-600 hover:bg-red-700 text-white rounded text-sm font-semibold transition-colors" onclick="return confirm('Delete this response?');">
+                                            Delete
+                                        </button>
+                                    </form>
+                                </td>
+                            </tr>
+                        }
+                    }
+                    else
+                    {
+                        <tr><td colspan="6" class="py-4 text-center">No responses yet</td></tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <!-- User Management Table -->
+    <div class="bg-white dark:bg-navy/50 p-6 rounded-xl shadow-lg border border-gray-100 dark:border-white/10 mt-8">
+        <h2 class="text-xl font-bold text-navy dark:text-white mb-4">User Management</h2>
+        <div class="overflow-x-auto">
+            <table class="table table-dark table-hover min-w-full text-left whitespace-nowrap">
+                <thead>
+                    <tr class="text-sm font-semibold text-gray-500 dark:text-gray-400 border-b border-gray-200 dark:border-white/10">
+                        <th class="py-3 px-4">Email</th>
+                        <th class="py-3 px-4">Status</th>
+                        <th class="py-3 px-4">Actions</th>
+                    </tr>
+                </thead>
+                <tbody class="text-navy dark:text-gray-300 divide-y divide-gray-100 dark:divide-white/10">
+                    @if (Model.RegisteredUsers != null && Model.RegisteredUsers.Any())
+                    {
+                        @foreach (var user in Model.RegisteredUsers)
+                        {
+                            <tr class="hover:bg-gray-50 dark:hover:bg-white/5 transition-colors">
+                                <td class="py-3 px-4">@user.Email</td>
+                                <td class="py-3 px-4">
+                                    @if (user.IsBanned)
+                                    {
+                                        <span class="px-2 py-1 bg-red-100 text-red-800 rounded-full text-xs font-semibold">Suspended</span>
+                                    }
+                                    else
+                                    {
+                                        <span class="px-2 py-1 bg-green-100 text-green-800 rounded-full text-xs font-semibold">Active</span>
+                                    }
+                                </td>
+                                <td class="py-3 px-4">
+                                    <button onclick="toggleUserBan(@user.Id)" class="px-3 py-1 rounded text-white text-sm font-semibold @(user.IsBanned ? "bg-green-600 hover:bg-green-700" : "bg-red-600 hover:bg-red-700") transition-colors">
+                                        @(user.IsBanned ? "Unban User" : "Ban User")
+                                    </button>
+                                </td>
+                            </tr>
+                        }
+                    }
+                    else
+                    {
+                        <tr><td colspan="3" class="py-4 text-center">No users registered yet.</td></tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <script>
+        document.addEventListener('DOMContentLoaded', async () => {
+            const token = localStorage.getItem('token');
+            const email = parseJwt(token)?.email;
+            
+            if (!token || email !== 'felopater@gmail.com') {
+                alert('Access denied. Admin only.');
+                window.location.href = '/Login';
+                return;
+            }
+
+            try {
+                const response = await fetch('/api/admin/dashboard-stats', {
+                    headers: { 'Authorization': `Bearer ${token}` }
+                });
+
+                if (!response.ok) {
+                    if (response.status === 401 || response.status === 403) {
+                        alert('Unauthorized. Please log in as admin.');
+                        window.location.href = '/Login';
+                    } else {
+                        throw new Error('Failed to load dashboard stats');
+                    }
+                    return;
+                }
+
+                const data = await response.json();
+                renderDashboard(data);
+
+            } catch (err) {
+                console.error(err);
+                alert('An error occurred loading the dashboard.');
+            }
+        });
+
+        function parseJwt(token) {
+            if (!token) return null;
+            try {
+                const base64Url = token.split('.')[1];
+                const base64 = base64Url.replace(/-/g, '+').replace(/_/g, '/');
+                const jsonPayload = decodeURIComponent(atob(base64).split('').map(function(c) {
+                    return '%' + ('00' + c.charCodeAt(0).toString(16)).slice(-2);
+                }).join(''));
+                return JSON.parse(jsonPayload);
+            } catch (e) {
+                return null;
+            }
+        }
+
+        function renderDashboard(data) {
+            // Stats
+            document.getElementById('stat-total').innerText = data.totalResponses;
+            document.getElementById('stat-avg-days').innerText = data.averageDays;
+            if (data.popularDestinations && data.popularDestinations.length > 0) {
+                document.getElementById('stat-top-dest').innerText = data.popularDestinations[0].destination;
+            } else {
+                document.getElementById('stat-top-dest').innerText = 'N/A';
+            }
+
+            // Destinations Table
+            const destBody = document.getElementById('destinations-table');
+            if (data.popularDestinations && data.popularDestinations.length > 0) {
+                destBody.innerHTML = data.popularDestinations.map(d => `
+                    <tr class="hover:bg-gray-50 dark:hover:bg-white/5 transition-colors">
+                        <td class="py-3 px-4 font-medium">${d.destination}</td>
+                        <td class="py-3 px-4 text-right">${d.count}</td>
+                    </tr>
+                `).join('');
+            } else {
+                destBody.innerHTML = '<tr><td colspan="2" class="py-4 text-center">No data available</td></tr>';
+            }
+
+            // Budgets List (Progress bars style)
+            const budgetWrapper = document.getElementById('budgets-list');
+            if (data.popularBudgets && data.popularBudgets.length > 0) {
+                const maxBudgetCount = Math.max(...data.popularBudgets.map(b => b.count));
+                budgetWrapper.innerHTML = data.popularBudgets.map(b => {
+                    const pct = Math.round((b.count / maxBudgetCount) * 100);
+                    return `
+                    <div>
+                        <div class="flex justify-between text-sm mb-1">
+                            <span class="font-medium dark:text-gray-300">${b.budget || 'Not specified'}</span>
+                            <span class="text-gray-500">${b.count}</span>
+                        </div>
+                        <div class="w-full bg-gray-200 dark:bg-white/10 rounded-full h-2">
+                            <div class="bg-orange h-2 rounded-full" style="width: ${pct}%"></div>
+                        </div>
+                    </div>
+                `}).join('');
+            } else {
+                budgetWrapper.innerHTML = '<p class="text-center text-gray-500">No data available</p>';
+            }
+
+            // Recent Responses rendering removed as it is now server-side rendered via Razor
+        }
+
+        async function toggleUserBan(userId) {
+            const token = localStorage.getItem('token');
+            if (!token) {
+                alert('Please log in as admin.');
+                window.location.href = '/Login';
+                return;
+            }
+
+            try {
+                const response = await fetch('/api/admin/toggle-ban', {
+                    method: 'POST',
+                    headers: { 
+                        'Authorization': `Bearer ${token}`,
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({ userId: userId })
+                });
+
+                if (!response.ok) {
+                    const errText = await response.text();
+                    alert(`Failed to toggle ban status: ${errText}`);
+                    return;
+                }
+
+                const result = await response.json();
+                alert(result.message);
+                window.location.reload(); // Reload to refresh the table
+            } catch (err) {
+                console.error(err);
+                alert('An error occurred while toggling the user ban status.');
+            }
+        }
+    </script>
+}

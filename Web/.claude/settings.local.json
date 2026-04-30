@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(dotnet build *)",
+      "Bash(taskkill /PID 1972 /F)",
+      "PowerShell(Stop-Process *)"
+    ]
+  }
+}

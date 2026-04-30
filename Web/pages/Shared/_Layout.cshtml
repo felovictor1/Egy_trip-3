@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - EGTrip</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: { navy: '#0F172A', orange: { DEFAULT: '#F7931A', hover: '#D67D14' } },
+                    fontFamily: { sans: ['Inter', 'sans-serif'], display: ['Montserrat', 'sans-serif'] },
+                }
+            }
+        }
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <style>
+        .nav-scrolled {
+            background: rgba(15, 23, 42, 0.9);
+            backdrop-filter: blur(10px);
+        }
+        
+        /* Chatbot Markdown Table Styling */
+        .prose-chat table { width: 100%; border-collapse: collapse; margin: 10px 0; font-size: 0.85rem; }
+        .prose-chat th, .prose-chat td { border: 1px solid rgba(247, 147, 26, 0.3); padding: 6px 8px; text-align: left; }
+        .prose-chat th { background-color: rgba(247, 147, 26, 0.1); font-weight: 600; }
+        .prose-chat tr:nth-child(even) { background-color: rgba(0, 0, 0, 0.02); }
+        .dark .prose-chat tr:nth-child(even) { background-color: rgba(255, 255, 255, 0.02); }
+        .prose-chat p { margin-bottom: 0.5rem; }
+        .prose-chat p:last-child { margin-bottom: 0; }
+    </style>
+</head>
+<body class="bg-white dark:bg-navy transition-colors duration-300">
+    @{
+        bool isHome = ViewData["Title"]?.ToString() == "Home";
+        string navBaseText = isHome ? "text-white" : "text-navy dark:text-white";
+        string themeToggleBase = isHome ? "text-white bg-white/10 hover:bg-white/20" : "text-navy bg-navy/5 hover:bg-navy/10 dark:text-white dark:bg-white/10 dark:hover:bg-white/20";
+    }
+    <nav id="main-nav" class="fixed w-full z-50 transition-all duration-300 py-4 @navBaseText">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center">
+            <a href="/" class="flex items-center group">
+                <div class="mr-2 p-1.5 bg-orange rounded-lg">🚢</div>
+                <span class="font-display font-bold text-xl tracking-tight">EGTrip</span>
+            </a>
+
+            <div id="auth-section" class="hidden md:flex items-center space-x-6">
+                <button id="theme-toggle" class="@themeToggleBase transition-colors p-2 rounded-full">
+                    <!-- Sun icon -->
+                    <svg id="theme-toggle-light-icon" class="w-5 h-5 hidden" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z" fill-rule="evenodd" clip-rule="evenodd"></path></svg>
+                    <!-- Moon icon -->
+                    <svg id="theme-toggle-dark-icon" class="w-5 h-5 hidden" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path></svg>
+                </button>
+                <a href="/Login" id="login-link" class="text-sm font-semibold hover:text-orange dark:text-white dark:hover:text-orange transition-colors">Sign In</a>
+                <button id="start-planning-btn" onclick="handleStartPlanning()" class="px-6 py-2.5 bg-orange hover:bg-orange-hover text-white text-sm font-bold rounded-full transition-all shadow-lg hover:scale-105">Start Planning</button>
+            </div>
+        </div>
+    </nav>
+
+    <main>@RenderBody()</main>
+
+    <script>
+        function updateNavbar() {
+            const token = localStorage.getItem('token');
+            const fullName = localStorage.getItem('fullName');
+            const authSection = document.getElementById('auth-section');
+
+            if (token && fullName) {
+                // Keep the theme toggle
+                const themeToggleHTML = document.getElementById('theme-toggle').outerHTML;
+                
+                authSection.innerHTML = `
+                    ${themeToggleHTML}
+                    <div class="flex items-center space-x-4">
+                        <span class="welcome-badge transition-colors duration-300 text-sm font-medium border @(ViewData["Title"]?.ToString() == "Home" ? "border-white/20 bg-white/5" : "border-navy/10 dark:border-white/20 bg-navy/5 dark:bg-white/5 dark:text-white") px-4 py-2 rounded-full hidden sm:inline-block">
+                            👋 Welcome, ${fullName}
+                        </span>
+                        <a href="/Profile" class="text-sm font-semibold hover:text-orange dark:text-white dark:hover:text-orange transition-colors">Profile</a>
+                        <a href="/MyPlans" class="text-sm font-semibold hover:text-orange dark:text-white dark:hover:text-orange transition-colors">My Plans</a>
+                        <a href="/planner" class="px-6 py-2.5 bg-orange hover:bg-orange-hover text-white text-sm font-bold rounded-full transition-all shadow-lg hover:scale-105">My AI Plan</a>
+                        <button onclick="logout()" class="logout-btn transition-colors duration-300 text-xs @(ViewData["Title"]?.ToString() == "Home" ? "text-gray-400 hover:text-white" : "text-gray-500 hover:text-navy dark:text-gray-400 dark:hover:text-white") underline">Logout</button>
+                    </div>
+                `;
+                
+                // Re-bind theme toggle event listner
+                bindThemeToggle();
+            }
+            authSection.classList.remove('hidden');
+        }
+
+        function handleStartPlanning() {
+            const token = localStorage.getItem('token');
+            if (token) {
+                window.location.href = '/planner';
+            } else {
+                localStorage.setItem('redirectAfterAuth', '/planner');
+                window.location.href = '/Register';
+            }
+        }
+
+        function handleBrowsePlans() {
+            const token = localStorage.getItem('token');
+            if (token) {
+                window.location.href = '/ReadyPlans';
+            } else {
+                localStorage.setItem('redirectAfterAuth', '/ReadyPlans');
+                window.location.href = '/Login';
+            }
+        }
+
+        function logout() {
+            localStorage.clear();
+            window.location.href = '/';
+        }
+
+        window.addEventListener('scroll', () => {
+            const nav = document.getElementById('main-nav');
+            const themeToggle = document.getElementById('theme-toggle');
+            const welcomeBadge = document.querySelector('.welcome-badge');
+            const logoutBtn = document.querySelector('.logout-btn');
+            const isHome = @(ViewData["Title"]?.ToString() == "Home" ? "true" : "false");
+
+            if (window.scrollY > 20) {
+                nav.classList.add('nav-scrolled');
+                nav.classList.remove('text-navy');
+                nav.classList.add('text-white');
+                
+                if (themeToggle) {
+                    themeToggle.classList.remove('text-navy', 'bg-navy/5', 'hover:bg-navy/10');
+                    themeToggle.classList.add('text-white', 'bg-white/10', 'hover:bg-white/20');
+                }
+                if (welcomeBadge) {
+                    welcomeBadge.classList.remove('border-navy/10', 'bg-navy/5');
+                    welcomeBadge.classList.add('border-white/20', 'bg-white/5');
+                }
+                if (logoutBtn) {
+                    logoutBtn.classList.remove('text-gray-500', 'hover:text-navy');
+                    logoutBtn.classList.add('text-gray-400', 'hover:text-white');
+                }
+            } else {
+                nav.classList.remove('nav-scrolled');
+                if (!isHome) {
+                    nav.classList.remove('text-white');
+                    nav.classList.add('text-navy');
+                    
+                    if (themeToggle) {
+                        themeToggle.classList.remove('text-white', 'bg-white/10', 'hover:bg-white/20');
+                        themeToggle.classList.add('text-navy', 'bg-navy/5', 'hover:bg-navy/10');
+                    }
+                    if (welcomeBadge) {
+                        welcomeBadge.classList.remove('border-white/20', 'bg-white/5');
+                        welcomeBadge.classList.add('border-navy/10', 'bg-navy/5');
+                    }
+                    if (logoutBtn) {
+                        logoutBtn.classList.remove('text-gray-400', 'hover:text-white');
+                        logoutBtn.classList.add('text-gray-500', 'hover:text-navy');
+                    }
+                }
+            }
+        });
+
+        // --- Dark mode logic ---
+        function bindThemeToggle() {
+            var themeToggleDarkIcon = document.getElementById('theme-toggle-dark-icon');
+            var themeToggleLightIcon = document.getElementById('theme-toggle-light-icon');
+            var themeToggleBtn = document.getElementById('theme-toggle');
+
+            if (!themeToggleDarkIcon || !themeToggleLightIcon || !themeToggleBtn) return;
+
+            // Change the icons inside the button based on previous settings
+            if (localStorage.getItem('color-theme') === 'dark' || (!('color-theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+                themeToggleLightIcon.classList.remove('hidden');
+                document.documentElement.classList.add('dark');
+            } else {
+                themeToggleDarkIcon.classList.remove('hidden');
+                document.documentElement.classList.remove('dark');
+            }
+
+            // Remove existing listener if any, then add a new one
+            const newThemeToggleBtn = themeToggleBtn.cloneNode(true);
+            themeToggleBtn.parentNode.replaceChild(newThemeToggleBtn, themeToggleBtn);
+            
+            newThemeToggleBtn.addEventListener('click', function() {
+                // toggle icons inside button
+                document.getElementById('theme-toggle-dark-icon').classList.toggle('hidden');
+                document.getElementById('theme-toggle-light-icon').classList.toggle('hidden');
+
+                // if set via local storage previously
+                if (localStorage.getItem('color-theme')) {
+                    if (localStorage.getItem('color-theme') === 'light') {
+                        document.documentElement.classList.add('dark');
+                        localStorage.setItem('color-theme', 'dark');
+                    } else {
+                        document.documentElement.classList.remove('dark');
+                        localStorage.setItem('color-theme', 'light');
+                    }
+
+                // if NOT set via local storage previously
+                } else {
+                    if (document.documentElement.classList.contains('dark')) {
+                        document.documentElement.classList.remove('dark');
+                        localStorage.setItem('color-theme', 'light');
+                    } else {
+                        document.documentElement.classList.add('dark');
+                        localStorage.setItem('color-theme', 'dark');
+                    }
+                }
+            });
+        }
+
+        document.addEventListener('DOMContentLoaded', () => {
+            // Check initial theme on load to avoid flashing
+            if (localStorage.getItem('color-theme') === 'dark' || (!('color-theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+                document.documentElement.classList.add('dark');
+            } else {
+                document.documentElement.classList.remove('dark');
+            }
+            
+            updateNavbar();
+            bindThemeToggle();
+        });
+    </script>
+    <!-- Chatbot Widget -->
+    <div id="chatbot-widget" class="fixed bottom-6 right-6 z-50">
+        <!-- Chat Window -->
+        <div id="chatbot-window" class="hidden flex-col bg-white dark:bg-slate-800 rounded-2xl shadow-2xl border border-gray-200 dark:border-white/10 w-80 sm:w-96 overflow-hidden transition-all duration-300 transform origin-bottom-right scale-95 opacity-0 mb-4 h-[500px] max-h-[80vh]">
+            <div class="bg-orange p-4 text-white font-bold flex justify-between items-center shadow-md">
+                <div class="flex items-center gap-2">
+                    <span class="text-2xl">🤖</span>
+                    <span>Egypt Guide</span>
+                </div>
+                <button onclick="toggleChatbot()" class="text-white/80 hover:text-white transition-colors">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+                </button>
+            </div>
+            
+            <div id="chatbot-messages" class="flex-1 overflow-y-auto p-4 space-y-4 bg-slate-50 dark:bg-[#0F172A]/50">
+                <div class="flex items-start gap-2">
+                    <div class="bg-orange/10 dark:bg-orange/20 text-navy dark:text-gray-200 rounded-2xl rounded-tl-sm p-3 max-w-[90%] text-sm shadow-sm border border-orange/20 break-words overflow-y-auto max-h-72 prose-chat">
+                        Hello! I'm your virtual Egypt travel guide. Ask me anything about exploring Egypt! 🇪🇬
+                    </div>
+                </div>
+            </div>
+            
+            <div class="p-3 border-t border-gray-200 dark:border-white/10 bg-white dark:bg-slate-800">
+                <form id="chatbot-form" class="flex gap-2" onsubmit="event.preventDefault(); sendChatMessage();">
+                    <input type="text" id="chatbot-input" autocomplete="off" class="flex-1 bg-slate-100 dark:bg-slate-700 text-navy dark:text-white text-sm rounded-full px-4 py-2 focus:outline-none focus:ring-2 focus:ring-orange border border-transparent" placeholder="Type your message...">
+                    <button type="submit" class="bg-orange hover:bg-orange-hover text-white rounded-full p-2 h-10 w-10 flex items-center justify-center transition-transform hover:scale-105 active:scale-95 shadow-md shrink-0">
+                        <svg class="w-5 h-5 ml-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"></path></svg>
+                    </button>
+                </form>
+            </div>
+        </div>
+        
+        <!-- Toggle Button -->
+        <button id="chatbot-toggle" onclick="toggleChatbot()" class="bg-orange hover:bg-orange-hover text-white rounded-full p-4 h-14 w-14 flex items-center justify-center shadow-2xl transition-transform hover:scale-110 ml-auto border-2 border-white/20">
+            <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z"></path></svg>
+        </button>
+    </div>
+
+    <script>
+        let chatHistory = [];
+        
+        function toggleChatbot() {
+            const window = document.getElementById('chatbot-window');
+            if (window.classList.contains('hidden')) {
+                window.classList.remove('hidden');
+                setTimeout(() => {
+                    window.classList.remove('scale-95', 'opacity-0');
+                    window.classList.add('scale-100', 'opacity-100');
+                }, 10);
+            } else {
+                window.classList.remove('scale-100', 'opacity-100');
+                window.classList.add('scale-95', 'opacity-0');
+                setTimeout(() => {
+                    window.classList.add('hidden');
+                }, 300);
+            }
+        }
+        
+        function addMessageToUI(text, isUser) {
+            const messagesDiv = document.getElementById('chatbot-messages');
+            const msgDiv = document.createElement('div');
+            msgDiv.className = `flex items-start gap-2 ${isUser ? 'flex-row-reverse' : ''}`;
+            
+            const bubble = document.createElement('div');
+            bubble.className = isUser 
+                ? 'bg-navy dark:bg-slate-700 text-white rounded-2xl rounded-tr-sm p-3 max-w-[85%] text-sm shadow-sm break-words'
+                : 'bg-orange/10 dark:bg-orange/20 text-navy dark:text-gray-200 rounded-2xl rounded-tl-sm p-3 max-w-[90%] text-sm shadow-sm border border-orange/20 break-words overflow-y-auto max-h-72 prose-chat';
+                
+            if (isUser) {
+                bubble.innerText = text;
+            } else {
+                bubble.innerHTML = marked.parse(text);
+            }
+            
+            msgDiv.appendChild(bubble);
+            messagesDiv.appendChild(msgDiv);
+            messagesDiv.scrollTop = messagesDiv.scrollHeight;
+        }
+
+        async function sendChatMessage() {
+            const input = document.getElementById('chatbot-input');
+            const text = input.value.trim();
+            if (!text) return;
+            
+            input.value = '';
+            addMessageToUI(text, true);
+            chatHistory.push({ role: 'user', text: text });
+            
+            const messagesDiv = document.getElementById('chatbot-messages');
+            const typingDiv = document.createElement('div');
+            typingDiv.id = 'chatbot-typing';
+            typingDiv.className = 'flex items-start gap-2';
+            typingDiv.innerHTML = `
+                <div class="bg-orange/10 dark:bg-orange/20 text-navy dark:text-gray-200 rounded-2xl rounded-tl-sm p-3 max-w-[85%] text-sm shadow-sm border border-orange/20 flex gap-1 items-center h-10">
+                    <div class="w-2 h-2 bg-orange rounded-full animate-bounce"></div>
+                    <div class="w-2 h-2 bg-orange rounded-full animate-bounce" style="animation-delay: 0.2s"></div>
+                    <div class="w-2 h-2 bg-orange rounded-full animate-bounce" style="animation-delay: 0.4s"></div>
+                </div>
+            `;
+            messagesDiv.appendChild(typingDiv);
+            messagesDiv.scrollTop = messagesDiv.scrollHeight;
+            
+            try {
+                const response = await fetch('/api/Chat', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ messages: chatHistory })
+                });
+                
+                const data = await response.json();
+                typingDiv.remove();
+                
+                if (response.ok && data.response) {
+                    addMessageToUI(data.response, false);
+                    chatHistory.push({ role: 'model', text: data.response });
+                } else {
+                    addMessageToUI('Sorry, I encountered an error. Please check your API key.', false);
+                }
+            } catch (err) {
+                typingDiv.remove();
+                addMessageToUI('Connection error. Please try again later.', false);
+            }
+        }
+    </script>
+    <script src="~/js/apiService.js"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

@@ -1,0 +1,206 @@
+@page
+@model eg_travil.Pages.ProfileModel
+@{
+    ViewData["Title"] = "My Profile";
+}
+
+<div class="min-h-screen bg-slate-50 dark:bg-[#0F172A] py-12 px-4 transition-colors duration-300">
+    <div class="max-w-4xl mx-auto">
+        <!-- Static Profile View -->
+        <div id="staticProfileView" class="bg-white dark:bg-white/5 backdrop-blur-xl border border-gray-200 dark:border-white/10 p-8 rounded-2xl shadow-xl dark:shadow-2xl">
+            <div class="flex justify-between items-center mb-8 border-b border-gray-200 dark:border-white/10 pb-6">
+                <div>
+                    <h2 class="text-3xl font-bold text-navy dark:text-white">Profile Details</h2>
+                    <p class="text-gray-600 dark:text-gray-400 mt-2">Manage your personal information</p>
+                </div>
+                <button onclick="toggleEditMode()" class="bg-navy dark:bg-white/10 text-white dark:text-gray-300 px-6 py-2.5 rounded-lg font-semibold hover:bg-orange transition-all shadow-md">
+                    Edit Profile
+                </button>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-y-8 gap-x-12">
+                <div>
+                    <p class="text-sm text-gray-500 dark:text-gray-400 mb-1">Full Name</p>
+                    <p id="displayFullName" class="text-xl font-semibold text-navy dark:text-white">Loading...</p>
+                </div>
+                <div>
+                    <p class="text-sm text-gray-500 dark:text-gray-400 mb-1">Username</p>
+                    <p id="displayUsername" class="text-xl font-semibold text-navy dark:text-white">Loading...</p>
+                </div>
+                <div>
+                    <p class="text-sm text-gray-500 dark:text-gray-400 mb-1">Email Address</p>
+                    <p id="displayEmail" class="text-xl font-semibold text-navy dark:text-white">Loading...</p>
+                </div>
+                <div>
+                    <p class="text-sm text-gray-500 dark:text-gray-400 mb-1">Age</p>
+                    <p id="displayAge" class="text-xl font-semibold text-navy dark:text-white">Loading...</p>
+                </div>
+                <div>
+                    <p class="text-sm text-gray-500 dark:text-gray-400 mb-1">Phone Number</p>
+                    <p id="displayPhoneNumber" class="text-xl font-semibold text-navy dark:text-white">Loading...</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Edit Profile Form -->
+        <div id="editProfileView" class="hidden bg-white dark:bg-white/5 backdrop-blur-xl border border-gray-200 dark:border-white/10 p-8 rounded-2xl shadow-xl dark:shadow-2xl">
+            <div class="flex justify-between items-center mb-6">
+                <h2 class="text-3xl font-bold text-navy dark:text-white">Edit Profile</h2>
+                <button onclick="toggleEditMode()" class="text-gray-500 hover:text-red-500 font-semibold transition-colors">
+                    Cancel
+                </button>
+            </div>
+            
+            <form id="profileForm" class="space-y-6">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div>
+                        <label class="block text-sm font-medium text-navy dark:text-gray-300 mb-2">Full Name</label>
+                        <input type="text" id="fullName" required class="w-full bg-gray-50 dark:bg-white/10 border border-gray-300 dark:border-white/20 rounded-lg px-4 py-3 text-navy dark:text-white focus:outline-none focus:border-orange transition-colors" placeholder="e.g. John Doe">
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium text-navy dark:text-gray-300 mb-2">Username</label>
+                        <input type="text" id="username" class="w-full bg-gray-50 dark:bg-white/10 border border-gray-300 dark:border-white/20 rounded-lg px-4 py-3 text-navy dark:text-white focus:outline-none focus:border-orange transition-colors" placeholder="e.g. johndoe123">
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium text-navy dark:text-gray-300 mb-2">Email Address</label>
+                        <input type="email" id="email" disabled class="w-full bg-gray-200 dark:bg-white/5 border border-gray-300 dark:border-white/10 rounded-lg px-4 py-3 text-gray-500 dark:text-gray-400 cursor-not-allowed">
+                        <p class="text-xs text-gray-400 mt-1">Email cannot be changed.</p>
+                    </div>
+                    <div></div> <!-- Spacer -->
+                    <div>
+                        <label class="block text-sm font-medium text-navy dark:text-gray-300 mb-2">Age</label>
+                        <input type="number" id="age" required class="w-full bg-gray-50 dark:bg-white/10 border border-gray-300 dark:border-white/20 rounded-lg px-4 py-3 text-navy dark:text-white focus:outline-none focus:border-orange transition-colors" placeholder="e.g. 25">
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium text-navy dark:text-gray-300 mb-2">Phone Number</label>
+                        <input type="tel" id="phoneNumber" required class="w-full bg-gray-50 dark:bg-white/10 border border-gray-300 dark:border-white/20 rounded-lg px-4 py-3 text-navy dark:text-white focus:outline-none focus:border-orange transition-colors" placeholder="e.g. +201000000000">
+                    </div>
+                </div>
+                <div id="profileError" class="hidden text-red-600 dark:text-red-500 text-sm mt-2"></div>
+                <div id="profileSuccess" class="hidden text-green-600 dark:text-green-500 text-sm mt-2">Profile updated successfully!</div>
+                <button type="submit" class="w-full bg-orange py-3 rounded-lg text-white font-bold hover:scale-105 transition-all shadow-lg">Save Changes</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <script>
+        let currentProfileData = {};
+
+        function toggleEditMode() {
+            const staticView = document.getElementById('staticProfileView');
+            const editView = document.getElementById('editProfileView');
+            
+            if (staticView.classList.contains('hidden')) {
+                // Switching to Static View
+                staticView.classList.remove('hidden');
+                editView.classList.add('hidden');
+                // Reset form values to current data
+                populateForm(currentProfileData);
+            } else {
+                // Switching to Edit View
+                staticView.classList.add('hidden');
+                editView.classList.remove('hidden');
+            }
+        }
+
+        function populateForm(data) {
+            document.getElementById('fullName').value = data.fullName || '';
+            document.getElementById('username').value = data.username || '';
+            document.getElementById('email').value = data.email || '';
+            document.getElementById('age').value = data.age || '';
+            document.getElementById('phoneNumber').value = data.phoneNumber || '';
+        }
+
+        function updateStaticView(data) {
+            document.getElementById('displayFullName').textContent = data.fullName || 'Not provided';
+            document.getElementById('displayUsername').textContent = data.username || 'Not provided';
+            document.getElementById('displayEmail').textContent = data.email || 'Not provided';
+            document.getElementById('displayAge').textContent = data.age || 'Not provided';
+            document.getElementById('displayPhoneNumber').textContent = data.phoneNumber || 'Not provided';
+        }
+
+        async function fetchProfile() {
+            const token = localStorage.getItem('token');
+            if (!token) {
+                window.location.href = '/Login';
+                return;
+            }
+
+            try {
+                const response = await fetch('/api/Profile/me', {
+                    headers: { 'Authorization': `Bearer ${token}` }
+                });
+                if (response.ok) {
+                    const data = await response.json();
+                    currentProfileData = data;
+                    updateStaticView(data);
+                    populateForm(data);
+                    
+                    // Force edit mode if profile is incomplete
+                    if (!data.age || !data.phoneNumber) {
+                        if (document.getElementById('editProfileView').classList.contains('hidden')) {
+                            toggleEditMode();
+                            // Hide cancel button if they must complete profile
+                            document.querySelector('#editProfileView button.text-gray-500').classList.add('hidden');
+                        }
+                    }
+                } else {
+                    console.error("Failed to fetch profile");
+                }
+            } catch (err) {
+                console.error("Error fetching profile:", err);
+            }
+        }
+
+        document.addEventListener('DOMContentLoaded', fetchProfile);
+
+        document.getElementById('profileForm').addEventListener('submit', async (e) => {
+            e.preventDefault();
+            const errorDiv = document.getElementById('profileError');
+            const successDiv = document.getElementById('profileSuccess');
+            errorDiv.classList.add('hidden');
+            successDiv.classList.add('hidden');
+
+            const payload = {
+                fullName: document.getElementById('fullName').value,
+                username: document.getElementById('username').value,
+                age: parseInt(document.getElementById('age').value),
+                phoneNumber: document.getElementById('phoneNumber').value
+            };
+
+            const token = localStorage.getItem('token');
+            try {
+                const response = await fetch('/api/Profile/update', {
+                    method: 'PUT',
+                    headers: { 
+                        'Content-Type': 'application/json',
+                        'Authorization': `Bearer ${token}`
+                    },
+                    body: JSON.stringify(payload)
+                });
+
+                if (response.ok) {
+                    localStorage.setItem('isProfileComplete', 'true');
+                    successDiv.classList.remove('hidden');
+                    
+                    // Update current data and static view
+                    currentProfileData = { ...currentProfileData, ...payload };
+                    updateStaticView(currentProfileData);
+                    
+                    setTimeout(() => {
+                        successDiv.classList.add('hidden');
+                        toggleEditMode();
+                    }, 1000);
+                } else {
+                    errorDiv.textContent = "Failed to update profile. Please try again.";
+                    errorDiv.classList.remove('hidden');
+                }
+            } catch (err) {
+                errorDiv.textContent = "Network error: " + err.message;
+                errorDiv.classList.remove('hidden');
+            }
+        });
+    </script>
+}

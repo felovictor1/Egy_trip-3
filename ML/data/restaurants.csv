@@ -1,0 +1,1226 @@
+id,city,Restaurant,Location,Cuisines,URL,Total_Items,Prices_List,Min_Price,Max_Price,Avg_Price
+1,Cairo,Abou Tarek 1,Garden City,"Egyptian,Arabic,Middle Eastern",https://talabat.com/eg/cairo/abou-tarek-1-1,23,74.54-275.38,74.54,275.38,174.96
+2,Cairo,Koshary Abou Tarek 1,Heliopolis,"Thai,Asian,Vegetarian",https://talabat.com/eg/cairo/koshary-abou-tarek-1-2,112,118.81-523.49,118.81,523.49,321.15
+3,Cairo,Sequoia 1,New Cairo,"Seafood,Mediterranean",https://talabat.com/eg/cairo/sequoia-1-3,30,50.48-130.73,50.48,130.73,90.6
+4,Cairo,Zooba 1,Heliopolis,"French,European,Fine Dining",https://talabat.com/eg/cairo/zooba-1-4,44,52.88-248.78,52.88,248.78,150.83
+5,Cairo,Fasahat Somaya 1,Nasr City,"Mexican,Latin,Tacos",https://talabat.com/eg/cairo/fasahat-somaya-1-5,51,129.45-323.6,129.45,323.6,226.53
+6,Cairo,El Prince 1,Heliopolis,"Vegetarian,Vegan,Healthy",https://talabat.com/eg/cairo/el-prince-1-6,35,96.7-418.48,96.7,418.48,257.59
+7,Cairo,Maison Thomas 1,6th of October,"French,European,Fine Dining",https://talabat.com/eg/cairo/maison-thomas-1-7,49,72.54-297.4,72.54,297.4,184.97
+8,Cairo,Taboula 1,Downtown Cairo,"Thai,Asian,Vegetarian",https://talabat.com/eg/cairo/taboula-1-8,63,81.49-127.26,81.49,127.26,104.38
+9,Cairo,Cairo Kitchen 1,Heliopolis,"Indian,Asian,Vegetarian",https://talabat.com/eg/cairo/cairo-kitchen-1-9,68,117.02-524.81,117.02,524.81,320.91
+10,Cairo,Kazouza 1,Heliopolis,"Thai,Asian,Vegetarian",https://talabat.com/eg/cairo/kazouza-1-10,47,63.31-294.0,63.31,294.0,178.66
+11,Cairo,Andrea El Mariouteya 1,Mohandessin,"Chinese,Asian,Dim Sum",https://talabat.com/eg/cairo/andrea-el-mariouteya-1-11,35,146.53-285.24,146.53,285.24,215.88
+12,Cairo,Sea Gull 1,6th of October,"Japanese,Sushi,Asian",https://talabat.com/eg/cairo/sea-gull-1-12,81,83.79-304.81,83.79,304.81,194.3
+13,Cairo,Samakmak 1,Garden City,"Italian,Pizza,Pasta",https://talabat.com/eg/cairo/samakmak-1-13,62,96.36-203.82,96.36,203.82,150.09
+14,Cairo,Fish Market 1,Mohandessin,"Italian,Pizza,Pasta",https://talabat.com/eg/cairo/fish-market-1-14,60,88.96-337.44,88.96,337.44,213.2
+15,Cairo,Gad 1,Nile Corniche,"Turkish,Kebab,Middle Eastern",https://talabat.com/eg/cairo/gad-1-15,88,49.36-190.03,49.36,190.03,119.69
+16,Cairo,Felfela 1,Khan El Khalili,"French,European,Fine Dining",https://talabat.com/eg/cairo/felfela-1-16,110,127.63-626.5,127.63,626.5,377.06
+17,Cairo,Tikka Grill 1,Nasr City,"Japanese,Sushi,Asian",https://talabat.com/eg/cairo/tikka-grill-1-17,46,33.38-102.63,33.38,102.63,68.0
+18,Cairo,El Shabrawy 1,Heliopolis,"Korean,Asian,BBQ",https://talabat.com/eg/cairo/el-shabrawy-1-18,108,62.09-204.75,62.09,204.75,133.42
+19,Cairo,Mori Sushi 1,Heliopolis,"Greek,Mediterranean,Seafood",https://talabat.com/eg/cairo/mori-sushi-1-19,32,62.88-269.57,62.88,269.57,166.22
+20,Cairo,Crimson Bar & Grill 1,Mohandessin,"Japanese,Sushi,Asian",https://talabat.com/eg/cairo/crimson-bar-&-grill-1-20,50,51.19-140.98,51.19,140.98,96.08
+21,Cairo,Naguib Mahfouz Cafe 1,Giza,"Indian,Asian,Vegetarian",https://talabat.com/eg/cairo/naguib-mahfouz-cafe-1-21,105,84.75-135.61,84.75,135.61,110.18
+22,Cairo,El Tabbala 1,Garden City,"Korean,Asian,BBQ",https://talabat.com/eg/cairo/el-tabbala-1-22,52,54.42-187.47,54.42,187.47,120.94
+23,Cairo,Osmanly 1,Pyramids Area,"American,Burgers,Fast Food",https://talabat.com/eg/cairo/osmanly-1-23,90,133.3-204.42,133.3,204.42,168.86
+24,Cairo,Sabaya 1,Mohandessin,"Italian,Pizza,Pasta",https://talabat.com/eg/cairo/sabaya-1-24,16,133.08-203.19,133.08,203.19,168.13
+25,Cairo,Le Deck 1,Khan El Khalili,"Thai,Asian,Vegetarian",https://talabat.com/eg/cairo/le-deck-1-25,46,72.47-198.94,72.47,198.94,135.7
+26,Cairo,Birdcage 1,Downtown Cairo,"Lebanese,Middle Eastern,Arabic",https://talabat.com/eg/cairo/birdcage-1-26,100,127.08-601.07,127.08,601.07,364.08
+27,Cairo,Crimson 1,Giza,"Lebanese,Middle Eastern,Arabic",https://talabat.com/eg/cairo/crimson-1-27,92,114.06-333.47,114.06,333.47,223.77
+28,Cairo,Pier 88 1,Zamalek,"Seafood,Mediterranean",https://talabat.com/eg/cairo/pier-88-1-28,61,106.57-478.47,106.57,478.47,292.52
+29,Cairo,The Blue Restaurant 1,Pyramids Area,"Thai,Asian,Vegetarian",https://talabat.com/eg/cairo/the-blue-restaurant-1-29,90,125.07-214.77,125.07,214.77,169.92
+30,Cairo,Nile Maxim 1,Pyramids Area,"Mexican,Latin,Tacos",https://talabat.com/eg/cairo/nile-maxim-1-30,99,91.7-267.94,91.7,267.94,179.82
+31,Cairo,Abou Tarek 2,Dokki,"Mexican,Latin,Tacos",https://talabat.com/eg/cairo/abou-tarek-2-31,55,87.19-162.19,87.19,162.19,124.69
+32,Cairo,Koshary Abou Tarek 2,Mohandessin,"Greek,Mediterranean,Seafood",https://talabat.com/eg/cairo/koshary-abou-tarek-2-32,105,99.43-231.79,99.43,231.79,165.61
+33,Cairo,Sequoia 2,Heliopolis,"American,Burgers,Fast Food",https://talabat.com/eg/cairo/sequoia-2-33,115,48.71-206.29,48.71,206.29,127.5
+34,Cairo,Zooba 2,Giza,"Korean,Asian,BBQ",https://talabat.com/eg/cairo/zooba-2-34,68,87.78-332.86,87.78,332.86,210.32
+35,Cairo,Fasahat Somaya 2,New Cairo,"Thai,Asian,Vegetarian",https://talabat.com/eg/cairo/fasahat-somaya-2-35,94,70.03-329.35,70.03,329.35,199.69
+36,Cairo,El Prince 2,New Cairo,"Thai,Asian,Vegetarian",https://talabat.com/eg/cairo/el-prince-2-36,37,122.27-334.99,122.27,334.99,228.63
+37,Cairo,Maison Thomas 2,Khan El Khalili,"Thai,Asian,Vegetarian",https://talabat.com/eg/cairo/maison-thomas-2-37,102,93.74-449.61,93.74,449.61,271.68
+38,Cairo,Taboula 2,Zamalek,"Vegetarian,Vegan,Healthy",https://talabat.com/eg/cairo/taboula-2-38,36,77.16-286.78,77.16,286.78,181.97
+39,Cairo,Cairo Kitchen 2,New Cairo,"Vegetarian,Vegan,Healthy",https://talabat.com/eg/cairo/cairo-kitchen-2-39,65,36.84-104.36,36.84,104.36,70.6
+40,Cairo,Kazouza 2,Giza,"Korean,Asian,BBQ",https://talabat.com/eg/cairo/kazouza-2-40,89,40.58-108.71,40.58,108.71,74.64
+41,Cairo,Andrea El Mariouteya 2,Mohandessin,"Mexican,Latin,Tacos",https://talabat.com/eg/cairo/andrea-el-mariouteya-2-41,39,81.38-286.86,81.38,286.86,184.12
+42,Cairo,Sea Gull 2,Nasr City,"Turkish,Kebab,Middle Eastern",https://talabat.com/eg/cairo/sea-gull-2-42,100,32.23-117.13,32.23,117.13,74.68
+43,Cairo,Samakmak 2,Nasr City,"Chinese,Asian,Dim Sum",https://talabat.com/eg/cairo/samakmak-2-43,20,63.07-247.7,63.07,247.7,155.38
+44,Cairo,Fish Market 2,Khan El Khalili,"Italian,Pizza,Pasta",https://talabat.com/eg/cairo/fish-market-2-44,25,62.31-285.83,62.31,285.83,174.07
+45,Cairo,Gad 2,6th of October,"Lebanese,Middle Eastern,Arabic",https://talabat.com/eg/cairo/gad-2-45,49,97.29-370.26,97.29,370.26,233.78
+46,Cairo,Felfela 2,6th of October,"Japanese,Sushi,Asian",https://talabat.com/eg/cairo/felfela-2-46,45,67.23-253.28,67.23,253.28,160.25
+47,Cairo,Tikka Grill 2,Downtown Cairo,"Vegetarian,Vegan,Healthy",https://talabat.com/eg/cairo/tikka-grill-2-47,72,120.59-399.16,120.59,399.16,259.88
+48,Cairo,El Shabrawy 2,Zamalek,"Turkish,Kebab,Middle Eastern",https://talabat.com/eg/cairo/el-shabrawy-2-48,33,33.52-57.12,33.52,57.12,45.32
+49,Cairo,Mori Sushi 2,Giza,"American,Burgers,Fast Food",https://talabat.com/eg/cairo/mori-sushi-2-49,61,115.2-469.97,115.2,469.97,292.59
+50,Cairo,Crimson Bar & Grill 2,Downtown Cairo,"Japanese,Sushi,Asian",https://talabat.com/eg/cairo/crimson-bar-&-grill-2-50,75,51.81-95.49,51.81,95.49,73.65
+51,Cairo,Naguib Mahfouz Cafe 2,Dokki,"Seafood,Mediterranean",https://talabat.com/eg/cairo/naguib-mahfouz-cafe-2-51,33,66.8-195.36,66.8,195.36,131.08
+52,Cairo,El Tabbala 2,Pyramids Area,"Egyptian,Arabic,Middle Eastern",https://talabat.com/eg/cairo/el-tabbala-2-52,105,46.17-225.22,46.17,225.22,135.69
+53,Cairo,Osmanly 2,Downtown Cairo,"Mexican,Latin,Tacos",https://talabat.com/eg/cairo/osmanly-2-53,114,38.12-106.32,38.12,106.32,72.22
+54,Cairo,Sabaya 2,6th of October,"American,Burgers,Fast Food",https://talabat.com/eg/cairo/sabaya-2-54,99,68.79-329.07,68.79,329.07,198.93
+55,Cairo,Le Deck 2,Maadi,"Italian,Pizza,Pasta",https://talabat.com/eg/cairo/le-deck-2-55,101,33.74-82.65,33.74,82.65,58.2
+56,Cairo,Birdcage 2,Khan El Khalili,"Seafood,Mediterranean",https://talabat.com/eg/cairo/birdcage-2-56,47,73.08-247.51,73.08,247.51,160.29
+57,Cairo,Crimson 2,Dokki,"French,European,Fine Dining",https://talabat.com/eg/cairo/crimson-2-57,39,61.42-297.07,61.42,297.07,179.25
+58,Cairo,Pier 88 2,Nasr City,"Greek,Mediterranean,Seafood",https://talabat.com/eg/cairo/pier-88-2-58,88,35.71-133.71,35.71,133.71,84.71
+59,Cairo,The Blue Restaurant 2,Downtown Cairo,"French,European,Fine Dining",https://talabat.com/eg/cairo/the-blue-restaurant-2-59,117,74.01-228.12,74.01,228.12,151.06
+60,Cairo,Nile Maxim 2,6th of October,"Chinese,Asian,Dim Sum",https://talabat.com/eg/cairo/nile-maxim-2-60,47,120.18-256.45,120.18,256.45,188.31
+61,Cairo,Abou Tarek 3,Giza,"Lebanese,Middle Eastern,Arabic",https://talabat.com/eg/cairo/abou-tarek-3-61,38,108.85-214.9,108.85,214.9,161.88
+62,Cairo,Koshary Abou Tarek 3,Garden City,"Seafood,Mediterranean",https://talabat.com/eg/cairo/koshary-abou-tarek-3-62,116,50.42-76.4,50.42,76.4,63.41
+63,Cairo,Sequoia 3,Khan El Khalili,"Indian,Asian,Vegetarian",https://talabat.com/eg/cairo/sequoia-3-63,47,33.95-86.12,33.95,86.12,60.04
+64,Cairo,Zooba 3,Garden City,"Japanese,Sushi,Asian",https://talabat.com/eg/cairo/zooba-3-64,89,95.43-386.24,95.43,386.24,240.84
+65,Cairo,Fasahat Somaya 3,Dokki,"Chinese,Asian,Dim Sum",https://talabat.com/eg/cairo/fasahat-somaya-3-65,39,58.48-126.5,58.48,126.5,92.49
+66,Cairo,El Prince 3,Khan El Khalili,"Italian,Pizza,Pasta",https://talabat.com/eg/cairo/el-prince-3-66,102,91.21-138.2,91.21,138.2,114.7
+67,Cairo,Maison Thomas 3,6th of October,"Japanese,Sushi,Asian",https://talabat.com/eg/cairo/maison-thomas-3-67,37,70.15-342.79,70.15,342.79,206.47
+68,Cairo,Taboula 3,Mohandessin,"Indian,Asian,Vegetarian",https://talabat.com/eg/cairo/taboula-3-68,55,99.42-211.4,99.42,211.4,155.41
+69,Cairo,Cairo Kitchen 3,Garden City,"Korean,Asian,BBQ",https://talabat.com/eg/cairo/cairo-kitchen-3-69,60,90.59-306.06,90.59,306.06,198.32
+70,Cairo,Kazouza 3,Nile Corniche,"Seafood,Mediterranean",https://talabat.com/eg/cairo/kazouza-3-70,115,93.09-429.38,93.09,429.38,261.24
+71,Cairo,Andrea El Mariouteya 3,Garden City,"French,European,Fine Dining",https://talabat.com/eg/cairo/andrea-el-mariouteya-3-71,39,87.12-212.96,87.12,212.96,150.04
+72,Cairo,Sea Gull 3,New Cairo,"Japanese,Sushi,Asian",https://talabat.com/eg/cairo/sea-gull-3-72,107,147.39-568.93,147.39,568.93,358.16
+73,Cairo,Samakmak 3,Dokki,"Greek,Mediterranean,Seafood",https://talabat.com/eg/cairo/samakmak-3-73,99,122.6-545.65,122.6,545.65,334.12
+74,Cairo,Fish Market 3,Nile Corniche,"Thai,Asian,Vegetarian",https://talabat.com/eg/cairo/fish-market-3-74,74,109.95-266.82,109.95,266.82,188.38
+75,Cairo,Gad 3,6th of October,"Italian,Pizza,Pasta",https://talabat.com/eg/cairo/gad-3-75,74,34.31-109.45,34.31,109.45,71.88
+76,Cairo,Felfela 3,Heliopolis,"Chinese,Asian,Dim Sum",https://talabat.com/eg/cairo/felfela-3-76,70,118.44-452.19,118.44,452.19,285.31
+77,Cairo,Tikka Grill 3,Giza,"Egyptian,Arabic,Middle Eastern",https://talabat.com/eg/cairo/tikka-grill-3-77,72,73.07-354.25,73.07,354.25,213.66
+78,Cairo,El Shabrawy 3,Nile Corniche,"Indian,Asian,Vegetarian",https://talabat.com/eg/cairo/el-shabrawy-3-78,118,40.19-107.15,40.19,107.15,73.67
+79,Cairo,Mori Sushi 3,Khan El Khalili,"Seafood,Mediterranean",https://talabat.com/eg/cairo/mori-sushi-3-79,98,142.12-286.66,142.12,286.66,214.39
+80,Cairo,Crimson Bar & Grill 3,Nile Corniche,"Turkish,Kebab,Middle Eastern",https://talabat.com/eg/cairo/crimson-bar-&-grill-3-80,38,42.78-189.86,42.78,189.86,116.32
+81,Cairo,Naguib Mahfouz Cafe 3,Giza,"Seafood,Mediterranean",https://talabat.com/eg/cairo/naguib-mahfouz-cafe-3-81,52,55.13-190.22,55.13,190.22,122.67
+82,Cairo,El Tabbala 3,New Cairo,"Chinese,Asian,Dim Sum",https://talabat.com/eg/cairo/el-tabbala-3-82,83,39.87-184.28,39.87,184.28,112.08
+83,Cairo,Osmanly 3,Zamalek,"Japanese,Sushi,Asian",https://talabat.com/eg/cairo/osmanly-3-83,54,140.49-562.71,140.49,562.71,351.6
+84,Cairo,Sabaya 3,Nasr City,"Korean,Asian,BBQ",https://talabat.com/eg/cairo/sabaya-3-84,62,72.79-304.64,72.79,304.64,188.72
+85,Cairo,Le Deck 3,Pyramids Area,"Egyptian,Arabic,Middle Eastern",https://talabat.com/eg/cairo/le-deck-3-85,36,142.62-647.63,142.62,647.63,395.12
+86,Cairo,Birdcage 3,6th of October,"Korean,Asian,BBQ",https://talabat.com/eg/cairo/birdcage-3-86,33,45.45-110.38,45.45,110.38,77.91
+87,Cairo,Crimson 3,Nasr City,"Thai,Asian,Vegetarian",https://talabat.com/eg/cairo/crimson-3-87,80,36.78-142.41,36.78,142.41,89.59
+88,Cairo,Pier 88 3,Nasr City,"Italian,Pizza,Pasta",https://talabat.com/eg/cairo/pier-88-3-88,109,111.81-524.52,111.81,524.52,318.16
+89,Cairo,The Blue Restaurant 3,Maadi,"Seafood,Mediterranean",https://talabat.com/eg/cairo/the-blue-restaurant-3-89,118,76.53-179.02,76.53,179.02,127.78
+90,Cairo,Nile Maxim 3,Nasr City,"Mexican,Latin,Tacos",https://talabat.com/eg/cairo/nile-maxim-3-90,78,126.59-624.53,126.59,624.53,375.56
+91,Cairo,Abou Tarek 4,Khan El Khalili,"Lebanese,Middle Eastern,Arabic",https://talabat.com/eg/cairo/abou-tarek-4-91,27,148.61-734.64,148.61,734.64,441.62
+92,Cairo,Koshary Abou Tarek 4,Nasr City,"Egyptian,Arabic,Middle Eastern",https://talabat.com/eg/cairo/koshary-abou-tarek-4-92,67,144.1-355.04,144.1,355.04,249.57
+93,Cairo,Sequoia 4,Pyramids Area,"American,Burgers,Fast Food",https://talabat.com/eg/cairo/sequoia-4-93,73,54.06-215.64,54.06,215.64,134.85
+94,Cairo,Zooba 4,Pyramids Area,"Seafood,Mediterranean",https://talabat.com/eg/cairo/zooba-4-94,74,127.27-334.55,127.27,334.55,230.91
+95,Cairo,Fasahat Somaya 4,Giza,"Greek,Mediterranean,Seafood",https://talabat.com/eg/cairo/fasahat-somaya-4-95,15,80.13-164.92,80.13,164.92,122.52
+96,Cairo,El Prince 4,Garden City,"Mexican,Latin,Tacos",https://talabat.com/eg/cairo/el-prince-4-96,77,46.51-214.55,46.51,214.55,130.53
+97,Cairo,Maison Thomas 4,Zamalek,"Korean,Asian,BBQ",https://talabat.com/eg/cairo/maison-thomas-4-97,80,41.44-123.64,41.44,123.64,82.54
+98,Cairo,Taboula 4,Garden City,"French,European,Fine Dining",https://talabat.com/eg/cairo/taboula-4-98,20,128.96-228.88,128.96,228.88,178.92
+99,Cairo,Cairo Kitchen 4,Mohandessin,"Lebanese,Middle Eastern,Arabic",https://talabat.com/eg/cairo/cairo-kitchen-4-99,99,121.59-441.3,121.59,441.3,281.44
+100,Cairo,Kazouza 4,Dokki,"French,European,Fine Dining",https://talabat.com/eg/cairo/kazouza-4-100,106,92.08-200.9,92.08,200.9,146.49
+101,Cairo,Andrea El Mariouteya 4,Heliopolis,"Mexican,Latin,Tacos",https://talabat.com/eg/cairo/andrea-el-mariouteya-4-101,19,116.84-377.72,116.84,377.72,247.28
+102,Cairo,Sea Gull 4,Maadi,"Vegetarian,Vegan,Healthy",https://talabat.com/eg/cairo/sea-gull-4-102,79,82.3-166.26,82.3,166.26,124.28
+103,Cairo,Samakmak 4,Zamalek,"American,Burgers,Fast Food",https://talabat.com/eg/cairo/samakmak-4-103,118,57.32-265.72,57.32,265.72,161.52
+104,Cairo,Fish Market 4,Nile Corniche,"Italian,Pizza,Pasta",https://talabat.com/eg/cairo/fish-market-4-104,22,43.73-193.28,43.73,193.28,118.5
+105,Cairo,Gad 4,6th of October,"Mexican,Latin,Tacos",https://talabat.com/eg/cairo/gad-4-105,59,74.83-301.2,74.83,301.2,188.01
+106,Cairo,Felfela 4,Zamalek,"Greek,Mediterranean,Seafood",https://talabat.com/eg/cairo/felfela-4-106,76,109.21-444.27,109.21,444.27,276.74
+107,Cairo,Tikka Grill 4,Nasr City,"Mexican,Latin,Tacos",https://talabat.com/eg/cairo/tikka-grill-4-107,37,66.63-145.64,66.63,145.64,106.13
+108,Cairo,El Shabrawy 4,Giza,"Indian,Asian,Vegetarian",https://talabat.com/eg/cairo/el-shabrawy-4-108,31,115.67-178.82,115.67,178.82,147.25
+109,Cairo,Mori Sushi 4,Pyramids Area,"Turkish,Kebab,Middle Eastern",https://talabat.com/eg/cairo/mori-sushi-4-109,52,110.5-448.75,110.5,448.75,279.62
+110,Cairo,Crimson Bar & Grill 4,Dokki,"Korean,Asian,BBQ",https://talabat.com/eg/cairo/crimson-bar-&-grill-4-110,83,111.15-416.04,111.15,416.04,263.6
+111,Cairo,Naguib Mahfouz Cafe 4,Heliopolis,"Chinese,Asian,Dim Sum",https://talabat.com/eg/cairo/naguib-mahfouz-cafe-4-111,91,98.29-217.19,98.29,217.19,157.74
+112,Cairo,El Tabbala 4,Heliopolis,"Lebanese,Middle Eastern,Arabic",https://talabat.com/eg/cairo/el-tabbala-4-112,54,37.97-114.47,37.97,114.47,76.22
+113,Cairo,Osmanly 4,Giza,"French,European,Fine Dining",https://talabat.com/eg/cairo/osmanly-4-113,100,81.56-355.88,81.56,355.88,218.72
+114,Cairo,Sabaya 4,Dokki,"American,Burgers,Fast Food",https://talabat.com/eg/cairo/sabaya-4-114,60,39.24-168.25,39.24,168.25,103.75
+115,Cairo,Le Deck 4,Mohandessin,"Greek,Mediterranean,Seafood",https://talabat.com/eg/cairo/le-deck-4-115,105,34.56-77.06,34.56,77.06,55.81
+116,Cairo,Birdcage 4,Garden City,"Vegetarian,Vegan,Healthy",https://talabat.com/eg/cairo/birdcage-4-116,94,91.63-194.35,91.63,194.35,142.99
+117,Cairo,Crimson 4,Khan El Khalili,"Greek,Mediterranean,Seafood",https://talabat.com/eg/cairo/crimson-4-117,42,139.67-389.4,139.67,389.4,264.53
+118,Cairo,Pier 88 4,New Cairo,"Vegetarian,Vegan,Healthy",https://talabat.com/eg/cairo/pier-88-4-118,111,117.68-577.55,117.68,577.55,347.62
+119,Cairo,The Blue Restaurant 4,Nile Corniche,"Thai,Asian,Vegetarian",https://talabat.com/eg/cairo/the-blue-restaurant-4-119,43,122.25-507.62,122.25,507.62,314.94
+120,Cairo,Nile Maxim 4,Mohandessin,"Greek,Mediterranean,Seafood",https://talabat.com/eg/cairo/nile-maxim-4-120,33,45.55-86.12,45.55,86.12,65.84
+121,Cairo,Abou Tarek 5,New Cairo,"Japanese,Sushi,Asian",https://talabat.com/eg/cairo/abou-tarek-5-121,116,128.32-212.38,128.32,212.38,170.35
+122,Cairo,Koshary Abou Tarek 5,Pyramids Area,"Japanese,Sushi,Asian",https://talabat.com/eg/cairo/koshary-abou-tarek-5-122,119,73.57-160.39,73.57,160.39,116.98
+123,Cairo,Sequoia 5,Nasr City,"Egyptian,Arabic,Middle Eastern",https://talabat.com/eg/cairo/sequoia-5-123,90,63.92-137.02,63.92,137.02,100.47
+124,Cairo,Zooba 5,Zamalek,"Turkish,Kebab,Middle Eastern",https://talabat.com/eg/cairo/zooba-5-124,44,57.31-119.45,57.31,119.45,88.38
+125,Cairo,Fasahat Somaya 5,6th of October,"Vegetarian,Vegan,Healthy",https://talabat.com/eg/cairo/fasahat-somaya-5-125,84,36.26-66.99,36.26,66.99,51.62
+126,Cairo,El Prince 5,Garden City,"French,European,Fine Dining",https://talabat.com/eg/cairo/el-prince-5-126,65,110.56-487.68,110.56,487.68,299.12
+127,Cairo,Maison Thomas 5,Nasr City,"Indian,Asian,Vegetarian",https://talabat.com/eg/cairo/maison-thomas-5-127,102,55.12-213.9,55.12,213.9,134.51
+128,Cairo,Taboula 5,Dokki,"Mexican,Latin,Tacos",https://talabat.com/eg/cairo/taboula-5-128,71,124.16-285.39,124.16,285.39,204.77
+129,Cairo,Cairo Kitchen 5,Heliopolis,"French,European,Fine Dining",https://talabat.com/eg/cairo/cairo-kitchen-5-129,44,33.06-129.43,33.06,129.43,81.25
+130,Cairo,Kazouza 5,Pyramids Area,"Japanese,Sushi,Asian",https://talabat.com/eg/cairo/kazouza-5-130,110,31.72-145.39,31.72,145.39,88.55
+131,Cairo,Andrea El Mariouteya 5,Khan El Khalili,"Italian,Pizza,Pasta",https://talabat.com/eg/cairo/andrea-el-mariouteya-5-131,73,101.12-278.53,101.12,278.53,189.82
+132,Cairo,Sea Gull 5,Pyramids Area,"Chinese,Asian,Dim Sum",https://talabat.com/eg/cairo/sea-gull-5-132,68,141.18-614.79,141.18,614.79,377.99
+133,Cairo,Samakmak 5,Maadi,"Italian,Pizza,Pasta",https://talabat.com/eg/cairo/samakmak-5-133,22,97.28-186.74,97.28,186.74,142.01
+134,Cairo,Fish Market 5,Garden City,"Korean,Asian,BBQ",https://talabat.com/eg/cairo/fish-market-5-134,23,144.74-583.3,144.74,583.3,364.02
+135,Cairo,Gad 5,Garden City,"Thai,Asian,Vegetarian",https://talabat.com/eg/cairo/gad-5-135,16,129.73-239.5,129.73,239.5,184.62
+136,Cairo,Felfela 5,New Cairo,"Mexican,Latin,Tacos",https://talabat.com/eg/cairo/felfela-5-136,26,81.59-327.82,81.59,327.82,204.7
+137,Cairo,Tikka Grill 5,Dokki,"Turkish,Kebab,Middle Eastern",https://talabat.com/eg/cairo/tikka-grill-5-137,107,66.19-117.87,66.19,117.87,92.03
+138,Cairo,El Shabrawy 5,Nasr City,"Mexican,Latin,Tacos",https://talabat.com/eg/cairo/el-shabrawy-5-138,52,58.22-201.7,58.22,201.7,129.96
+139,Cairo,Mori Sushi 5,Heliopolis,"Lebanese,Middle Eastern,Arabic",https://talabat.com/eg/cairo/mori-sushi-5-139,48,40.76-152.83,40.76,152.83,96.8
+140,Cairo,Crimson Bar & Grill 5,Pyramids Area,"Indian,Asian,Vegetarian",https://talabat.com/eg/cairo/crimson-bar-&-grill-5-140,84,105.49-447.05,105.49,447.05,276.27
+141,Cairo,Naguib Mahfouz Cafe 5,Garden City,"Thai,Asian,Vegetarian",https://talabat.com/eg/cairo/naguib-mahfouz-cafe-5-141,30,95.46-374.26,95.46,374.26,234.86
+142,Cairo,El Tabbala 5,Nile Corniche,"Thai,Asian,Vegetarian",https://talabat.com/eg/cairo/el-tabbala-5-142,112,116.34-562.39,116.34,562.39,339.37
+143,Cairo,Osmanly 5,Mohandessin,"Egyptian,Arabic,Middle Eastern",https://talabat.com/eg/cairo/osmanly-5-143,67,36.82-81.86,36.82,81.86,59.34
+144,Cairo,Sabaya 5,Maadi,"Egyptian,Arabic,Middle Eastern",https://talabat.com/eg/cairo/sabaya-5-144,114,35.61-174.84,35.61,174.84,105.22
+145,Cairo,Le Deck 5,Garden City,"French,European,Fine Dining",https://talabat.com/eg/cairo/le-deck-5-145,82,34.81-119.64,34.81,119.64,77.22
+146,Cairo,Birdcage 5,Giza,"American,Burgers,Fast Food",https://talabat.com/eg/cairo/birdcage-5-146,109,91.22-425.36,91.22,425.36,258.29
+147,Cairo,Crimson 5,Dokki,"Turkish,Kebab,Middle Eastern",https://talabat.com/eg/cairo/crimson-5-147,85,47.73-196.15,47.73,196.15,121.94
+148,Cairo,Pier 88 5,Zamalek,"Lebanese,Middle Eastern,Arabic",https://talabat.com/eg/cairo/pier-88-5-148,36,93.8-256.46,93.8,256.46,175.13
+149,Cairo,The Blue Restaurant 5,Pyramids Area,"Turkish,Kebab,Middle Eastern",https://talabat.com/eg/cairo/the-blue-restaurant-5-149,109,108.55-354.33,108.55,354.33,231.44
+150,Cairo,Nile Maxim 5,Nasr City,"Turkish,Kebab,Middle Eastern",https://talabat.com/eg/cairo/nile-maxim-5-150,100,118.69-302.01,118.69,302.01,210.35
+151,Cairo,Abou Tarek 6,Downtown Cairo,"Italian,Pizza,Pasta",https://talabat.com/eg/cairo/abou-tarek-6-151,25,86.16-193.61,86.16,193.61,139.88
+152,Cairo,Koshary Abou Tarek 6,Khan El Khalili,"Greek,Mediterranean,Seafood",https://talabat.com/eg/cairo/koshary-abou-tarek-6-152,111,36.68-183.26,36.68,183.26,109.97
+153,Cairo,Sequoia 6,Garden City,"Greek,Mediterranean,Seafood",https://talabat.com/eg/cairo/sequoia-6-153,104,125.7-337.66,125.7,337.66,231.68
+154,Cairo,Zooba 6,Khan El Khalili,"Korean,Asian,BBQ",https://talabat.com/eg/cairo/zooba-6-154,59,53.99-220.28,53.99,220.28,137.13
+155,Cairo,Fasahat Somaya 6,Mohandessin,"Vegetarian,Vegan,Healthy",https://talabat.com/eg/cairo/fasahat-somaya-6-155,110,50.62-94.4,50.62,94.4,72.51
+156,Cairo,El Prince 6,6th of October,"American,Burgers,Fast Food",https://talabat.com/eg/cairo/el-prince-6-156,78,90.11-249.91,90.11,249.91,170.01
+157,Cairo,Maison Thomas 6,Downtown Cairo,"Lebanese,Middle Eastern,Arabic",https://talabat.com/eg/cairo/maison-thomas-6-157,41,149.96-381.32,149.96,381.32,265.64
+158,Cairo,Taboula 6,Dokki,"Chinese,Asian,Dim Sum",https://talabat.com/eg/cairo/taboula-6-158,16,76.1-259.05,76.1,259.05,167.57
+159,Cairo,Cairo Kitchen 6,Giza,"Mexican,Latin,Tacos",https://talabat.com/eg/cairo/cairo-kitchen-6-159,102,127.34-344.14,127.34,344.14,235.74
+160,Cairo,Kazouza 6,Garden City,"American,Burgers,Fast Food",https://talabat.com/eg/cairo/kazouza-6-160,70,132.53-547.19,132.53,547.19,339.86
+161,Cairo,Andrea El Mariouteya 6,Garden City,"American,Burgers,Fast Food",https://talabat.com/eg/cairo/andrea-el-mariouteya-6-161,36,61.98-151.03,61.98,151.03,106.5
+162,Cairo,Sea Gull 6,Maadi,"Turkish,Kebab,Middle Eastern",https://talabat.com/eg/cairo/sea-gull-6-162,59,70.5-219.26,70.5,219.26,144.88
+163,Cairo,Samakmak 6,Mohandessin,"Japanese,Sushi,Asian",https://talabat.com/eg/cairo/samakmak-6-163,42,47.36-154.57,47.36,154.57,100.97
+164,Cairo,Fish Market 6,6th of October,"Korean,Asian,BBQ",https://talabat.com/eg/cairo/fish-market-6-164,91,87.79-337.77,87.79,337.77,212.78
+165,Cairo,Gad 6,Heliopolis,"Vegetarian,Vegan,Healthy",https://talabat.com/eg/cairo/gad-6-165,31,42.62-112.09,42.62,112.09,77.36
+166,Cairo,Felfela 6,Nasr City,"Mexican,Latin,Tacos",https://talabat.com/eg/cairo/felfela-6-166,28,120.42-482.31,120.42,482.31,301.37
+167,Cairo,Tikka Grill 6,6th of October,"Korean,Asian,BBQ",https://talabat.com/eg/cairo/tikka-grill-6-167,85,107.73-429.37,107.73,429.37,268.55
+168,Cairo,El Shabrawy 6,Heliopolis,"Turkish,Kebab,Middle Eastern",https://talabat.com/eg/cairo/el-shabrawy-6-168,58,54.84-272.1,54.84,272.1,163.47
+169,Cairo,Mori Sushi 6,New Cairo,"Turkish,Kebab,Middle Eastern",https://talabat.com/eg/cairo/mori-sushi-6-169,15,109.48-412.84,109.48,412.84,261.16
+170,Cairo,Crimson Bar & Grill 6,Heliopolis,"Greek,Mediterranean,Seafood",https://talabat.com/eg/cairo/crimson-bar-&-grill-6-170,52,145.38-489.97,145.38,489.97,317.68
+171,Cairo,Naguib Mahfouz Cafe 6,New Cairo,"Indian,Asian,Vegetarian",https://talabat.com/eg/cairo/naguib-mahfouz-cafe-6-171,108,92.94-143.69,92.94,143.69,118.31
+172,Cairo,El Tabbala 6,Dokki,"Indian,Asian,Vegetarian",https://talabat.com/eg/cairo/el-tabbala-6-172,73,67.44-318.68,67.44,318.68,193.06
+173,Cairo,Osmanly 6,Khan El Khalili,"Indian,Asian,Vegetarian",https://talabat.com/eg/cairo/osmanly-6-173,30,40.02-65.68,40.02,65.68,52.85
+174,Cairo,Sabaya 6,Heliopolis,"Egyptian,Arabic,Middle Eastern",https://talabat.com/eg/cairo/sabaya-6-174,56,98.3-276.32,98.3,276.32,187.31
+175,Cairo,Le Deck 6,Maadi,"Greek,Mediterranean,Seafood",https://talabat.com/eg/cairo/le-deck-6-175,109,148.33-528.51,148.33,528.51,338.42
+176,Cairo,Birdcage 6,Giza,"Japanese,Sushi,Asian",https://talabat.com/eg/cairo/birdcage-6-176,34,107.89-277.85,107.89,277.85,192.87
+177,Cairo,Crimson 6,Heliopolis,"Thai,Asian,Vegetarian",https://talabat.com/eg/cairo/crimson-6-177,16,146.06-704.72,146.06,704.72,425.39
+178,Cairo,Pier 88 6,Khan El Khalili,"Seafood,Mediterranean",https://talabat.com/eg/cairo/pier-88-6-178,110,121.81-188.1,121.81,188.1,154.95
+179,Cairo,The Blue Restaurant 6,Mohandessin,"Indian,Asian,Vegetarian",https://talabat.com/eg/cairo/the-blue-restaurant-6-179,26,115.06-560.31,115.06,560.31,337.68
+180,Cairo,Nile Maxim 6,New Cairo,"Egyptian,Arabic,Middle Eastern",https://talabat.com/eg/cairo/nile-maxim-6-180,54,136.18-322.07,136.18,322.07,229.12
+181,Cairo,Abou Tarek 7,Maadi,"Vegetarian,Vegan,Healthy",https://talabat.com/eg/cairo/abou-tarek-7-181,43,82.11-150.29,82.11,150.29,116.2
+182,Cairo,Koshary Abou Tarek 7,6th of October,"Egyptian,Arabic,Middle Eastern",https://talabat.com/eg/cairo/koshary-abou-tarek-7-182,35,142.89-589.67,142.89,589.67,366.28
+183,Cairo,Sequoia 7,Heliopolis,"Chinese,Asian,Dim Sum",https://talabat.com/eg/cairo/sequoia-7-183,67,118.78-182.22,118.78,182.22,150.5
+184,Cairo,Zooba 7,6th of October,"Vegetarian,Vegan,Healthy",https://talabat.com/eg/cairo/zooba-7-184,43,85.77-381.69,85.77,381.69,233.73
+185,Cairo,Fasahat Somaya 7,Giza,"French,European,Fine Dining",https://talabat.com/eg/cairo/fasahat-somaya-7-185,85,52.01-200.66,52.01,200.66,126.33
+186,Cairo,El Prince 7,Heliopolis,"American,Burgers,Fast Food",https://talabat.com/eg/cairo/el-prince-7-186,89,138.05-451.28,138.05,451.28,294.66
+187,Cairo,Maison Thomas 7,Nasr City,"Mexican,Latin,Tacos",https://talabat.com/eg/cairo/maison-thomas-7-187,106,84.0-172.21,84.0,172.21,128.11
+188,Cairo,Taboula 7,Heliopolis,"Greek,Mediterranean,Seafood",https://talabat.com/eg/cairo/taboula-7-188,19,125.61-518.82,125.61,518.82,322.22
+189,Cairo,Cairo Kitchen 7,Khan El Khalili,"Indian,Asian,Vegetarian",https://talabat.com/eg/cairo/cairo-kitchen-7-189,17,57.04-217.59,57.04,217.59,137.31
+190,Cairo,Kazouza 7,Zamalek,"Thai,Asian,Vegetarian",https://talabat.com/eg/cairo/kazouza-7-190,88,113.27-510.82,113.27,510.82,312.05
+191,Cairo,Andrea El Mariouteya 7,Khan El Khalili,"Seafood,Mediterranean",https://talabat.com/eg/cairo/andrea-el-mariouteya-7-191,107,46.25-129.92,46.25,129.92,88.08
+192,Cairo,Sea Gull 7,Nasr City,"Thai,Asian,Vegetarian",https://talabat.com/eg/cairo/sea-gull-7-192,96,146.36-365.63,146.36,365.63,256.0
+193,Cairo,Samakmak 7,6th of October,"Italian,Pizza,Pasta",https://talabat.com/eg/cairo/samakmak-7-193,23,92.1-410.01,92.1,410.01,251.06
+194,Cairo,Fish Market 7,6th of October,"French,European,Fine Dining",https://talabat.com/eg/cairo/fish-market-7-194,94,121.55-247.45,121.55,247.45,184.5
+195,Cairo,Gad 7,Mohandessin,"American,Burgers,Fast Food",https://talabat.com/eg/cairo/gad-7-195,89,61.43-222.81,61.43,222.81,142.12
+196,Cairo,Felfela 7,Heliopolis,"Egyptian,Arabic,Middle Eastern",https://talabat.com/eg/cairo/felfela-7-196,97,114.33-569.51,114.33,569.51,341.92
+197,Cairo,Tikka Grill 7,Nasr City,"Turkish,Kebab,Middle Eastern",https://talabat.com/eg/cairo/tikka-grill-7-197,42,94.48-294.51,94.48,294.51,194.5
+198,Cairo,El Shabrawy 7,Nasr City,"Italian,Pizza,Pasta",https://talabat.com/eg/cairo/el-shabrawy-7-198,59,45.2-85.73,45.2,85.73,65.47
+199,Cairo,Mori Sushi 7,Nasr City,"Greek,Mediterranean,Seafood",https://talabat.com/eg/cairo/mori-sushi-7-199,59,47.75-156.58,47.75,156.58,102.17
+200,Cairo,Crimson Bar & Grill 7,Nile Corniche,"Chinese,Asian,Dim Sum",https://talabat.com/eg/cairo/crimson-bar-&-grill-7-200,68,93.11-160.86,93.11,160.86,126.99
+201,Cairo,Naguib Mahfouz Cafe 7,Nile Corniche,"Lebanese,Middle Eastern,Arabic",https://talabat.com/eg/cairo/naguib-mahfouz-cafe-7-201,112,146.12-436.87,146.12,436.87,291.5
+202,Cairo,El Tabbala 7,Maadi,"Chinese,Asian,Dim Sum",https://talabat.com/eg/cairo/el-tabbala-7-202,43,118.0-344.46,118.0,344.46,231.23
+203,Cairo,Osmanly 7,Dokki,"American,Burgers,Fast Food",https://talabat.com/eg/cairo/osmanly-7-203,31,78.58-387.83,78.58,387.83,233.2
+204,Cairo,Sabaya 7,Pyramids Area,"Korean,Asian,BBQ",https://talabat.com/eg/cairo/sabaya-7-204,27,58.46-190.03,58.46,190.03,124.25
+205,Cairo,Le Deck 7,Nile Corniche,"Vegetarian,Vegan,Healthy",https://talabat.com/eg/cairo/le-deck-7-205,64,138.78-607.4,138.78,607.4,373.09
+206,Cairo,Birdcage 7,New Cairo,"Thai,Asian,Vegetarian",https://talabat.com/eg/cairo/birdcage-7-206,100,82.3-166.48,82.3,166.48,124.39
+207,Cairo,Crimson 7,6th of October,"Mexican,Latin,Tacos",https://talabat.com/eg/cairo/crimson-7-207,108,38.52-102.51,38.52,102.51,70.52
+208,Cairo,Pier 88 7,Garden City,"Seafood,Mediterranean",https://talabat.com/eg/cairo/pier-88-7-208,98,131.39-571.21,131.39,571.21,351.3
+209,Cairo,The Blue Restaurant 7,Nasr City,"Japanese,Sushi,Asian",https://talabat.com/eg/cairo/the-blue-restaurant-7-209,47,92.28-355.63,92.28,355.63,223.95
+210,Cairo,Nile Maxim 7,New Cairo,"Egyptian,Arabic,Middle Eastern",https://talabat.com/eg/cairo/nile-maxim-7-210,100,47.4-138.21,47.4,138.21,92.81
+211,Cairo,Abou Tarek 8,Heliopolis,"Indian,Asian,Vegetarian",https://talabat.com/eg/cairo/abou-tarek-8-211,46,91.34-188.28,91.34,188.28,139.81
+212,Cairo,Koshary Abou Tarek 8,Giza,"Thai,Asian,Vegetarian",https://talabat.com/eg/cairo/koshary-abou-tarek-8-212,28,67.84-316.14,67.84,316.14,191.99
+213,Cairo,Sequoia 8,Zamalek,"Egyptian,Arabic,Middle Eastern",https://talabat.com/eg/cairo/sequoia-8-213,70,103.9-277.63,103.9,277.63,190.76
+214,Cairo,Zooba 8,Nasr City,"Egyptian,Arabic,Middle Eastern",https://talabat.com/eg/cairo/zooba-8-214,85,109.88-182.95,109.88,182.95,146.41
+215,Cairo,Fasahat Somaya 8,New Cairo,"Indian,Asian,Vegetarian",https://talabat.com/eg/cairo/fasahat-somaya-8-215,53,59.39-240.97,59.39,240.97,150.18
+216,Cairo,El Prince 8,Nile Corniche,"Korean,Asian,BBQ",https://talabat.com/eg/cairo/el-prince-8-216,36,73.42-365.6,73.42,365.6,219.51
+217,Cairo,Maison Thomas 8,Nile Corniche,"Seafood,Mediterranean",https://talabat.com/eg/cairo/maison-thomas-8-217,112,144.85-341.14,144.85,341.14,243.0
+218,Cairo,Taboula 8,Pyramids Area,"Greek,Mediterranean,Seafood",https://talabat.com/eg/cairo/taboula-8-218,30,107.26-204.74,107.26,204.74,156.0
+219,Cairo,Cairo Kitchen 8,Heliopolis,"Indian,Asian,Vegetarian",https://talabat.com/eg/cairo/cairo-kitchen-8-219,55,127.75-565.51,127.75,565.51,346.63
+220,Cairo,Kazouza 8,Pyramids Area,"Seafood,Mediterranean",https://talabat.com/eg/cairo/kazouza-8-220,118,136.65-455.94,136.65,455.94,296.3
+221,Cairo,Andrea El Mariouteya 8,Pyramids Area,"Lebanese,Middle Eastern,Arabic",https://talabat.com/eg/cairo/andrea-el-mariouteya-8-221,60,46.43-187.45,46.43,187.45,116.94
+222,Cairo,Sea Gull 8,Khan El Khalili,"French,European,Fine Dining",https://talabat.com/eg/cairo/sea-gull-8-222,67,90.25-320.89,90.25,320.89,205.57
+223,Cairo,Samakmak 8,Pyramids Area,"Mexican,Latin,Tacos",https://talabat.com/eg/cairo/samakmak-8-223,119,108.75-486.11,108.75,486.11,297.43
+224,Cairo,Fish Market 8,Dokki,"Egyptian,Arabic,Middle Eastern",https://talabat.com/eg/cairo/fish-market-8-224,66,129.49-539.13,129.49,539.13,334.31
+225,Cairo,Gad 8,Giza,"Italian,Pizza,Pasta",https://talabat.com/eg/cairo/gad-8-225,66,75.71-207.55,75.71,207.55,141.63
+226,Cairo,Felfela 8,Nasr City,"Thai,Asian,Vegetarian",https://talabat.com/eg/cairo/felfela-8-226,106,149.36-380.31,149.36,380.31,264.84
+227,Cairo,Tikka Grill 8,Dokki,"Mexican,Latin,Tacos",https://talabat.com/eg/cairo/tikka-grill-8-227,61,118.55-561.82,118.55,561.82,340.19
+228,Cairo,El Shabrawy 8,Pyramids Area,"American,Burgers,Fast Food",https://talabat.com/eg/cairo/el-shabrawy-8-228,58,123.82-306.65,123.82,306.65,215.23
+229,Cairo,Mori Sushi 8,Nasr City,"Chinese,Asian,Dim Sum",https://talabat.com/eg/cairo/mori-sushi-8-229,104,95.62-177.7,95.62,177.7,136.66
+230,Cairo,Crimson Bar & Grill 8,Downtown Cairo,"Seafood,Mediterranean",https://talabat.com/eg/cairo/crimson-bar-&-grill-8-230,83,84.59-129.55,84.59,129.55,107.07
+231,Cairo,Naguib Mahfouz Cafe 8,Downtown Cairo,"Chinese,Asian,Dim Sum",https://talabat.com/eg/cairo/naguib-mahfouz-cafe-8-231,26,98.39-405.78,98.39,405.78,252.08
+232,Cairo,El Tabbala 8,Nasr City,"Vegetarian,Vegan,Healthy",https://talabat.com/eg/cairo/el-tabbala-8-232,43,122.91-445.02,122.91,445.02,283.96
+233,Cairo,Osmanly 8,Garden City,"Seafood,Mediterranean",https://talabat.com/eg/cairo/osmanly-8-233,100,56.4-204.64,56.4,204.64,130.52
+234,Cairo,Sabaya 8,Nile Corniche,"Mexican,Latin,Tacos",https://talabat.com/eg/cairo/sabaya-8-234,73,88.39-429.44,88.39,429.44,258.92
+235,Cairo,Le Deck 8,Downtown Cairo,"Japanese,Sushi,Asian",https://talabat.com/eg/cairo/le-deck-8-235,119,125.62-255.58,125.62,255.58,190.6
+236,Cairo,Birdcage 8,New Cairo,"Korean,Asian,BBQ",https://talabat.com/eg/cairo/birdcage-8-236,69,131.83-346.93,131.83,346.93,239.38
+237,Cairo,Crimson 8,Nile Corniche,"Korean,Asian,BBQ",https://talabat.com/eg/cairo/crimson-8-237,78,65.36-224.04,65.36,224.04,144.7
+238,Cairo,Pier 88 8,Heliopolis,"Japanese,Sushi,Asian",https://talabat.com/eg/cairo/pier-88-8-238,104,92.13-350.25,92.13,350.25,221.19
+239,Cairo,The Blue Restaurant 8,Giza,"Turkish,Kebab,Middle Eastern",https://talabat.com/eg/cairo/the-blue-restaurant-8-239,88,126.41-405.56,126.41,405.56,265.99
+240,Cairo,Nile Maxim 8,Zamalek,"Turkish,Kebab,Middle Eastern",https://talabat.com/eg/cairo/nile-maxim-8-240,114,139.59-223.9,139.59,223.9,181.75
+241,Cairo,Abou Tarek 9,Maadi,"Lebanese,Middle Eastern,Arabic",https://talabat.com/eg/cairo/abou-tarek-9-241,96,47.02-184.35,47.02,184.35,115.69
+242,Cairo,Koshary Abou Tarek 9,Pyramids Area,"French,European,Fine Dining",https://talabat.com/eg/cairo/koshary-abou-tarek-9-242,107,117.81-249.72,117.81,249.72,183.76
+243,Cairo,Sequoia 9,Nile Corniche,"Indian,Asian,Vegetarian",https://talabat.com/eg/cairo/sequoia-9-243,97,130.7-543.33,130.7,543.33,337.01
+244,Cairo,Zooba 9,Maadi,"Vegetarian,Vegan,Healthy",https://talabat.com/eg/cairo/zooba-9-244,62,95.03-422.9,95.03,422.9,258.96
+245,Cairo,Fasahat Somaya 9,Heliopolis,"Turkish,Kebab,Middle Eastern",https://talabat.com/eg/cairo/fasahat-somaya-9-245,16,93.41-180.24,93.41,180.24,136.82
+246,Cairo,El Prince 9,New Cairo,"Egyptian,Arabic,Middle Eastern",https://talabat.com/eg/cairo/el-prince-9-246,95,49.64-209.43,49.64,209.43,129.53
+247,Cairo,Maison Thomas 9,Nasr City,"Korean,Asian,BBQ",https://talabat.com/eg/cairo/maison-thomas-9-247,48,66.49-253.5,66.49,253.5,160.0
+248,Cairo,Taboula 9,Downtown Cairo,"Korean,Asian,BBQ",https://talabat.com/eg/cairo/taboula-9-248,20,44.46-185.38,44.46,185.38,114.92
+249,Cairo,Cairo Kitchen 9,Dokki,"Thai,Asian,Vegetarian",https://talabat.com/eg/cairo/cairo-kitchen-9-249,59,118.67-334.39,118.67,334.39,226.53
+250,Cairo,Kazouza 9,Maadi,"Japanese,Sushi,Asian",https://talabat.com/eg/cairo/kazouza-9-250,61,146.04-611.21,146.04,611.21,378.62
+251,Cairo,Andrea El Mariouteya 9,Heliopolis,"Indian,Asian,Vegetarian",https://talabat.com/eg/cairo/andrea-el-mariouteya-9-251,114,47.01-147.47,47.01,147.47,97.24
+252,Cairo,Sea Gull 9,Giza,"Vegetarian,Vegan,Healthy",https://talabat.com/eg/cairo/sea-gull-9-252,65,114.78-447.24,114.78,447.24,281.01
+253,Cairo,Samakmak 9,Mohandessin,"Mexican,Latin,Tacos",https://talabat.com/eg/cairo/samakmak-9-253,85,77.74-351.13,77.74,351.13,214.44
+254,Cairo,Fish Market 9,Dokki,"Greek,Mediterranean,Seafood",https://talabat.com/eg/cairo/fish-market-9-254,105,119.2-328.89,119.2,328.89,224.04
+255,Cairo,Gad 9,Nile Corniche,"Korean,Asian,BBQ",https://talabat.com/eg/cairo/gad-9-255,100,132.28-446.47,132.28,446.47,289.38
+256,Cairo,Felfela 9,Garden City,"Japanese,Sushi,Asian",https://talabat.com/eg/cairo/felfela-9-256,85,61.82-285.63,61.82,285.63,173.72
+257,Cairo,Tikka Grill 9,Mohandessin,"Vegetarian,Vegan,Healthy",https://talabat.com/eg/cairo/tikka-grill-9-257,81,128.98-509.33,128.98,509.33,319.15
+258,Cairo,El Shabrawy 9,Nasr City,"Thai,Asian,Vegetarian",https://talabat.com/eg/cairo/el-shabrawy-9-258,70,144.79-715.58,144.79,715.58,430.19
+259,Cairo,Mori Sushi 9,Nasr City,"Greek,Mediterranean,Seafood",https://talabat.com/eg/cairo/mori-sushi-9-259,99,72.35-193.88,72.35,193.88,133.12
+260,Cairo,Crimson Bar & Grill 9,Giza,"Mexican,Latin,Tacos",https://talabat.com/eg/cairo/crimson-bar-&-grill-9-260,76,123.59-509.25,123.59,509.25,316.42
+261,Cairo,Naguib Mahfouz Cafe 9,Garden City,"Japanese,Sushi,Asian",https://talabat.com/eg/cairo/naguib-mahfouz-cafe-9-261,16,64.54-103.73,64.54,103.73,84.14
+262,Cairo,El Tabbala 9,Nasr City,"Japanese,Sushi,Asian",https://talabat.com/eg/cairo/el-tabbala-9-262,55,59.38-89.65,59.38,89.65,74.52
+263,Cairo,Osmanly 9,Heliopolis,"Korean,Asian,BBQ",https://talabat.com/eg/cairo/osmanly-9-263,41,103.94-493.57,103.94,493.57,298.75
+264,Cairo,Sabaya 9,Heliopolis,"Korean,Asian,BBQ",https://talabat.com/eg/cairo/sabaya-9-264,74,144.44-251.35,144.44,251.35,197.89
+265,Cairo,Le Deck 9,Dokki,"French,European,Fine Dining",https://talabat.com/eg/cairo/le-deck-9-265,19,76.55-249.7,76.55,249.7,163.12
+266,Cairo,Birdcage 9,Heliopolis,"Vegetarian,Vegan,Healthy",https://talabat.com/eg/cairo/birdcage-9-266,34,119.28-308.07,119.28,308.07,213.68
+267,Cairo,Crimson 9,Maadi,"American,Burgers,Fast Food",https://talabat.com/eg/cairo/crimson-9-267,77,30.47-84.55,30.47,84.55,57.51
+268,Cairo,Pier 88 9,Maadi,"French,European,Fine Dining",https://talabat.com/eg/cairo/pier-88-9-268,63,44.56-75.98,44.56,75.98,60.27
+269,Cairo,The Blue Restaurant 9,Maadi,"Italian,Pizza,Pasta",https://talabat.com/eg/cairo/the-blue-restaurant-9-269,68,46.04-193.43,46.04,193.43,119.73
+270,Cairo,Nile Maxim 9,Khan El Khalili,"French,European,Fine Dining",https://talabat.com/eg/cairo/nile-maxim-9-270,96,122.63-238.35,122.63,238.35,180.49
+271,Cairo,Abou Tarek 10,Mohandessin,"American,Burgers,Fast Food",https://talabat.com/eg/cairo/abou-tarek-10-271,78,32.11-75.35,32.11,75.35,53.73
+272,Cairo,Koshary Abou Tarek 10,Zamalek,"Egyptian,Arabic,Middle Eastern",https://talabat.com/eg/cairo/koshary-abou-tarek-10-272,36,62.09-299.5,62.09,299.5,180.8
+273,Cairo,Sequoia 10,6th of October,"Mexican,Latin,Tacos",https://talabat.com/eg/cairo/sequoia-10-273,20,70.57-278.92,70.57,278.92,174.75
+274,Cairo,Zooba 10,Downtown Cairo,"Thai,Asian,Vegetarian",https://talabat.com/eg/cairo/zooba-10-274,53,125.34-534.56,125.34,534.56,329.95
+275,Cairo,Fasahat Somaya 10,Garden City,"Seafood,Mediterranean",https://talabat.com/eg/cairo/fasahat-somaya-10-275,92,39.78-175.21,39.78,175.21,107.5
+276,Cairo,El Prince 10,Giza,"Thai,Asian,Vegetarian",https://talabat.com/eg/cairo/el-prince-10-276,77,40.71-178.3,40.71,178.3,109.51
+277,Cairo,Maison Thomas 10,Maadi,"Indian,Asian,Vegetarian",https://talabat.com/eg/cairo/maison-thomas-10-277,71,41.97-172.15,41.97,172.15,107.06
+278,Cairo,Taboula 10,Nile Corniche,"Turkish,Kebab,Middle Eastern",https://talabat.com/eg/cairo/taboula-10-278,62,128.2-539.45,128.2,539.45,333.83
+279,Cairo,Cairo Kitchen 10,Maadi,"Greek,Mediterranean,Seafood",https://talabat.com/eg/cairo/cairo-kitchen-10-279,112,82.01-293.75,82.01,293.75,187.88
+280,Cairo,Kazouza 10,Giza,"Thai,Asian,Vegetarian",https://talabat.com/eg/cairo/kazouza-10-280,31,95.15-172.3,95.15,172.3,133.73
+281,Cairo,Andrea El Mariouteya 10,Giza,"Seafood,Mediterranean",https://talabat.com/eg/cairo/andrea-el-mariouteya-10-281,32,113.03-521.67,113.03,521.67,317.35
+282,Cairo,Sea Gull 10,Khan El Khalili,"Italian,Pizza,Pasta",https://talabat.com/eg/cairo/sea-gull-10-282,110,63.15-237.35,63.15,237.35,150.25
+283,Cairo,Samakmak 10,Nile Corniche,"Thai,Asian,Vegetarian",https://talabat.com/eg/cairo/samakmak-10-283,40,80.68-192.56,80.68,192.56,136.62
+284,Cairo,Fish Market 10,Heliopolis,"Turkish,Kebab,Middle Eastern",https://talabat.com/eg/cairo/fish-market-10-284,117,117.64-328.95,117.64,328.95,223.29
+285,Cairo,Gad 10,Nasr City,"Japanese,Sushi,Asian",https://talabat.com/eg/cairo/gad-10-285,16,88.62-311.05,88.62,311.05,199.84
+286,Cairo,Felfela 10,Nile Corniche,"Seafood,Mediterranean",https://talabat.com/eg/cairo/felfela-10-286,57,80.96-241.47,80.96,241.47,161.22
+287,Cairo,Tikka Grill 10,Mohandessin,"Korean,Asian,BBQ",https://talabat.com/eg/cairo/tikka-grill-10-287,107,56.9-106.49,56.9,106.49,81.69
+288,Cairo,El Shabrawy 10,Giza,"Egyptian,Arabic,Middle Eastern",https://talabat.com/eg/cairo/el-shabrawy-10-288,47,83.27-386.8,83.27,386.8,235.03
+289,Cairo,Mori Sushi 10,Dokki,"Korean,Asian,BBQ",https://talabat.com/eg/cairo/mori-sushi-10-289,107,85.18-238.28,85.18,238.28,161.73
+290,Cairo,Crimson Bar & Grill 10,New Cairo,"Egyptian,Arabic,Middle Eastern",https://talabat.com/eg/cairo/crimson-bar-&-grill-10-290,31,92.32-239.59,92.32,239.59,165.95
+291,Cairo,Naguib Mahfouz Cafe 10,Maadi,"Korean,Asian,BBQ",https://talabat.com/eg/cairo/naguib-mahfouz-cafe-10-291,107,135.61-460.42,135.61,460.42,298.01
+292,Cairo,El Tabbala 10,Downtown Cairo,"Egyptian,Arabic,Middle Eastern",https://talabat.com/eg/cairo/el-tabbala-10-292,59,77.7-374.31,77.7,374.31,226.0
+293,Cairo,Osmanly 10,Giza,"Vegetarian,Vegan,Healthy",https://talabat.com/eg/cairo/osmanly-10-293,25,144.47-662.76,144.47,662.76,403.62
+294,Cairo,Sabaya 10,Garden City,"Mexican,Latin,Tacos",https://talabat.com/eg/cairo/sabaya-10-294,119,31.1-129.61,31.1,129.61,80.36
+295,Cairo,Le Deck 10,Khan El Khalili,"Mexican,Latin,Tacos",https://talabat.com/eg/cairo/le-deck-10-295,43,147.87-576.67,147.87,576.67,362.27
+296,Cairo,Birdcage 10,Giza,"Lebanese,Middle Eastern,Arabic",https://talabat.com/eg/cairo/birdcage-10-296,89,111.02-260.97,111.02,260.97,186.0
+297,Cairo,Crimson 10,Downtown Cairo,"Seafood,Mediterranean",https://talabat.com/eg/cairo/crimson-10-297,46,123.93-255.56,123.93,255.56,189.75
+298,Cairo,Pier 88 10,Heliopolis,"Japanese,Sushi,Asian",https://talabat.com/eg/cairo/pier-88-10-298,48,143.74-486.38,143.74,486.38,315.06
+299,Cairo,The Blue Restaurant 10,Khan El Khalili,"Indian,Asian,Vegetarian",https://talabat.com/eg/cairo/the-blue-restaurant-10-299,76,37.04-74.96,37.04,74.96,56.0
+300,Cairo,Nile Maxim 10,Giza,"Lebanese,Middle Eastern,Arabic",https://talabat.com/eg/cairo/nile-maxim-10-300,64,58.26-249.09,58.26,249.09,153.68
+301,Cairo,Abou Tarek 11,Giza,"Egyptian,Arabic,Middle Eastern",https://talabat.com/eg/cairo/abou-tarek-11-301,97,96.21-279.94,96.21,279.94,188.07
+302,Cairo,Koshary Abou Tarek 11,Downtown Cairo,"Vegetarian,Vegan,Healthy",https://talabat.com/eg/cairo/koshary-abou-tarek-11-302,84,40.81-188.1,40.81,188.1,114.45
+303,Cairo,Sequoia 11,6th of October,"Vegetarian,Vegan,Healthy",https://talabat.com/eg/cairo/sequoia-11-303,49,103.34-395.99,103.34,395.99,249.67
+304,Cairo,Zooba 11,Zamalek,"French,European,Fine Dining",https://talabat.com/eg/cairo/zooba-11-304,57,30.61-89.68,30.61,89.68,60.15
+305,Cairo,Fasahat Somaya 11,Pyramids Area,"Korean,Asian,BBQ",https://talabat.com/eg/cairo/fasahat-somaya-11-305,32,55.29-232.36,55.29,232.36,143.83
+306,Cairo,El Prince 11,Zamalek,"Korean,Asian,BBQ",https://talabat.com/eg/cairo/el-prince-11-306,19,118.12-566.0,118.12,566.0,342.06
+307,Cairo,Maison Thomas 11,Mohandessin,"Turkish,Kebab,Middle Eastern",https://talabat.com/eg/cairo/maison-thomas-11-307,88,37.7-171.57,37.7,171.57,104.63
+308,Cairo,Taboula 11,Dokki,"Turkish,Kebab,Middle Eastern",https://talabat.com/eg/cairo/taboula-11-308,63,66.08-253.44,66.08,253.44,159.76
+309,Cairo,Cairo Kitchen 11,Zamalek,"Greek,Mediterranean,Seafood",https://talabat.com/eg/cairo/cairo-kitchen-11-309,49,121.36-530.94,121.36,530.94,326.15
+310,Cairo,Kazouza 11,Khan El Khalili,"Korean,Asian,BBQ",https://talabat.com/eg/cairo/kazouza-11-310,97,88.92-420.28,88.92,420.28,254.6
+311,Cairo,Andrea El Mariouteya 11,Downtown Cairo,"Mexican,Latin,Tacos",https://talabat.com/eg/cairo/andrea-el-mariouteya-11-311,103,43.96-211.89,43.96,211.89,127.92
+312,Cairo,Sea Gull 11,Heliopolis,"Vegetarian,Vegan,Healthy",https://talabat.com/eg/cairo/sea-gull-11-312,93,91.61-217.5,91.61,217.5,154.56
+313,Cairo,Samakmak 11,Nile Corniche,"Turkish,Kebab,Middle Eastern",https://talabat.com/eg/cairo/samakmak-11-313,79,149.98-563.12,149.98,563.12,356.55
+314,Cairo,Fish Market 11,Maadi,"Indian,Asian,Vegetarian",https://talabat.com/eg/cairo/fish-market-11-314,104,97.91-183.11,97.91,183.11,140.51
+315,Cairo,Gad 11,Giza,"Chinese,Asian,Dim Sum",https://talabat.com/eg/cairo/gad-11-315,65,66.94-311.34,66.94,311.34,189.14
+316,Cairo,Felfela 11,Garden City,"Chinese,Asian,Dim Sum",https://talabat.com/eg/cairo/felfela-11-316,23,35.6-84.61,35.6,84.61,60.11
+317,Cairo,Tikka Grill 11,Garden City,"Chinese,Asian,Dim Sum",https://talabat.com/eg/cairo/tikka-grill-11-317,88,120.65-239.42,120.65,239.42,180.03
+318,Cairo,El Shabrawy 11,6th of October,"Japanese,Sushi,Asian",https://talabat.com/eg/cairo/el-shabrawy-11-318,43,79.37-375.14,79.37,375.14,227.25
+319,Cairo,Mori Sushi 11,Zamalek,"Greek,Mediterranean,Seafood",https://talabat.com/eg/cairo/mori-sushi-11-319,85,137.94-575.11,137.94,575.11,356.52
+320,Cairo,Crimson Bar & Grill 11,Heliopolis,"Japanese,Sushi,Asian",https://talabat.com/eg/cairo/crimson-bar-&-grill-11-320,65,83.7-324.51,83.7,324.51,204.1
+321,Cairo,Naguib Mahfouz Cafe 11,Heliopolis,"American,Burgers,Fast Food",https://talabat.com/eg/cairo/naguib-mahfouz-cafe-11-321,68,30.03-98.28,30.03,98.28,64.16
+322,Cairo,El Tabbala 11,6th of October,"Japanese,Sushi,Asian",https://talabat.com/eg/cairo/el-tabbala-11-322,50,106.77-400.96,106.77,400.96,253.86
+323,Cairo,Osmanly 11,Dokki,"Korean,Asian,BBQ",https://talabat.com/eg/cairo/osmanly-11-323,80,146.5-286.23,146.5,286.23,216.37
+324,Cairo,Sabaya 11,Pyramids Area,"Mexican,Latin,Tacos",https://talabat.com/eg/cairo/sabaya-11-324,77,88.15-292.41,88.15,292.41,190.28
+325,Cairo,Le Deck 11,Dokki,"Egyptian,Arabic,Middle Eastern",https://talabat.com/eg/cairo/le-deck-11-325,102,35.94-164.8,35.94,164.8,100.37
+326,Cairo,Birdcage 11,Garden City,"Indian,Asian,Vegetarian",https://talabat.com/eg/cairo/birdcage-11-326,102,46.93-177.11,46.93,177.11,112.02
+327,Cairo,Crimson 11,Nile Corniche,"Lebanese,Middle Eastern,Arabic",https://talabat.com/eg/cairo/crimson-11-327,116,57.33-167.61,57.33,167.61,112.47
+328,Cairo,Pier 88 11,Garden City,"Korean,Asian,BBQ",https://talabat.com/eg/cairo/pier-88-11-328,99,76.44-379.14,76.44,379.14,227.79
+329,Cairo,The Blue Restaurant 11,Dokki,"Lebanese,Middle Eastern,Arabic",https://talabat.com/eg/cairo/the-blue-restaurant-11-329,58,112.22-444.94,112.22,444.94,278.58
+330,Cairo,Nile Maxim 11,Mohandessin,"American,Burgers,Fast Food",https://talabat.com/eg/cairo/nile-maxim-11-330,22,139.93-454.76,139.93,454.76,297.35
+331,Cairo,Abou Tarek 12,Zamalek,"French,European,Fine Dining",https://talabat.com/eg/cairo/abou-tarek-12-331,106,133.85-586.06,133.85,586.06,359.95
+332,Cairo,Koshary Abou Tarek 12,Zamalek,"Chinese,Asian,Dim Sum",https://talabat.com/eg/cairo/koshary-abou-tarek-12-332,73,59.64-174.84,59.64,174.84,117.24
+333,Cairo,Sequoia 12,Pyramids Area,"Mexican,Latin,Tacos",https://talabat.com/eg/cairo/sequoia-12-333,48,145.85-282.39,145.85,282.39,214.12
+334,Cairo,Zooba 12,Downtown Cairo,"Chinese,Asian,Dim Sum",https://talabat.com/eg/cairo/zooba-12-334,86,31.81-147.72,31.81,147.72,89.77
+335,Cairo,Fasahat Somaya 12,Pyramids Area,"Italian,Pizza,Pasta",https://talabat.com/eg/cairo/fasahat-somaya-12-335,51,37.19-85.39,37.19,85.39,61.29
+336,Cairo,El Prince 12,Nasr City,"Greek,Mediterranean,Seafood",https://talabat.com/eg/cairo/el-prince-12-336,66,131.68-377.63,131.68,377.63,254.66
+337,Cairo,Maison Thomas 12,New Cairo,"Egyptian,Arabic,Middle Eastern",https://talabat.com/eg/cairo/maison-thomas-12-337,16,37.8-67.22,37.8,67.22,52.51
+338,Cairo,Taboula 12,New Cairo,"Japanese,Sushi,Asian",https://talabat.com/eg/cairo/taboula-12-338,106,133.74-346.34,133.74,346.34,240.04
+339,Cairo,Cairo Kitchen 12,Dokki,"Mexican,Latin,Tacos",https://talabat.com/eg/cairo/cairo-kitchen-12-339,53,47.15-195.38,47.15,195.38,121.27
+340,Cairo,Kazouza 12,New Cairo,"Egyptian,Arabic,Middle Eastern",https://talabat.com/eg/cairo/kazouza-12-340,18,39.29-60.6,39.29,60.6,49.95
+341,Cairo,Andrea El Mariouteya 12,Giza,"Korean,Asian,BBQ",https://talabat.com/eg/cairo/andrea-el-mariouteya-12-341,32,102.94-327.18,102.94,327.18,215.06
+342,Cairo,Sea Gull 12,Garden City,"Italian,Pizza,Pasta",https://talabat.com/eg/cairo/sea-gull-12-342,18,100.26-478.3,100.26,478.3,289.28
+343,Cairo,Samakmak 12,Khan El Khalili,"Turkish,Kebab,Middle Eastern",https://talabat.com/eg/cairo/samakmak-12-343,65,54.56-199.92,54.56,199.92,127.24
+344,Cairo,Fish Market 12,6th of October,"Japanese,Sushi,Asian",https://talabat.com/eg/cairo/fish-market-12-344,82,109.56-526.69,109.56,526.69,318.12
+345,Cairo,Gad 12,Heliopolis,"Thai,Asian,Vegetarian",https://talabat.com/eg/cairo/gad-12-345,20,107.53-339.29,107.53,339.29,223.41
+346,Cairo,Felfela 12,Heliopolis,"Seafood,Mediterranean",https://talabat.com/eg/cairo/felfela-12-346,51,97.9-463.92,97.9,463.92,280.91
+347,Cairo,Tikka Grill 12,Giza,"Mexican,Latin,Tacos",https://talabat.com/eg/cairo/tikka-grill-12-347,56,122.82-597.88,122.82,597.88,360.35
+348,Cairo,El Shabrawy 12,Khan El Khalili,"Seafood,Mediterranean",https://talabat.com/eg/cairo/el-shabrawy-12-348,69,102.93-507.99,102.93,507.99,305.46
+349,Cairo,Mori Sushi 12,Pyramids Area,"Greek,Mediterranean,Seafood",https://talabat.com/eg/cairo/mori-sushi-12-349,35,79.06-206.46,79.06,206.46,142.76
+350,Cairo,Crimson Bar & Grill 12,Nasr City,"Chinese,Asian,Dim Sum",https://talabat.com/eg/cairo/crimson-bar-&-grill-12-350,77,62.63-248.49,62.63,248.49,155.56
+351,Cairo,Naguib Mahfouz Cafe 12,Zamalek,"Korean,Asian,BBQ",https://talabat.com/eg/cairo/naguib-mahfouz-cafe-12-351,66,98.04-399.25,98.04,399.25,248.65
+352,Cairo,El Tabbala 12,New Cairo,"Japanese,Sushi,Asian",https://talabat.com/eg/cairo/el-tabbala-12-352,85,139.93-518.47,139.93,518.47,329.2
+353,Cairo,Osmanly 12,Dokki,"Vegetarian,Vegan,Healthy",https://talabat.com/eg/cairo/osmanly-12-353,67,83.75-139.85,83.75,139.85,111.8
+354,Cairo,Sabaya 12,Nile Corniche,"Seafood,Mediterranean",https://talabat.com/eg/cairo/sabaya-12-354,31,52.65-154.63,52.65,154.63,103.64
+355,Cairo,Le Deck 12,Dokki,"Japanese,Sushi,Asian",https://talabat.com/eg/cairo/le-deck-12-355,53,114.3-444.51,114.3,444.51,279.4
+356,Cairo,Birdcage 12,Garden City,"Vegetarian,Vegan,Healthy",https://talabat.com/eg/cairo/birdcage-12-356,94,81.5-306.09,81.5,306.09,193.79
+357,Cairo,Crimson 12,Khan El Khalili,"Turkish,Kebab,Middle Eastern",https://talabat.com/eg/cairo/crimson-12-357,95,41.91-187.96,41.91,187.96,114.94
+358,Cairo,Pier 88 12,Maadi,"Japanese,Sushi,Asian",https://talabat.com/eg/cairo/pier-88-12-358,104,85.63-246.76,85.63,246.76,166.19
+359,Cairo,The Blue Restaurant 12,Nasr City,"Mexican,Latin,Tacos",https://talabat.com/eg/cairo/the-blue-restaurant-12-359,75,114.61-511.37,114.61,511.37,312.99
+360,Cairo,Nile Maxim 12,Dokki,"Greek,Mediterranean,Seafood",https://talabat.com/eg/cairo/nile-maxim-12-360,15,34.41-147.84,34.41,147.84,91.12
+361,Cairo,Abou Tarek 13,6th of October,"Italian,Pizza,Pasta",https://talabat.com/eg/cairo/abou-tarek-13-361,30,99.26-240.95,99.26,240.95,170.1
+362,Cairo,Koshary Abou Tarek 13,Giza,"Seafood,Mediterranean",https://talabat.com/eg/cairo/koshary-abou-tarek-13-362,58,144.49-383.34,144.49,383.34,263.91
+363,Cairo,Sequoia 13,Heliopolis,"Greek,Mediterranean,Seafood",https://talabat.com/eg/cairo/sequoia-13-363,32,49.33-177.08,49.33,177.08,113.21
+364,Cairo,Zooba 13,Heliopolis,"Greek,Mediterranean,Seafood",https://talabat.com/eg/cairo/zooba-13-364,89,71.73-351.51,71.73,351.51,211.62
+365,Cairo,Fasahat Somaya 13,Nile Corniche,"Mexican,Latin,Tacos",https://talabat.com/eg/cairo/fasahat-somaya-13-365,52,147.79-544.87,147.79,544.87,346.33
+366,Cairo,El Prince 13,Dokki,"Thai,Asian,Vegetarian",https://talabat.com/eg/cairo/el-prince-13-366,91,79.04-347.17,79.04,347.17,213.11
+367,Cairo,Maison Thomas 13,Zamalek,"Vegetarian,Vegan,Healthy",https://talabat.com/eg/cairo/maison-thomas-13-367,96,119.21-490.03,119.21,490.03,304.62
+368,Cairo,Taboula 13,Mohandessin,"Mexican,Latin,Tacos",https://talabat.com/eg/cairo/taboula-13-368,70,131.13-266.84,131.13,266.84,198.98
+369,Cairo,Cairo Kitchen 13,Nile Corniche,"Korean,Asian,BBQ",https://talabat.com/eg/cairo/cairo-kitchen-13-369,43,147.57-649.4,147.57,649.4,398.49
+370,Cairo,Kazouza 13,6th of October,"Indian,Asian,Vegetarian",https://talabat.com/eg/cairo/kazouza-13-370,79,48.05-137.28,48.05,137.28,92.66
+371,Cairo,Andrea El Mariouteya 13,New Cairo,"Korean,Asian,BBQ",https://talabat.com/eg/cairo/andrea-el-mariouteya-13-371,97,58.84-219.66,58.84,219.66,139.25
+372,Cairo,Sea Gull 13,Zamalek,"Mexican,Latin,Tacos",https://talabat.com/eg/cairo/sea-gull-13-372,115,142.99-473.11,142.99,473.11,308.05
+373,Cairo,Samakmak 13,Garden City,"Greek,Mediterranean,Seafood",https://talabat.com/eg/cairo/samakmak-13-373,115,36.12-169.49,36.12,169.49,102.81
+374,Cairo,Fish Market 13,Zamalek,"French,European,Fine Dining",https://talabat.com/eg/cairo/fish-market-13-374,95,115.98-451.11,115.98,451.11,283.55
+375,Cairo,Gad 13,Khan El Khalili,"Korean,Asian,BBQ",https://talabat.com/eg/cairo/gad-13-375,32,147.8-476.72,147.8,476.72,312.26
+376,Cairo,Felfela 13,Pyramids Area,"Vegetarian,Vegan,Healthy",https://talabat.com/eg/cairo/felfela-13-376,25,102.66-409.79,102.66,409.79,256.23
+377,Cairo,Tikka Grill 13,New Cairo,"Korean,Asian,BBQ",https://talabat.com/eg/cairo/tikka-grill-13-377,29,93.22-359.24,93.22,359.24,226.23
+378,Cairo,El Shabrawy 13,Khan El Khalili,"Italian,Pizza,Pasta",https://talabat.com/eg/cairo/el-shabrawy-13-378,73,53.71-104.83,53.71,104.83,79.27
+379,Cairo,Mori Sushi 13,Giza,"Italian,Pizza,Pasta",https://talabat.com/eg/cairo/mori-sushi-13-379,45,38.51-138.01,38.51,138.01,88.26
+380,Cairo,Crimson Bar & Grill 13,Nile Corniche,"Egyptian,Arabic,Middle Eastern",https://talabat.com/eg/cairo/crimson-bar-&-grill-13-380,89,126.25-535.85,126.25,535.85,331.05
+381,Cairo,Naguib Mahfouz Cafe 13,Heliopolis,"Seafood,Mediterranean",https://talabat.com/eg/cairo/naguib-mahfouz-cafe-13-381,33,106.67-514.59,106.67,514.59,310.63
+382,Cairo,El Tabbala 13,Nile Corniche,"Egyptian,Arabic,Middle Eastern",https://talabat.com/eg/cairo/el-tabbala-13-382,50,138.24-321.74,138.24,321.74,229.99
+383,Cairo,Osmanly 13,Mohandessin,"Greek,Mediterranean,Seafood",https://talabat.com/eg/cairo/osmanly-13-383,105,74.55-248.09,74.55,248.09,161.32
+384,Cairo,Sabaya 13,Pyramids Area,"Greek,Mediterranean,Seafood",https://talabat.com/eg/cairo/sabaya-13-384,110,70.27-220.14,70.27,220.14,145.2
+385,Cairo,Le Deck 13,New Cairo,"Thai,Asian,Vegetarian",https://talabat.com/eg/cairo/le-deck-13-385,95,138.4-691.37,138.4,691.37,414.88
+386,Cairo,Birdcage 13,Giza,"Indian,Asian,Vegetarian",https://talabat.com/eg/cairo/birdcage-13-386,36,118.15-185.41,118.15,185.41,151.78
+387,Cairo,Crimson 13,Mohandessin,"Indian,Asian,Vegetarian",https://talabat.com/eg/cairo/crimson-13-387,31,111.24-444.36,111.24,444.36,277.8
+388,Cairo,Pier 88 13,Nile Corniche,"Japanese,Sushi,Asian",https://talabat.com/eg/cairo/pier-88-13-388,24,129.76-488.15,129.76,488.15,308.95
+389,Cairo,The Blue Restaurant 13,Dokki,"Indian,Asian,Vegetarian",https://talabat.com/eg/cairo/the-blue-restaurant-13-389,24,51.27-135.4,51.27,135.4,93.34
+390,Cairo,Nile Maxim 13,Zamalek,"Korean,Asian,BBQ",https://talabat.com/eg/cairo/nile-maxim-13-390,50,97.95-404.41,97.95,404.41,251.18
+391,Cairo,Abou Tarek 14,Heliopolis,"Indian,Asian,Vegetarian",https://talabat.com/eg/cairo/abou-tarek-14-391,61,125.64-529.01,125.64,529.01,327.32
+392,Cairo,Koshary Abou Tarek 14,Nasr City,"Thai,Asian,Vegetarian",https://talabat.com/eg/cairo/koshary-abou-tarek-14-392,53,36.51-125.16,36.51,125.16,80.83
+393,Cairo,Sequoia 14,Nile Corniche,"Japanese,Sushi,Asian",https://talabat.com/eg/cairo/sequoia-14-393,116,119.51-448.12,119.51,448.12,283.81
+394,Cairo,Zooba 14,New Cairo,"French,European,Fine Dining",https://talabat.com/eg/cairo/zooba-14-394,41,94.03-251.66,94.03,251.66,172.84
+395,Cairo,Fasahat Somaya 14,Mohandessin,"Lebanese,Middle Eastern,Arabic",https://talabat.com/eg/cairo/fasahat-somaya-14-395,94,84.34-246.28,84.34,246.28,165.31
+396,Cairo,El Prince 14,New Cairo,"American,Burgers,Fast Food",https://talabat.com/eg/cairo/el-prince-14-396,43,120.37-585.83,120.37,585.83,353.1
+397,Cairo,Maison Thomas 14,Heliopolis,"Greek,Mediterranean,Seafood",https://talabat.com/eg/cairo/maison-thomas-14-397,115,79.57-174.1,79.57,174.1,126.83
+398,Cairo,Taboula 14,Zamalek,"Greek,Mediterranean,Seafood",https://talabat.com/eg/cairo/taboula-14-398,90,117.99-326.39,117.99,326.39,222.19
+399,Cairo,Cairo Kitchen 14,Khan El Khalili,"Turkish,Kebab,Middle Eastern",https://talabat.com/eg/cairo/cairo-kitchen-14-399,16,143.92-232.22,143.92,232.22,188.07
+400,Cairo,Kazouza 14,Dokki,"Chinese,Asian,Dim Sum",https://talabat.com/eg/cairo/kazouza-14-400,61,75.95-336.44,75.95,336.44,206.19
+401,Cairo,Andrea El Mariouteya 14,Khan El Khalili,"Thai,Asian,Vegetarian",https://talabat.com/eg/cairo/andrea-el-mariouteya-14-401,33,56.48-212.93,56.48,212.93,134.71
+402,Cairo,Sea Gull 14,Dokki,"Thai,Asian,Vegetarian",https://talabat.com/eg/cairo/sea-gull-14-402,108,149.36-744.74,149.36,744.74,447.05
+403,Cairo,Samakmak 14,Khan El Khalili,"Greek,Mediterranean,Seafood",https://talabat.com/eg/cairo/samakmak-14-403,67,144.39-526.2,144.39,526.2,335.3
+404,Cairo,Fish Market 14,Giza,"American,Burgers,Fast Food",https://talabat.com/eg/cairo/fish-market-14-404,117,47.12-93.78,47.12,93.78,70.45
+405,Cairo,Gad 14,Mohandessin,"Mexican,Latin,Tacos",https://talabat.com/eg/cairo/gad-14-405,72,72.85-327.95,72.85,327.95,200.4
+406,Cairo,Felfela 14,Downtown Cairo,"Chinese,Asian,Dim Sum",https://talabat.com/eg/cairo/felfela-14-406,23,107.99-420.6,107.99,420.6,264.3
+407,Cairo,Tikka Grill 14,6th of October,"Vegetarian,Vegan,Healthy",https://talabat.com/eg/cairo/tikka-grill-14-407,102,47.46-223.19,47.46,223.19,135.32
+408,Cairo,El Shabrawy 14,Downtown Cairo,"Seafood,Mediterranean",https://talabat.com/eg/cairo/el-shabrawy-14-408,68,55.3-102.17,55.3,102.17,78.73
+409,Cairo,Mori Sushi 14,Maadi,"Indian,Asian,Vegetarian",https://talabat.com/eg/cairo/mori-sushi-14-409,106,64.39-148.64,64.39,148.64,106.51
+410,Cairo,Crimson Bar & Grill 14,Nile Corniche,"Lebanese,Middle Eastern,Arabic",https://talabat.com/eg/cairo/crimson-bar-&-grill-14-410,94,83.97-396.74,83.97,396.74,240.36
+411,Cairo,Naguib Mahfouz Cafe 14,Downtown Cairo,"Indian,Asian,Vegetarian",https://talabat.com/eg/cairo/naguib-mahfouz-cafe-14-411,48,78.94-233.48,78.94,233.48,156.21
+412,Cairo,El Tabbala 14,Garden City,"French,European,Fine Dining",https://talabat.com/eg/cairo/el-tabbala-14-412,21,51.73-181.11,51.73,181.11,116.42
+413,Cairo,Osmanly 14,6th of October,"Egyptian,Arabic,Middle Eastern",https://talabat.com/eg/cairo/osmanly-14-413,61,106.21-247.49,106.21,247.49,176.85
+414,Cairo,Sabaya 14,Nile Corniche,"Thai,Asian,Vegetarian",https://talabat.com/eg/cairo/sabaya-14-414,36,58.19-286.87,58.19,286.87,172.53
+415,Cairo,Le Deck 14,Zamalek,"Korean,Asian,BBQ",https://talabat.com/eg/cairo/le-deck-14-415,29,129.5-625.47,129.5,625.47,377.49
+416,Cairo,Birdcage 14,Pyramids Area,"Indian,Asian,Vegetarian",https://talabat.com/eg/cairo/birdcage-14-416,69,106.11-477.84,106.11,477.84,291.97
+417,Cairo,Crimson 14,Downtown Cairo,"American,Burgers,Fast Food",https://talabat.com/eg/cairo/crimson-14-417,92,121.49-488.77,121.49,488.77,305.13
+418,Cairo,Pier 88 14,Zamalek,"Chinese,Asian,Dim Sum",https://talabat.com/eg/cairo/pier-88-14-418,85,104.93-289.97,104.93,289.97,197.45
+419,Cairo,The Blue Restaurant 14,Dokki,"Chinese,Asian,Dim Sum",https://talabat.com/eg/cairo/the-blue-restaurant-14-419,98,49.27-228.4,49.27,228.4,138.84
+420,Cairo,Nile Maxim 14,Giza,"Korean,Asian,BBQ",https://talabat.com/eg/cairo/nile-maxim-14-420,67,82.62-334.7,82.62,334.7,208.66
+421,Cairo,Abou Tarek 15,Garden City,"American,Burgers,Fast Food",https://talabat.com/eg/cairo/abou-tarek-15-421,60,75.78-371.72,75.78,371.72,223.75
+422,Cairo,Koshary Abou Tarek 15,Mohandessin,"Turkish,Kebab,Middle Eastern",https://talabat.com/eg/cairo/koshary-abou-tarek-15-422,106,51.26-86.87,51.26,86.87,69.06
+423,Cairo,Sequoia 15,Mohandessin,"Lebanese,Middle Eastern,Arabic",https://talabat.com/eg/cairo/sequoia-15-423,88,45.43-129.61,45.43,129.61,87.52
+424,Cairo,Zooba 15,Zamalek,"Mexican,Latin,Tacos",https://talabat.com/eg/cairo/zooba-15-424,21,143.44-222.07,143.44,222.07,182.75
+425,Cairo,Fasahat Somaya 15,6th of October,"Vegetarian,Vegan,Healthy",https://talabat.com/eg/cairo/fasahat-somaya-15-425,59,89.36-153.91,89.36,153.91,121.63
+426,Cairo,El Prince 15,6th of October,"American,Burgers,Fast Food",https://talabat.com/eg/cairo/el-prince-15-426,54,100.93-470.07,100.93,470.07,285.5
+427,Cairo,Maison Thomas 15,Downtown Cairo,"Chinese,Asian,Dim Sum",https://talabat.com/eg/cairo/maison-thomas-15-427,117,128.1-362.48,128.1,362.48,245.29
+428,Cairo,Taboula 15,Downtown Cairo,"Turkish,Kebab,Middle Eastern",https://talabat.com/eg/cairo/taboula-15-428,94,88.11-393.05,88.11,393.05,240.58
+429,Cairo,Cairo Kitchen 15,Giza,"Mexican,Latin,Tacos",https://talabat.com/eg/cairo/cairo-kitchen-15-429,44,144.23-422.58,144.23,422.58,283.4
+430,Cairo,Kazouza 15,Zamalek,"Lebanese,Middle Eastern,Arabic",https://talabat.com/eg/cairo/kazouza-15-430,70,100.0-387.1,100.0,387.1,243.55
+431,Cairo,Andrea El Mariouteya 15,Garden City,"Indian,Asian,Vegetarian",https://talabat.com/eg/cairo/andrea-el-mariouteya-15-431,82,130.23-278.43,130.23,278.43,204.33
+432,Cairo,Sea Gull 15,Downtown Cairo,"Chinese,Asian,Dim Sum",https://talabat.com/eg/cairo/sea-gull-15-432,64,131.29-535.59,131.29,535.59,333.44
+433,Cairo,Samakmak 15,Nasr City,"Greek,Mediterranean,Seafood",https://talabat.com/eg/cairo/samakmak-15-433,44,50.24-86.65,50.24,86.65,68.45
+434,Cairo,Fish Market 15,Dokki,"Chinese,Asian,Dim Sum",https://talabat.com/eg/cairo/fish-market-15-434,23,113.83-306.07,113.83,306.07,209.95
+435,Cairo,Gad 15,Garden City,"Greek,Mediterranean,Seafood",https://talabat.com/eg/cairo/gad-15-435,47,31.79-135.41,31.79,135.41,83.6
+436,Cairo,Felfela 15,Nasr City,"Korean,Asian,BBQ",https://talabat.com/eg/cairo/felfela-15-436,105,34.69-142.19,34.69,142.19,88.44
+437,Cairo,Tikka Grill 15,Downtown Cairo,"Seafood,Mediterranean",https://talabat.com/eg/cairo/tikka-grill-15-437,65,114.92-387.48,114.92,387.48,251.2
+438,Cairo,El Shabrawy 15,6th of October,"Italian,Pizza,Pasta",https://talabat.com/eg/cairo/el-shabrawy-15-438,115,120.14-243.44,120.14,243.44,181.79
+439,Cairo,Mori Sushi 15,Giza,"French,European,Fine Dining",https://talabat.com/eg/cairo/mori-sushi-15-439,100,31.53-146.8,31.53,146.8,89.17
+440,Cairo,Crimson Bar & Grill 15,Zamalek,"Seafood,Mediterranean",https://talabat.com/eg/cairo/crimson-bar-&-grill-15-440,79,36.18-174.58,36.18,174.58,105.38
+441,Cairo,Naguib Mahfouz Cafe 15,Nasr City,"Turkish,Kebab,Middle Eastern",https://talabat.com/eg/cairo/naguib-mahfouz-cafe-15-441,74,79.89-245.5,79.89,245.5,162.69
+442,Cairo,El Tabbala 15,6th of October,"Chinese,Asian,Dim Sum",https://talabat.com/eg/cairo/el-tabbala-15-442,22,45.18-164.28,45.18,164.28,104.73
+443,Cairo,Osmanly 15,Downtown Cairo,"Lebanese,Middle Eastern,Arabic",https://talabat.com/eg/cairo/osmanly-15-443,90,33.39-60.23,33.39,60.23,46.81
+444,Cairo,Sabaya 15,Zamalek,"American,Burgers,Fast Food",https://talabat.com/eg/cairo/sabaya-15-444,26,74.62-301.04,74.62,301.04,187.83
+445,Cairo,Le Deck 15,New Cairo,"Turkish,Kebab,Middle Eastern",https://talabat.com/eg/cairo/le-deck-15-445,27,59.14-184.09,59.14,184.09,121.62
+446,Cairo,Birdcage 15,Nile Corniche,"Japanese,Sushi,Asian",https://talabat.com/eg/cairo/birdcage-15-446,109,47.62-120.06,47.62,120.06,83.84
+447,Cairo,Crimson 15,Zamalek,"Turkish,Kebab,Middle Eastern",https://talabat.com/eg/cairo/crimson-15-447,100,61.5-129.35,61.5,129.35,95.42
+448,Cairo,Pier 88 15,Garden City,"Korean,Asian,BBQ",https://talabat.com/eg/cairo/pier-88-15-448,60,74.16-250.02,74.16,250.02,162.09
+449,Cairo,The Blue Restaurant 15,Zamalek,"Italian,Pizza,Pasta",https://talabat.com/eg/cairo/the-blue-restaurant-15-449,100,138.49-297.29,138.49,297.29,217.89
+450,Cairo,Nile Maxim 15,Downtown Cairo,"Vegetarian,Vegan,Healthy",https://talabat.com/eg/cairo/nile-maxim-15-450,26,93.6-183.26,93.6,183.26,138.43
+451,Cairo,Abou Tarek 16,Nasr City,"Greek,Mediterranean,Seafood",https://talabat.com/eg/cairo/abou-tarek-16-451,66,89.25-276.64,89.25,276.64,182.94
+452,Cairo,Koshary Abou Tarek 16,Downtown Cairo,"American,Burgers,Fast Food",https://talabat.com/eg/cairo/koshary-abou-tarek-16-452,68,63.19-197.86,63.19,197.86,130.53
+453,Cairo,Sequoia 16,Giza,"Japanese,Sushi,Asian",https://talabat.com/eg/cairo/sequoia-16-453,55,40.29-106.61,40.29,106.61,73.45
+454,Cairo,Zooba 16,Garden City,"Vegetarian,Vegan,Healthy",https://talabat.com/eg/cairo/zooba-16-454,42,122.98-375.32,122.98,375.32,249.15
+455,Cairo,Fasahat Somaya 16,Nasr City,"Chinese,Asian,Dim Sum",https://talabat.com/eg/cairo/fasahat-somaya-16-455,104,56.37-153.49,56.37,153.49,104.93
+456,Cairo,El Prince 16,6th of October,"Greek,Mediterranean,Seafood",https://talabat.com/eg/cairo/el-prince-16-456,86,49.55-112.59,49.55,112.59,81.07
+457,Cairo,Maison Thomas 16,Heliopolis,"Korean,Asian,BBQ",https://talabat.com/eg/cairo/maison-thomas-16-457,70,56.74-244.51,56.74,244.51,150.62
+458,Cairo,Taboula 16,Garden City,"Thai,Asian,Vegetarian",https://talabat.com/eg/cairo/taboula-16-458,106,61.93-176.13,61.93,176.13,119.03
+459,Cairo,Cairo Kitchen 16,New Cairo,"Chinese,Asian,Dim Sum",https://talabat.com/eg/cairo/cairo-kitchen-16-459,79,34.9-95.19,34.9,95.19,65.05
+460,Cairo,Kazouza 16,Khan El Khalili,"Vegetarian,Vegan,Healthy",https://talabat.com/eg/cairo/kazouza-16-460,101,39.47-62.58,39.47,62.58,51.02
+461,Cairo,Andrea El Mariouteya 16,Maadi,"Greek,Mediterranean,Seafood",https://talabat.com/eg/cairo/andrea-el-mariouteya-16-461,85,117.09-313.47,117.09,313.47,215.28
+462,Cairo,Sea Gull 16,Maadi,"Turkish,Kebab,Middle Eastern",https://talabat.com/eg/cairo/sea-gull-16-462,53,103.31-463.22,103.31,463.22,283.26
+463,Cairo,Samakmak 16,Downtown Cairo,"American,Burgers,Fast Food",https://talabat.com/eg/cairo/samakmak-16-463,99,77.91-226.18,77.91,226.18,152.05
+464,Alexandria,Abou Tarek 1,San Stefano,"American,Burgers,Fast Food",https://talabat.com/eg/alexandria/abou-tarek-1-464,101,145.98-408.82,145.98,408.82,277.4
+465,Alexandria,Koshary Abou Tarek 1,Smouha,"Greek,Mediterranean,Seafood",https://talabat.com/eg/alexandria/koshary-abou-tarek-1-465,45,68.32-120.34,68.32,120.34,94.33
+466,Alexandria,Sequoia 1,Montaza,"Lebanese,Middle Eastern,Arabic",https://talabat.com/eg/alexandria/sequoia-1-466,117,145.76-617.93,145.76,617.93,381.84
+467,Alexandria,Zooba 1,Miami,"Thai,Asian,Vegetarian",https://talabat.com/eg/alexandria/zooba-1-467,17,110.67-552.58,110.67,552.58,331.62
+468,Alexandria,Fasahat Somaya 1,Sidi Gaber,"Seafood,Mediterranean",https://talabat.com/eg/alexandria/fasahat-somaya-1-468,110,63.55-311.49,63.55,311.49,187.52
+469,Alexandria,El Prince 1,Anfoushi,"Mexican,Latin,Tacos",https://talabat.com/eg/alexandria/el-prince-1-469,106,108.72-468.93,108.72,468.93,288.82
+470,Alexandria,Maison Thomas 1,Miami,"Italian,Pizza,Pasta",https://talabat.com/eg/alexandria/maison-thomas-1-470,72,127.76-332.4,127.76,332.4,230.08
+471,Alexandria,Taboula 1,Montaza,"Indian,Asian,Vegetarian",https://talabat.com/eg/alexandria/taboula-1-471,102,71.18-238.77,71.18,238.77,154.98
+472,Alexandria,Cairo Kitchen 1,Bahary,"Turkish,Kebab,Middle Eastern",https://talabat.com/eg/alexandria/cairo-kitchen-1-472,44,108.78-226.2,108.78,226.2,167.49
+473,Alexandria,Kazouza 1,Mandara,"Thai,Asian,Vegetarian",https://talabat.com/eg/alexandria/kazouza-1-473,26,76.25-209.81,76.25,209.81,143.03
+474,Alexandria,Andrea El Mariouteya 1,Montaza,"Egyptian,Arabic,Middle Eastern",https://talabat.com/eg/alexandria/andrea-el-mariouteya-1-474,60,72.41-288.67,72.41,288.67,180.54
+475,Alexandria,Sea Gull 1,Miami,"Turkish,Kebab,Middle Eastern",https://talabat.com/eg/alexandria/sea-gull-1-475,80,95.86-234.14,95.86,234.14,165.0
+476,Alexandria,Samakmak 1,Raml Station,"Seafood,Mediterranean",https://talabat.com/eg/alexandria/samakmak-1-476,45,56.02-85.23,56.02,85.23,70.62
+477,Alexandria,Fish Market 1,Smouha,"French,European,Fine Dining",https://talabat.com/eg/alexandria/fish-market-1-477,67,31.16-70.76,31.16,70.76,50.96
+478,Alexandria,Gad 1,Mandara,"Mexican,Latin,Tacos",https://talabat.com/eg/alexandria/gad-1-478,113,33.06-75.02,33.06,75.02,54.04
+479,Alexandria,Felfela 1,Anfoushi,"Japanese,Sushi,Asian",https://talabat.com/eg/alexandria/felfela-1-479,29,118.55-485.38,118.55,485.38,301.96
+480,Alexandria,Tikka Grill 1,Bahary,"Indian,Asian,Vegetarian",https://talabat.com/eg/alexandria/tikka-grill-1-480,61,121.35-510.18,121.35,510.18,315.76
+481,Alexandria,El Shabrawy 1,Anfoushi,"Thai,Asian,Vegetarian",https://talabat.com/eg/alexandria/el-shabrawy-1-481,46,34.68-171.85,34.68,171.85,103.27
+482,Alexandria,Mori Sushi 1,Sidi Gaber,"Vegetarian,Vegan,Healthy",https://talabat.com/eg/alexandria/mori-sushi-1-482,76,87.8-362.55,87.8,362.55,225.18
+483,Alexandria,Crimson Bar & Grill 1,San Stefano,"Japanese,Sushi,Asian",https://talabat.com/eg/alexandria/crimson-bar-&-grill-1-483,24,141.14-494.13,141.14,494.13,317.63
+484,Alexandria,Naguib Mahfouz Cafe 1,Sidi Gaber,"Japanese,Sushi,Asian",https://talabat.com/eg/alexandria/naguib-mahfouz-cafe-1-484,25,149.86-327.39,149.86,327.39,238.62
+485,Alexandria,El Tabbala 1,Roushdy,"Chinese,Asian,Dim Sum",https://talabat.com/eg/alexandria/el-tabbala-1-485,24,57.82-173.67,57.82,173.67,115.74
+486,Alexandria,Osmanly 1,Mandara,"Thai,Asian,Vegetarian",https://talabat.com/eg/alexandria/osmanly-1-486,17,31.29-143.29,31.29,143.29,87.29
+487,Alexandria,Sabaya 1,Camp Caesar,"Mexican,Latin,Tacos",https://talabat.com/eg/alexandria/sabaya-1-487,22,35.25-107.24,35.25,107.24,71.25
+488,Alexandria,Le Deck 1,Gleem,"French,European,Fine Dining",https://talabat.com/eg/alexandria/le-deck-1-488,65,119.42-320.4,119.42,320.4,219.91
+489,Alexandria,Birdcage 1,Stanley,"Vegetarian,Vegan,Healthy",https://talabat.com/eg/alexandria/birdcage-1-489,48,136.9-603.55,136.9,603.55,370.22
+490,Alexandria,Crimson 1,Sidi Gaber,"American,Burgers,Fast Food",https://talabat.com/eg/alexandria/crimson-1-490,112,46.45-149.01,46.45,149.01,97.73
+491,Alexandria,Pier 88 1,Mandara,"Chinese,Asian,Dim Sum",https://talabat.com/eg/alexandria/pier-88-1-491,70,133.42-295.5,133.42,295.5,214.46
+492,Alexandria,The Blue Restaurant 1,Stanley,"Seafood,Mediterranean",https://talabat.com/eg/alexandria/the-blue-restaurant-1-492,64,84.58-356.34,84.58,356.34,220.46
+493,Alexandria,Nile Maxim 1,Corniche,"Korean,Asian,BBQ",https://talabat.com/eg/alexandria/nile-maxim-1-493,40,58.13-108.34,58.13,108.34,83.23
+494,Alexandria,Abou Tarek 2,Anfoushi,"American,Burgers,Fast Food",https://talabat.com/eg/alexandria/abou-tarek-2-494,88,116.27-373.84,116.27,373.84,245.05
+495,Alexandria,Koshary Abou Tarek 2,Raml Station,"French,European,Fine Dining",https://talabat.com/eg/alexandria/koshary-abou-tarek-2-495,103,136.52-363.87,136.52,363.87,250.19
+496,Alexandria,Sequoia 2,Camp Caesar,"Vegetarian,Vegan,Healthy",https://talabat.com/eg/alexandria/sequoia-2-496,30,138.42-484.74,138.42,484.74,311.58
+497,Alexandria,Zooba 2,San Stefano,"Korean,Asian,BBQ",https://talabat.com/eg/alexandria/zooba-2-497,90,60.2-279.25,60.2,279.25,169.72
+498,Alexandria,Fasahat Somaya 2,Camp Caesar,"Indian,Asian,Vegetarian",https://talabat.com/eg/alexandria/fasahat-somaya-2-498,105,68.39-215.93,68.39,215.93,142.16
+499,Alexandria,El Prince 2,Miami,"Vegetarian,Vegan,Healthy",https://talabat.com/eg/alexandria/el-prince-2-499,51,117.15-460.04,117.15,460.04,288.6
+500,Alexandria,Maison Thomas 2,Roushdy,"Thai,Asian,Vegetarian",https://talabat.com/eg/alexandria/maison-thomas-2-500,45,142.72-545.51,142.72,545.51,344.12
+501,Alexandria,Taboula 2,Stanley,"Indian,Asian,Vegetarian",https://talabat.com/eg/alexandria/taboula-2-501,91,147.87-468.27,147.87,468.27,308.07
+502,Alexandria,Cairo Kitchen 2,Corniche,"Vegetarian,Vegan,Healthy",https://talabat.com/eg/alexandria/cairo-kitchen-2-502,81,36.36-64.52,36.36,64.52,50.44
+503,Alexandria,Kazouza 2,Gleem,"Italian,Pizza,Pasta",https://talabat.com/eg/alexandria/kazouza-2-503,45,65.9-169.29,65.9,169.29,117.59
+504,Alexandria,Andrea El Mariouteya 2,Montaza,"Indian,Asian,Vegetarian",https://talabat.com/eg/alexandria/andrea-el-mariouteya-2-504,72,64.66-277.36,64.66,277.36,171.01
+505,Alexandria,Sea Gull 2,Smouha,"American,Burgers,Fast Food",https://talabat.com/eg/alexandria/sea-gull-2-505,86,84.84-365.01,84.84,365.01,224.93
+506,Alexandria,Samakmak 2,Corniche,"French,European,Fine Dining",https://talabat.com/eg/alexandria/samakmak-2-506,17,52.33-131.57,52.33,131.57,91.95
+507,Alexandria,Fish Market 2,San Stefano,"Lebanese,Middle Eastern,Arabic",https://talabat.com/eg/alexandria/fish-market-2-507,104,112.35-425.11,112.35,425.11,268.73
+508,Alexandria,Gad 2,Gleem,"Chinese,Asian,Dim Sum",https://talabat.com/eg/alexandria/gad-2-508,23,149.77-463.85,149.77,463.85,306.81
+509,Alexandria,Felfela 2,San Stefano,"Greek,Mediterranean,Seafood",https://talabat.com/eg/alexandria/felfela-2-509,103,100.66-218.91,100.66,218.91,159.78
+510,Alexandria,Tikka Grill 2,Montaza,"Korean,Asian,BBQ",https://talabat.com/eg/alexandria/tikka-grill-2-510,47,134.49-350.8,134.49,350.8,242.65
+511,Alexandria,El Shabrawy 2,Bahary,"Korean,Asian,BBQ",https://talabat.com/eg/alexandria/el-shabrawy-2-511,38,93.69-299.07,93.69,299.07,196.38
+512,Alexandria,Mori Sushi 2,Raml Station,"Japanese,Sushi,Asian",https://talabat.com/eg/alexandria/mori-sushi-2-512,63,138.05-404.26,138.05,404.26,271.15
+513,Alexandria,Crimson Bar & Grill 2,Camp Caesar,"Seafood,Mediterranean",https://talabat.com/eg/alexandria/crimson-bar-&-grill-2-513,112,47.54-120.75,47.54,120.75,84.14
+514,Alexandria,Naguib Mahfouz Cafe 2,Sidi Gaber,"Vegetarian,Vegan,Healthy",https://talabat.com/eg/alexandria/naguib-mahfouz-cafe-2-514,85,103.48-288.28,103.48,288.28,195.88
+515,Alexandria,El Tabbala 2,Camp Caesar,"Chinese,Asian,Dim Sum",https://talabat.com/eg/alexandria/el-tabbala-2-515,113,133.56-606.78,133.56,606.78,370.17
+516,Alexandria,Osmanly 2,Bahary,"Greek,Mediterranean,Seafood",https://talabat.com/eg/alexandria/osmanly-2-516,43,30.4-86.1,30.4,86.1,58.25
+517,Alexandria,Sabaya 2,Gleem,"Seafood,Mediterranean",https://talabat.com/eg/alexandria/sabaya-2-517,20,87.17-168.86,87.17,168.86,128.02
+518,Alexandria,Le Deck 2,Raml Station,"French,European,Fine Dining",https://talabat.com/eg/alexandria/le-deck-2-518,92,67.49-150.36,67.49,150.36,108.93
+519,Alexandria,Birdcage 2,Gleem,"Seafood,Mediterranean",https://talabat.com/eg/alexandria/birdcage-2-519,51,101.72-224.83,101.72,224.83,163.28
+520,Alexandria,Crimson 2,San Stefano,"American,Burgers,Fast Food",https://talabat.com/eg/alexandria/crimson-2-520,84,94.47-147.85,94.47,147.85,121.16
+521,Alexandria,Pier 88 2,Raml Station,"Egyptian,Arabic,Middle Eastern",https://talabat.com/eg/alexandria/pier-88-2-521,111,130.26-506.92,130.26,506.92,318.59
+522,Alexandria,The Blue Restaurant 2,Montaza,"French,European,Fine Dining",https://talabat.com/eg/alexandria/the-blue-restaurant-2-522,36,84.75-248.8,84.75,248.8,166.78
+523,Alexandria,Nile Maxim 2,Camp Caesar,"Vegetarian,Vegan,Healthy",https://talabat.com/eg/alexandria/nile-maxim-2-523,41,147.8-710.3,147.8,710.3,429.05
+524,Alexandria,Abou Tarek 3,Gleem,"Egyptian,Arabic,Middle Eastern",https://talabat.com/eg/alexandria/abou-tarek-3-524,83,79.1-317.54,79.1,317.54,198.32
+525,Alexandria,Koshary Abou Tarek 3,Miami,"Vegetarian,Vegan,Healthy",https://talabat.com/eg/alexandria/koshary-abou-tarek-3-525,26,34.3-130.77,34.3,130.77,82.53
+526,Alexandria,Sequoia 3,Raml Station,"Chinese,Asian,Dim Sum",https://talabat.com/eg/alexandria/sequoia-3-526,96,112.18-351.48,112.18,351.48,231.83
+527,Alexandria,Zooba 3,Roushdy,"Turkish,Kebab,Middle Eastern",https://talabat.com/eg/alexandria/zooba-3-527,106,94.8-272.46,94.8,272.46,183.63
+528,Alexandria,Fasahat Somaya 3,Raml Station,"American,Burgers,Fast Food",https://talabat.com/eg/alexandria/fasahat-somaya-3-528,37,129.51-466.24,129.51,466.24,297.88
+529,Alexandria,El Prince 3,Gleem,"Indian,Asian,Vegetarian",https://talabat.com/eg/alexandria/el-prince-3-529,42,44.57-139.59,44.57,139.59,92.08
+530,Alexandria,Maison Thomas 3,Bahary,"Vegetarian,Vegan,Healthy",https://talabat.com/eg/alexandria/maison-thomas-3-530,98,119.96-360.71,119.96,360.71,240.33
+531,Alexandria,Taboula 3,Roushdy,"Mexican,Latin,Tacos",https://talabat.com/eg/alexandria/taboula-3-531,21,139.95-311.65,139.95,311.65,225.8
+532,Alexandria,Cairo Kitchen 3,San Stefano,"Italian,Pizza,Pasta",https://talabat.com/eg/alexandria/cairo-kitchen-3-532,84,79.28-358.68,79.28,358.68,218.98
+533,Alexandria,Kazouza 3,Smouha,"Indian,Asian,Vegetarian",https://talabat.com/eg/alexandria/kazouza-3-533,55,50.7-118.94,50.7,118.94,84.82
+534,Alexandria,Andrea El Mariouteya 3,Anfoushi,"Lebanese,Middle Eastern,Arabic",https://talabat.com/eg/alexandria/andrea-el-mariouteya-3-534,117,89.82-281.79,89.82,281.79,185.81
+535,Alexandria,Sea Gull 3,Gleem,"American,Burgers,Fast Food",https://talabat.com/eg/alexandria/sea-gull-3-535,62,89.96-301.35,89.96,301.35,195.66
+536,Alexandria,Samakmak 3,Stanley,"Greek,Mediterranean,Seafood",https://talabat.com/eg/alexandria/samakmak-3-536,67,60.13-124.53,60.13,124.53,92.33
+537,Alexandria,Fish Market 3,Anfoushi,"Mexican,Latin,Tacos",https://talabat.com/eg/alexandria/fish-market-3-537,67,130.75-250.57,130.75,250.57,190.66
+538,Alexandria,Gad 3,Roushdy,"Italian,Pizza,Pasta",https://talabat.com/eg/alexandria/gad-3-538,88,115.1-563.81,115.1,563.81,339.45
+539,Alexandria,Felfela 3,Bahary,"Egyptian,Arabic,Middle Eastern",https://talabat.com/eg/alexandria/felfela-3-539,82,73.0-193.5,73.0,193.5,133.25
+540,Alexandria,Tikka Grill 3,San Stefano,"Korean,Asian,BBQ",https://talabat.com/eg/alexandria/tikka-grill-3-540,31,55.45-184.39,55.45,184.39,119.92
+541,Alexandria,El Shabrawy 3,Raml Station,"Japanese,Sushi,Asian",https://talabat.com/eg/alexandria/el-shabrawy-3-541,35,81.14-218.77,81.14,218.77,149.96
+542,Alexandria,Mori Sushi 3,San Stefano,"American,Burgers,Fast Food",https://talabat.com/eg/alexandria/mori-sushi-3-542,29,64.99-171.8,64.99,171.8,118.4
+543,Alexandria,Crimson Bar & Grill 3,Gleem,"Vegetarian,Vegan,Healthy",https://talabat.com/eg/alexandria/crimson-bar-&-grill-3-543,69,42.04-175.18,42.04,175.18,108.61
+544,Alexandria,Naguib Mahfouz Cafe 3,Roushdy,"Chinese,Asian,Dim Sum",https://talabat.com/eg/alexandria/naguib-mahfouz-cafe-3-544,102,68.69-205.47,68.69,205.47,137.08
+545,Alexandria,El Tabbala 3,Bahary,"Korean,Asian,BBQ",https://talabat.com/eg/alexandria/el-tabbala-3-545,39,115.2-382.62,115.2,382.62,248.91
+546,Alexandria,Osmanly 3,Mandara,"Chinese,Asian,Dim Sum",https://talabat.com/eg/alexandria/osmanly-3-546,61,112.28-524.07,112.28,524.07,318.18
+547,Alexandria,Sabaya 3,Stanley,"Japanese,Sushi,Asian",https://talabat.com/eg/alexandria/sabaya-3-547,87,104.53-257.53,104.53,257.53,181.03
+548,Alexandria,Le Deck 3,Sidi Gaber,"Korean,Asian,BBQ",https://talabat.com/eg/alexandria/le-deck-3-548,31,52.43-180.9,52.43,180.9,116.67
+549,Alexandria,Birdcage 3,Camp Caesar,"Seafood,Mediterranean",https://talabat.com/eg/alexandria/birdcage-3-549,78,84.02-354.03,84.02,354.03,219.02
+550,Alexandria,Crimson 3,Mandara,"Egyptian,Arabic,Middle Eastern",https://talabat.com/eg/alexandria/crimson-3-550,26,89.67-153.46,89.67,153.46,121.56
+551,Alexandria,Pier 88 3,Roushdy,"Japanese,Sushi,Asian",https://talabat.com/eg/alexandria/pier-88-3-551,17,119.48-302.55,119.48,302.55,211.02
+552,Alexandria,The Blue Restaurant 3,Corniche,"Japanese,Sushi,Asian",https://talabat.com/eg/alexandria/the-blue-restaurant-3-552,51,71.11-342.24,71.11,342.24,206.68
+553,Alexandria,Nile Maxim 3,Stanley,"American,Burgers,Fast Food",https://talabat.com/eg/alexandria/nile-maxim-3-553,76,90.84-211.99,90.84,211.99,151.42
+554,Alexandria,Abou Tarek 4,Smouha,"Indian,Asian,Vegetarian",https://talabat.com/eg/alexandria/abou-tarek-4-554,80,105.23-164.51,105.23,164.51,134.87
+555,Alexandria,Koshary Abou Tarek 4,San Stefano,"American,Burgers,Fast Food",https://talabat.com/eg/alexandria/koshary-abou-tarek-4-555,114,148.21-260.86,148.21,260.86,204.54
+556,Alexandria,Sequoia 4,Montaza,"Mexican,Latin,Tacos",https://talabat.com/eg/alexandria/sequoia-4-556,59,65.1-220.93,65.1,220.93,143.01
+557,Alexandria,Zooba 4,Roushdy,"Japanese,Sushi,Asian",https://talabat.com/eg/alexandria/zooba-4-557,49,132.99-316.14,132.99,316.14,224.56
+558,Alexandria,Fasahat Somaya 4,Camp Caesar,"French,European,Fine Dining",https://talabat.com/eg/alexandria/fasahat-somaya-4-558,115,89.81-259.37,89.81,259.37,174.59
+559,Alexandria,El Prince 4,Miami,"Greek,Mediterranean,Seafood",https://talabat.com/eg/alexandria/el-prince-4-559,47,111.65-319.06,111.65,319.06,215.36
+560,Alexandria,Maison Thomas 4,Corniche,"Korean,Asian,BBQ",https://talabat.com/eg/alexandria/maison-thomas-4-560,16,68.98-328.49,68.98,328.49,198.74
+561,Alexandria,Taboula 4,Roushdy,"Mexican,Latin,Tacos",https://talabat.com/eg/alexandria/taboula-4-561,116,132.51-533.18,132.51,533.18,332.84
+562,Alexandria,Cairo Kitchen 4,Corniche,"Vegetarian,Vegan,Healthy",https://talabat.com/eg/alexandria/cairo-kitchen-4-562,51,57.88-96.69,57.88,96.69,77.28
+563,Alexandria,Kazouza 4,Corniche,"Chinese,Asian,Dim Sum",https://talabat.com/eg/alexandria/kazouza-4-563,77,105.02-450.74,105.02,450.74,277.88
+564,Alexandria,Andrea El Mariouteya 4,Montaza,"Japanese,Sushi,Asian",https://talabat.com/eg/alexandria/andrea-el-mariouteya-4-564,59,122.96-554.14,122.96,554.14,338.55
+565,Alexandria,Sea Gull 4,Bahary,"Vegetarian,Vegan,Healthy",https://talabat.com/eg/alexandria/sea-gull-4-565,73,48.92-85.53,48.92,85.53,67.22
+566,Alexandria,Samakmak 4,Bahary,"Japanese,Sushi,Asian",https://talabat.com/eg/alexandria/samakmak-4-566,84,121.15-428.97,121.15,428.97,275.06
+567,Alexandria,Fish Market 4,Roushdy,"Mexican,Latin,Tacos",https://talabat.com/eg/alexandria/fish-market-4-567,41,93.58-229.89,93.58,229.89,161.73
+568,Alexandria,Gad 4,Miami,"Egyptian,Arabic,Middle Eastern",https://talabat.com/eg/alexandria/gad-4-568,25,99.48-358.95,99.48,358.95,229.22
+569,Alexandria,Felfela 4,Mandara,"Greek,Mediterranean,Seafood",https://talabat.com/eg/alexandria/felfela-4-569,89,142.03-316.98,142.03,316.98,229.5
+570,Alexandria,Tikka Grill 4,San Stefano,"Mexican,Latin,Tacos",https://talabat.com/eg/alexandria/tikka-grill-4-570,75,122.18-483.94,122.18,483.94,303.06
+571,Alexandria,El Shabrawy 4,San Stefano,"Egyptian,Arabic,Middle Eastern",https://talabat.com/eg/alexandria/el-shabrawy-4-571,25,108.47-398.22,108.47,398.22,253.35
+572,Alexandria,Mori Sushi 4,Roushdy,"Vegetarian,Vegan,Healthy",https://talabat.com/eg/alexandria/mori-sushi-4-572,61,131.74-484.15,131.74,484.15,307.94
+573,Alexandria,Crimson Bar & Grill 4,Stanley,"Thai,Asian,Vegetarian",https://talabat.com/eg/alexandria/crimson-bar-&-grill-4-573,29,50.72-100.74,50.72,100.74,75.73
+574,Alexandria,Naguib Mahfouz Cafe 4,Gleem,"Japanese,Sushi,Asian",https://talabat.com/eg/alexandria/naguib-mahfouz-cafe-4-574,99,37.56-180.76,37.56,180.76,109.16
+575,Alexandria,El Tabbala 4,Montaza,"Japanese,Sushi,Asian",https://talabat.com/eg/alexandria/el-tabbala-4-575,32,90.21-427.33,90.21,427.33,258.77
+576,Alexandria,Osmanly 4,Raml Station,"Japanese,Sushi,Asian",https://talabat.com/eg/alexandria/osmanly-4-576,31,67.47-164.94,67.47,164.94,116.2
+577,Alexandria,Sabaya 4,Roushdy,"Italian,Pizza,Pasta",https://talabat.com/eg/alexandria/sabaya-4-577,113,48.61-75.5,48.61,75.5,62.05
+578,Alexandria,Le Deck 4,Montaza,"Seafood,Mediterranean",https://talabat.com/eg/alexandria/le-deck-4-578,19,129.53-599.3,129.53,599.3,364.41
+579,Alexandria,Birdcage 4,Anfoushi,"Chinese,Asian,Dim Sum",https://talabat.com/eg/alexandria/birdcage-4-579,118,105.44-496.72,105.44,496.72,301.08
+580,Alexandria,Crimson 4,Sidi Gaber,"Greek,Mediterranean,Seafood",https://talabat.com/eg/alexandria/crimson-4-580,79,42.79-83.72,42.79,83.72,63.25
+581,Alexandria,Pier 88 4,Smouha,"American,Burgers,Fast Food",https://talabat.com/eg/alexandria/pier-88-4-581,37,145.57-419.88,145.57,419.88,282.73
+582,Alexandria,The Blue Restaurant 4,Anfoushi,"Mexican,Latin,Tacos",https://talabat.com/eg/alexandria/the-blue-restaurant-4-582,97,51.7-135.64,51.7,135.64,93.67
+583,Alexandria,Nile Maxim 4,Corniche,"Lebanese,Middle Eastern,Arabic",https://talabat.com/eg/alexandria/nile-maxim-4-583,75,115.17-319.01,115.17,319.01,217.09
+584,Alexandria,Abou Tarek 5,Bahary,"Egyptian,Arabic,Middle Eastern",https://talabat.com/eg/alexandria/abou-tarek-5-584,16,91.0-276.12,91.0,276.12,183.56
+585,Alexandria,Koshary Abou Tarek 5,Smouha,"Italian,Pizza,Pasta",https://talabat.com/eg/alexandria/koshary-abou-tarek-5-585,82,70.68-193.79,70.68,193.79,132.24
+586,Alexandria,Sequoia 5,Corniche,"Turkish,Kebab,Middle Eastern",https://talabat.com/eg/alexandria/sequoia-5-586,101,140.42-409.65,140.42,409.65,275.03
+587,Alexandria,Zooba 5,Smouha,"Chinese,Asian,Dim Sum",https://talabat.com/eg/alexandria/zooba-5-587,18,61.45-287.64,61.45,287.64,174.54
+588,Alexandria,Fasahat Somaya 5,Bahary,"Korean,Asian,BBQ",https://talabat.com/eg/alexandria/fasahat-somaya-5-588,105,50.89-235.3,50.89,235.3,143.09
+589,Alexandria,El Prince 5,Montaza,"Japanese,Sushi,Asian",https://talabat.com/eg/alexandria/el-prince-5-589,40,126.99-590.81,126.99,590.81,358.9
+590,Alexandria,Maison Thomas 5,Stanley,"Turkish,Kebab,Middle Eastern",https://talabat.com/eg/alexandria/maison-thomas-5-590,60,92.76-325.05,92.76,325.05,208.91
+591,Alexandria,Taboula 5,Smouha,"Thai,Asian,Vegetarian",https://talabat.com/eg/alexandria/taboula-5-591,84,147.37-645.53,147.37,645.53,396.45
+592,Alexandria,Cairo Kitchen 5,Smouha,"Japanese,Sushi,Asian",https://talabat.com/eg/alexandria/cairo-kitchen-5-592,66,113.11-261.28,113.11,261.28,187.19
+593,Alexandria,Kazouza 5,Anfoushi,"Indian,Asian,Vegetarian",https://talabat.com/eg/alexandria/kazouza-5-593,80,92.63-447.85,92.63,447.85,270.24
+594,Alexandria,Andrea El Mariouteya 5,Miami,"Egyptian,Arabic,Middle Eastern",https://talabat.com/eg/alexandria/andrea-el-mariouteya-5-594,115,101.74-437.11,101.74,437.11,269.43
+595,Alexandria,Sea Gull 5,Anfoushi,"Egyptian,Arabic,Middle Eastern",https://talabat.com/eg/alexandria/sea-gull-5-595,71,135.26-399.02,135.26,399.02,267.14
+596,Alexandria,Samakmak 5,Bahary,"Mexican,Latin,Tacos",https://talabat.com/eg/alexandria/samakmak-5-596,116,53.29-208.54,53.29,208.54,130.91
+597,Alexandria,Fish Market 5,Smouha,"French,European,Fine Dining",https://talabat.com/eg/alexandria/fish-market-5-597,99,146.51-502.92,146.51,502.92,324.72
+598,Alexandria,Gad 5,San Stefano,"Chinese,Asian,Dim Sum",https://talabat.com/eg/alexandria/gad-5-598,22,104.86-412.64,104.86,412.64,258.75
+599,Alexandria,Felfela 5,Anfoushi,"Japanese,Sushi,Asian",https://talabat.com/eg/alexandria/felfela-5-599,81,96.0-435.98,96.0,435.98,265.99
+600,Alexandria,Tikka Grill 5,Stanley,"Thai,Asian,Vegetarian",https://talabat.com/eg/alexandria/tikka-grill-5-600,50,32.42-76.26,32.42,76.26,54.34
+601,Alexandria,El Shabrawy 5,Smouha,"Greek,Mediterranean,Seafood",https://talabat.com/eg/alexandria/el-shabrawy-5-601,90,48.54-163.5,48.54,163.5,106.02
+602,Alexandria,Mori Sushi 5,Smouha,"Turkish,Kebab,Middle Eastern",https://talabat.com/eg/alexandria/mori-sushi-5-602,112,70.75-327.89,70.75,327.89,199.32
+603,Alexandria,Crimson Bar & Grill 5,Smouha,"Seafood,Mediterranean",https://talabat.com/eg/alexandria/crimson-bar-&-grill-5-603,73,80.95-218.48,80.95,218.48,149.72
+604,Alexandria,Naguib Mahfouz Cafe 5,Stanley,"Lebanese,Middle Eastern,Arabic",https://talabat.com/eg/alexandria/naguib-mahfouz-cafe-5-604,27,121.12-219.63,121.12,219.63,170.38
+605,Alexandria,El Tabbala 5,Stanley,"Chinese,Asian,Dim Sum",https://talabat.com/eg/alexandria/el-tabbala-5-605,35,30.77-63.22,30.77,63.22,46.99
+606,Alexandria,Osmanly 5,Corniche,"Thai,Asian,Vegetarian",https://talabat.com/eg/alexandria/osmanly-5-606,26,35.59-177.6,35.59,177.6,106.59
+607,Alexandria,Sabaya 5,Smouha,"Italian,Pizza,Pasta",https://talabat.com/eg/alexandria/sabaya-5-607,59,71.6-273.62,71.6,273.62,172.61
+608,Alexandria,Le Deck 5,Miami,"French,European,Fine Dining",https://talabat.com/eg/alexandria/le-deck-5-608,105,122.66-457.8,122.66,457.8,290.23
+609,Alexandria,Birdcage 5,Camp Caesar,"Japanese,Sushi,Asian",https://talabat.com/eg/alexandria/birdcage-5-609,75,57.24-218.39,57.24,218.39,137.81
+610,Alexandria,Crimson 5,Sidi Gaber,"Korean,Asian,BBQ",https://talabat.com/eg/alexandria/crimson-5-610,69,54.26-232.18,54.26,232.18,143.22
+611,Alexandria,Pier 88 5,Camp Caesar,"Chinese,Asian,Dim Sum",https://talabat.com/eg/alexandria/pier-88-5-611,25,146.66-527.5,146.66,527.5,337.08
+612,Alexandria,The Blue Restaurant 5,Miami,"Japanese,Sushi,Asian",https://talabat.com/eg/alexandria/the-blue-restaurant-5-612,78,112.06-543.45,112.06,543.45,327.75
+613,Alexandria,Nile Maxim 5,Montaza,"Egyptian,Arabic,Middle Eastern",https://talabat.com/eg/alexandria/nile-maxim-5-613,45,93.7-266.95,93.7,266.95,180.32
+614,Alexandria,Abou Tarek 6,Miami,"Greek,Mediterranean,Seafood",https://talabat.com/eg/alexandria/abou-tarek-6-614,22,47.99-111.19,47.99,111.19,79.59
+615,Alexandria,Koshary Abou Tarek 6,Roushdy,"Lebanese,Middle Eastern,Arabic",https://talabat.com/eg/alexandria/koshary-abou-tarek-6-615,36,43.5-175.51,43.5,175.51,109.5
+616,Alexandria,Sequoia 6,Miami,"American,Burgers,Fast Food",https://talabat.com/eg/alexandria/sequoia-6-616,33,120.68-481.77,120.68,481.77,301.23
+617,Alexandria,Zooba 6,Sidi Gaber,"Korean,Asian,BBQ",https://talabat.com/eg/alexandria/zooba-6-617,30,137.36-227.8,137.36,227.8,182.58
+618,Alexandria,Fasahat Somaya 6,Stanley,"Lebanese,Middle Eastern,Arabic",https://talabat.com/eg/alexandria/fasahat-somaya-6-618,59,149.94-277.15,149.94,277.15,213.54
+619,Alexandria,El Prince 6,Montaza,"Egyptian,Arabic,Middle Eastern",https://talabat.com/eg/alexandria/el-prince-6-619,119,67.64-147.79,67.64,147.79,107.72
+620,Alexandria,Maison Thomas 6,Corniche,"American,Burgers,Fast Food",https://talabat.com/eg/alexandria/maison-thomas-6-620,82,108.18-442.57,108.18,442.57,275.38
+621,Alexandria,Taboula 6,Mandara,"Greek,Mediterranean,Seafood",https://talabat.com/eg/alexandria/taboula-6-621,105,81.05-332.65,81.05,332.65,206.85
+622,Alexandria,Cairo Kitchen 6,Mandara,"Mexican,Latin,Tacos",https://talabat.com/eg/alexandria/cairo-kitchen-6-622,45,138.69-680.42,138.69,680.42,409.55
+623,Alexandria,Kazouza 6,San Stefano,"Lebanese,Middle Eastern,Arabic",https://talabat.com/eg/alexandria/kazouza-6-623,30,98.79-405.99,98.79,405.99,252.39
+624,Alexandria,Andrea El Mariouteya 6,Anfoushi,"Lebanese,Middle Eastern,Arabic",https://talabat.com/eg/alexandria/andrea-el-mariouteya-6-624,96,143.99-386.71,143.99,386.71,265.35
+625,Alexandria,Sea Gull 6,San Stefano,"Lebanese,Middle Eastern,Arabic",https://talabat.com/eg/alexandria/sea-gull-6-625,79,42.9-148.64,42.9,148.64,95.77
+626,Alexandria,Samakmak 6,Montaza,"Thai,Asian,Vegetarian",https://talabat.com/eg/alexandria/samakmak-6-626,46,38.41-97.36,38.41,97.36,67.88
+627,Alexandria,Fish Market 6,Anfoushi,"Japanese,Sushi,Asian",https://talabat.com/eg/alexandria/fish-market-6-627,104,49.83-147.07,49.83,147.07,98.45
+628,Alexandria,Gad 6,Bahary,"Mexican,Latin,Tacos",https://talabat.com/eg/alexandria/gad-6-628,73,64.32-231.46,64.32,231.46,147.89
+629,Alexandria,Felfela 6,San Stefano,"Indian,Asian,Vegetarian",https://talabat.com/eg/alexandria/felfela-6-629,85,125.54-225.31,125.54,225.31,175.43
+630,Alexandria,Tikka Grill 6,Montaza,"Lebanese,Middle Eastern,Arabic",https://talabat.com/eg/alexandria/tikka-grill-6-630,28,31.89-80.17,31.89,80.17,56.03
+631,Alexandria,El Shabrawy 6,Roushdy,"Turkish,Kebab,Middle Eastern",https://talabat.com/eg/alexandria/el-shabrawy-6-631,18,143.29-690.3,143.29,690.3,416.79
+632,Alexandria,Mori Sushi 6,Anfoushi,"Seafood,Mediterranean",https://talabat.com/eg/alexandria/mori-sushi-6-632,106,105.8-372.34,105.8,372.34,239.07
+633,Alexandria,Crimson Bar & Grill 6,Mandara,"Vegetarian,Vegan,Healthy",https://talabat.com/eg/alexandria/crimson-bar-&-grill-6-633,79,143.57-649.68,143.57,649.68,396.62
+634,Alexandria,Naguib Mahfouz Cafe 6,Montaza,"Lebanese,Middle Eastern,Arabic",https://talabat.com/eg/alexandria/naguib-mahfouz-cafe-6-634,49,106.31-343.78,106.31,343.78,225.04
+635,Alexandria,El Tabbala 6,Gleem,"American,Burgers,Fast Food",https://talabat.com/eg/alexandria/el-tabbala-6-635,98,45.75-209.91,45.75,209.91,127.83
+636,Alexandria,Osmanly 6,Smouha,"Vegetarian,Vegan,Healthy",https://talabat.com/eg/alexandria/osmanly-6-636,39,128.95-638.85,128.95,638.85,383.9
+637,Alexandria,Sabaya 6,San Stefano,"Thai,Asian,Vegetarian",https://talabat.com/eg/alexandria/sabaya-6-637,22,89.92-355.77,89.92,355.77,222.84
+638,Alexandria,Le Deck 6,Smouha,"Korean,Asian,BBQ",https://talabat.com/eg/alexandria/le-deck-6-638,29,37.47-158.04,37.47,158.04,97.75
+639,Alexandria,Birdcage 6,Corniche,"Lebanese,Middle Eastern,Arabic",https://talabat.com/eg/alexandria/birdcage-6-639,56,113.5-548.92,113.5,548.92,331.21
+640,Alexandria,Crimson 6,Camp Caesar,"Seafood,Mediterranean",https://talabat.com/eg/alexandria/crimson-6-640,36,136.99-393.5,136.99,393.5,265.25
+641,Alexandria,Pier 88 6,Bahary,"Vegetarian,Vegan,Healthy",https://talabat.com/eg/alexandria/pier-88-6-641,93,38.48-96.06,38.48,96.06,67.27
+642,Alexandria,The Blue Restaurant 6,Miami,"Greek,Mediterranean,Seafood",https://talabat.com/eg/alexandria/the-blue-restaurant-6-642,43,129.74-281.59,129.74,281.59,205.66
+643,Alexandria,Nile Maxim 6,Mandara,"Indian,Asian,Vegetarian",https://talabat.com/eg/alexandria/nile-maxim-6-643,111,138.66-460.77,138.66,460.77,299.71
+644,Alexandria,Abou Tarek 7,San Stefano,"Seafood,Mediterranean",https://talabat.com/eg/alexandria/abou-tarek-7-644,83,122.92-322.77,122.92,322.77,222.84
+645,Alexandria,Koshary Abou Tarek 7,Camp Caesar,"Seafood,Mediterranean",https://talabat.com/eg/alexandria/koshary-abou-tarek-7-645,95,131.97-501.38,131.97,501.38,316.68
+646,Alexandria,Sequoia 7,Smouha,"Japanese,Sushi,Asian",https://talabat.com/eg/alexandria/sequoia-7-646,92,102.14-483.82,102.14,483.82,292.98
+647,Alexandria,Zooba 7,Mandara,"Vegetarian,Vegan,Healthy",https://talabat.com/eg/alexandria/zooba-7-647,47,137.14-512.73,137.14,512.73,324.94
+648,Alexandria,Fasahat Somaya 7,Sidi Gaber,"Lebanese,Middle Eastern,Arabic",https://talabat.com/eg/alexandria/fasahat-somaya-7-648,99,146.79-663.14,146.79,663.14,404.96
+649,Alexandria,El Prince 7,Corniche,"Greek,Mediterranean,Seafood",https://talabat.com/eg/alexandria/el-prince-7-649,25,74.22-291.98,74.22,291.98,183.1
+650,Alexandria,Maison Thomas 7,Mandara,"Korean,Asian,BBQ",https://talabat.com/eg/alexandria/maison-thomas-7-650,62,103.63-498.47,103.63,498.47,301.05
+651,Alexandria,Taboula 7,Bahary,"Japanese,Sushi,Asian",https://talabat.com/eg/alexandria/taboula-7-651,47,93.07-320.29,93.07,320.29,206.68
+652,Alexandria,Cairo Kitchen 7,Montaza,"Mexican,Latin,Tacos",https://talabat.com/eg/alexandria/cairo-kitchen-7-652,71,84.76-378.33,84.76,378.33,231.54
+653,Alexandria,Kazouza 7,Gleem,"Chinese,Asian,Dim Sum",https://talabat.com/eg/alexandria/kazouza-7-653,43,35.45-71.74,35.45,71.74,53.59
+654,Alexandria,Andrea El Mariouteya 7,Corniche,"Italian,Pizza,Pasta",https://talabat.com/eg/alexandria/andrea-el-mariouteya-7-654,117,100.03-162.75,100.03,162.75,131.39
+655,Alexandria,Sea Gull 7,Camp Caesar,"Lebanese,Middle Eastern,Arabic",https://talabat.com/eg/alexandria/sea-gull-7-655,57,95.34-288.63,95.34,288.63,191.99
+656,Alexandria,Samakmak 7,Roushdy,"Indian,Asian,Vegetarian",https://talabat.com/eg/alexandria/samakmak-7-656,34,146.68-475.22,146.68,475.22,310.95
+657,Alexandria,Fish Market 7,Sidi Gaber,"Turkish,Kebab,Middle Eastern",https://talabat.com/eg/alexandria/fish-market-7-657,55,93.78-187.88,93.78,187.88,140.83
+658,Alexandria,Gad 7,Bahary,"Indian,Asian,Vegetarian",https://talabat.com/eg/alexandria/gad-7-658,115,36.16-131.21,36.16,131.21,83.69
+659,Alexandria,Felfela 7,Raml Station,"Vegetarian,Vegan,Healthy",https://talabat.com/eg/alexandria/felfela-7-659,83,74.63-322.46,74.63,322.46,198.54
+660,Alexandria,Tikka Grill 7,Camp Caesar,"Korean,Asian,BBQ",https://talabat.com/eg/alexandria/tikka-grill-7-660,64,59.03-292.04,59.03,292.04,175.54
+661,Alexandria,El Shabrawy 7,Corniche,"Korean,Asian,BBQ",https://talabat.com/eg/alexandria/el-shabrawy-7-661,33,76.96-246.76,76.96,246.76,161.86
+662,Alexandria,Mori Sushi 7,Roushdy,"Japanese,Sushi,Asian",https://talabat.com/eg/alexandria/mori-sushi-7-662,113,119.9-278.51,119.9,278.51,199.2
+663,Alexandria,Crimson Bar & Grill 7,Sidi Gaber,"Greek,Mediterranean,Seafood",https://talabat.com/eg/alexandria/crimson-bar-&-grill-7-663,37,102.42-185.87,102.42,185.87,144.15
+664,Alexandria,Naguib Mahfouz Cafe 7,Roushdy,"Italian,Pizza,Pasta",https://talabat.com/eg/alexandria/naguib-mahfouz-cafe-7-664,21,79.67-336.53,79.67,336.53,208.1
+665,Alexandria,El Tabbala 7,Montaza,"Thai,Asian,Vegetarian",https://talabat.com/eg/alexandria/el-tabbala-7-665,37,99.91-364.93,99.91,364.93,232.42
+666,Alexandria,Osmanly 7,Anfoushi,"Indian,Asian,Vegetarian",https://talabat.com/eg/alexandria/osmanly-7-666,22,133.48-490.72,133.48,490.72,312.1
+667,Alexandria,Sabaya 7,Roushdy,"French,European,Fine Dining",https://talabat.com/eg/alexandria/sabaya-7-667,118,77.91-294.94,77.91,294.94,186.43
+668,Alexandria,Le Deck 7,Gleem,"Egyptian,Arabic,Middle Eastern",https://talabat.com/eg/alexandria/le-deck-7-668,97,51.62-147.26,51.62,147.26,99.44
+669,Alexandria,Birdcage 7,Stanley,"Indian,Asian,Vegetarian",https://talabat.com/eg/alexandria/birdcage-7-669,37,133.0-372.68,133.0,372.68,252.84
+670,Alexandria,Crimson 7,Mandara,"Turkish,Kebab,Middle Eastern",https://talabat.com/eg/alexandria/crimson-7-670,25,135.42-498.9,135.42,498.9,317.16
+671,Alexandria,Pier 88 7,Anfoushi,"Seafood,Mediterranean",https://talabat.com/eg/alexandria/pier-88-7-671,103,48.23-102.67,48.23,102.67,75.45
+672,Alexandria,The Blue Restaurant 7,Camp Caesar,"Chinese,Asian,Dim Sum",https://talabat.com/eg/alexandria/the-blue-restaurant-7-672,80,102.67-241.21,102.67,241.21,171.94
+673,Alexandria,Nile Maxim 7,San Stefano,"Lebanese,Middle Eastern,Arabic",https://talabat.com/eg/alexandria/nile-maxim-7-673,52,30.41-143.25,30.41,143.25,86.83
+674,Alexandria,Abou Tarek 8,Anfoushi,"Greek,Mediterranean,Seafood",https://talabat.com/eg/alexandria/abou-tarek-8-674,68,128.9-343.73,128.9,343.73,236.31
+675,Alexandria,Koshary Abou Tarek 8,Camp Caesar,"Seafood,Mediterranean",https://talabat.com/eg/alexandria/koshary-abou-tarek-8-675,55,60.54-273.38,60.54,273.38,166.96
+676,Alexandria,Sequoia 8,San Stefano,"Greek,Mediterranean,Seafood",https://talabat.com/eg/alexandria/sequoia-8-676,115,90.94-403.58,90.94,403.58,247.26
+677,Alexandria,Zooba 8,Gleem,"Turkish,Kebab,Middle Eastern",https://talabat.com/eg/alexandria/zooba-8-677,23,140.43-519.32,140.43,519.32,329.88
+678,Alexandria,Fasahat Somaya 8,Montaza,"Lebanese,Middle Eastern,Arabic",https://talabat.com/eg/alexandria/fasahat-somaya-8-678,43,69.56-233.93,69.56,233.93,151.75
+679,Alexandria,El Prince 8,Raml Station,"Indian,Asian,Vegetarian",https://talabat.com/eg/alexandria/el-prince-8-679,37,78.57-344.08,78.57,344.08,211.32
+680,Alexandria,Maison Thomas 8,Bahary,"Vegetarian,Vegan,Healthy",https://talabat.com/eg/alexandria/maison-thomas-8-680,76,124.43-305.83,124.43,305.83,215.13
+681,Alexandria,Taboula 8,Corniche,"Indian,Asian,Vegetarian",https://talabat.com/eg/alexandria/taboula-8-681,97,108.51-393.29,108.51,393.29,250.9
+682,Alexandria,Cairo Kitchen 8,Bahary,"Korean,Asian,BBQ",https://talabat.com/eg/alexandria/cairo-kitchen-8-682,83,78.47-339.18,78.47,339.18,208.82
+683,Alexandria,Kazouza 8,Bahary,"Egyptian,Arabic,Middle Eastern",https://talabat.com/eg/alexandria/kazouza-8-683,41,133.51-617.9,133.51,617.9,375.7
+684,Alexandria,Andrea El Mariouteya 8,San Stefano,"American,Burgers,Fast Food",https://talabat.com/eg/alexandria/andrea-el-mariouteya-8-684,28,133.38-590.89,133.38,590.89,362.13
+685,Alexandria,Sea Gull 8,Roushdy,"Indian,Asian,Vegetarian",https://talabat.com/eg/alexandria/sea-gull-8-685,25,92.21-432.5,92.21,432.5,262.36
+686,Alexandria,Samakmak 8,Miami,"Chinese,Asian,Dim Sum",https://talabat.com/eg/alexandria/samakmak-8-686,51,139.56-422.8,139.56,422.8,281.18
+687,Alexandria,Fish Market 8,Anfoushi,"Vegetarian,Vegan,Healthy",https://talabat.com/eg/alexandria/fish-market-8-687,109,32.84-109.07,32.84,109.07,70.95
+688,Alexandria,Gad 8,Miami,"Korean,Asian,BBQ",https://talabat.com/eg/alexandria/gad-8-688,98,34.82-126.52,34.82,126.52,80.67
+689,Alexandria,Felfela 8,Camp Caesar,"Indian,Asian,Vegetarian",https://talabat.com/eg/alexandria/felfela-8-689,77,55.85-188.87,55.85,188.87,122.36
+690,Alexandria,Tikka Grill 8,Smouha,"Greek,Mediterranean,Seafood",https://talabat.com/eg/alexandria/tikka-grill-8-690,32,60.3-149.32,60.3,149.32,104.81
+691,Alexandria,El Shabrawy 8,Sidi Gaber,"Greek,Mediterranean,Seafood",https://talabat.com/eg/alexandria/el-shabrawy-8-691,29,30.43-128.9,30.43,128.9,79.67
+692,Alexandria,Mori Sushi 8,Stanley,"Vegetarian,Vegan,Healthy",https://talabat.com/eg/alexandria/mori-sushi-8-692,89,103.97-307.39,103.97,307.39,205.68
+693,Alexandria,Crimson Bar & Grill 8,Mandara,"Korean,Asian,BBQ",https://talabat.com/eg/alexandria/crimson-bar-&-grill-8-693,116,86.07-186.63,86.07,186.63,136.35
+694,Alexandria,Naguib Mahfouz Cafe 8,Smouha,"Thai,Asian,Vegetarian",https://talabat.com/eg/alexandria/naguib-mahfouz-cafe-8-694,23,64.89-171.85,64.89,171.85,118.37
+695,Alexandria,El Tabbala 8,Corniche,"Vegetarian,Vegan,Healthy",https://talabat.com/eg/alexandria/el-tabbala-8-695,69,118.09-453.18,118.09,453.18,285.63
+696,Alexandria,Osmanly 8,Montaza,"Thai,Asian,Vegetarian",https://talabat.com/eg/alexandria/osmanly-8-696,15,70.87-308.01,70.87,308.01,189.44
+697,Alexandria,Sabaya 8,Roushdy,"Greek,Mediterranean,Seafood",https://talabat.com/eg/alexandria/sabaya-8-697,47,146.34-722.09,146.34,722.09,434.22
+698,Alexandria,Le Deck 8,Smouha,"Turkish,Kebab,Middle Eastern",https://talabat.com/eg/alexandria/le-deck-8-698,116,47.53-191.76,47.53,191.76,119.64
+699,Alexandria,Birdcage 8,Roushdy,"Vegetarian,Vegan,Healthy",https://talabat.com/eg/alexandria/birdcage-8-699,64,76.21-144.39,76.21,144.39,110.3
+700,Alexandria,Crimson 8,Sidi Gaber,"Italian,Pizza,Pasta",https://talabat.com/eg/alexandria/crimson-8-700,78,72.03-176.29,72.03,176.29,124.16
+701,Alexandria,Pier 88 8,Bahary,"Korean,Asian,BBQ",https://talabat.com/eg/alexandria/pier-88-8-701,86,61.68-281.24,61.68,281.24,171.46
+702,Alexandria,The Blue Restaurant 8,Corniche,"Chinese,Asian,Dim Sum",https://talabat.com/eg/alexandria/the-blue-restaurant-8-702,114,80.77-192.48,80.77,192.48,136.62
+703,Alexandria,Nile Maxim 8,Camp Caesar,"French,European,Fine Dining",https://talabat.com/eg/alexandria/nile-maxim-8-703,105,142.86-605.1,142.86,605.1,373.98
+704,Alexandria,Abou Tarek 9,Smouha,"Seafood,Mediterranean",https://talabat.com/eg/alexandria/abou-tarek-9-704,57,121.26-579.06,121.26,579.06,350.16
+705,Alexandria,Koshary Abou Tarek 9,Raml Station,"French,European,Fine Dining",https://talabat.com/eg/alexandria/koshary-abou-tarek-9-705,50,45.16-122.26,45.16,122.26,83.71
+706,Alexandria,Sequoia 9,Stanley,"Japanese,Sushi,Asian",https://talabat.com/eg/alexandria/sequoia-9-706,78,30.82-82.75,30.82,82.75,56.78
+707,Alexandria,Zooba 9,Bahary,"Chinese,Asian,Dim Sum",https://talabat.com/eg/alexandria/zooba-9-707,37,112.06-192.32,112.06,192.32,152.19
+708,Alexandria,Fasahat Somaya 9,Gleem,"Italian,Pizza,Pasta",https://talabat.com/eg/alexandria/fasahat-somaya-9-708,48,143.76-396.73,143.76,396.73,270.25
+709,Alexandria,El Prince 9,Mandara,"Seafood,Mediterranean",https://talabat.com/eg/alexandria/el-prince-9-709,39,61.85-131.5,61.85,131.5,96.67
+710,Alexandria,Maison Thomas 9,Anfoushi,"Chinese,Asian,Dim Sum",https://talabat.com/eg/alexandria/maison-thomas-9-710,25,140.4-233.4,140.4,233.4,186.9
+711,Alexandria,Taboula 9,Gleem,"Japanese,Sushi,Asian",https://talabat.com/eg/alexandria/taboula-9-711,18,62.67-283.08,62.67,283.08,172.88
+712,Alexandria,Cairo Kitchen 9,Anfoushi,"Korean,Asian,BBQ",https://talabat.com/eg/alexandria/cairo-kitchen-9-712,30,128.94-232.46,128.94,232.46,180.7
+713,Alexandria,Kazouza 9,Sidi Gaber,"Seafood,Mediterranean",https://talabat.com/eg/alexandria/kazouza-9-713,83,88.31-367.36,88.31,367.36,227.84
+714,Alexandria,Andrea El Mariouteya 9,Stanley,"Turkish,Kebab,Middle Eastern",https://talabat.com/eg/alexandria/andrea-el-mariouteya-9-714,86,124.03-271.76,124.03,271.76,197.89
+715,Alexandria,Sea Gull 9,Bahary,"Seafood,Mediterranean",https://talabat.com/eg/alexandria/sea-gull-9-715,30,73.37-279.44,73.37,279.44,176.41
+716,Alexandria,Samakmak 9,Gleem,"Chinese,Asian,Dim Sum",https://talabat.com/eg/alexandria/samakmak-9-716,42,59.37-238.92,59.37,238.92,149.14
+717,Alexandria,Fish Market 9,Camp Caesar,"French,European,Fine Dining",https://talabat.com/eg/alexandria/fish-market-9-717,33,54.99-235.29,54.99,235.29,145.14
+718,Alexandria,Gad 9,Raml Station,"Korean,Asian,BBQ",https://talabat.com/eg/alexandria/gad-9-718,117,68.57-200.29,68.57,200.29,134.43
+719,Alexandria,Felfela 9,Montaza,"Vegetarian,Vegan,Healthy",https://talabat.com/eg/alexandria/felfela-9-719,75,53.18-222.84,53.18,222.84,138.01
+720,Alexandria,Tikka Grill 9,Gleem,"Thai,Asian,Vegetarian",https://talabat.com/eg/alexandria/tikka-grill-9-720,102,91.79-151.18,91.79,151.18,121.49
+721,Alexandria,El Shabrawy 9,Anfoushi,"Italian,Pizza,Pasta",https://talabat.com/eg/alexandria/el-shabrawy-9-721,109,139.59-408.91,139.59,408.91,274.25
+722,Alexandria,Mori Sushi 9,Camp Caesar,"Turkish,Kebab,Middle Eastern",https://talabat.com/eg/alexandria/mori-sushi-9-722,116,76.41-267.33,76.41,267.33,171.87
+723,Alexandria,Crimson Bar & Grill 9,Mandara,"Seafood,Mediterranean",https://talabat.com/eg/alexandria/crimson-bar-&-grill-9-723,18,130.07-270.6,130.07,270.6,200.34
+724,Alexandria,Naguib Mahfouz Cafe 9,Roushdy,"Seafood,Mediterranean",https://talabat.com/eg/alexandria/naguib-mahfouz-cafe-9-724,33,62.13-154.58,62.13,154.58,108.36
+725,Alexandria,El Tabbala 9,Montaza,"Thai,Asian,Vegetarian",https://talabat.com/eg/alexandria/el-tabbala-9-725,50,55.65-134.44,55.65,134.44,95.05
+726,Alexandria,Osmanly 9,Raml Station,"Korean,Asian,BBQ",https://talabat.com/eg/alexandria/osmanly-9-726,50,91.06-430.41,91.06,430.41,260.74
+727,Alexandria,Sabaya 9,Montaza,"Lebanese,Middle Eastern,Arabic",https://talabat.com/eg/alexandria/sabaya-9-727,82,34.42-82.13,34.42,82.13,58.27
+728,Alexandria,Le Deck 9,Miami,"Japanese,Sushi,Asian",https://talabat.com/eg/alexandria/le-deck-9-728,24,123.77-383.86,123.77,383.86,253.81
+729,Alexandria,Birdcage 9,Raml Station,"Indian,Asian,Vegetarian",https://talabat.com/eg/alexandria/birdcage-9-729,116,92.83-180.96,92.83,180.96,136.9
+730,Alexandria,Crimson 9,San Stefano,"Mexican,Latin,Tacos",https://talabat.com/eg/alexandria/crimson-9-730,98,109.12-443.46,109.12,443.46,276.29
+731,Alexandria,Pier 88 9,Mandara,"Egyptian,Arabic,Middle Eastern",https://talabat.com/eg/alexandria/pier-88-9-731,76,112.68-177.06,112.68,177.06,144.87
+732,Alexandria,The Blue Restaurant 9,Gleem,"French,European,Fine Dining",https://talabat.com/eg/alexandria/the-blue-restaurant-9-732,47,54.03-90.88,54.03,90.88,72.45
+733,Alexandria,Nile Maxim 9,Bahary,"Italian,Pizza,Pasta",https://talabat.com/eg/alexandria/nile-maxim-9-733,63,100.32-363.38,100.32,363.38,231.85
+734,Alexandria,Abou Tarek 10,Corniche,"Turkish,Kebab,Middle Eastern",https://talabat.com/eg/alexandria/abou-tarek-10-734,88,67.74-288.31,67.74,288.31,178.03
+735,Alexandria,Koshary Abou Tarek 10,Anfoushi,"Greek,Mediterranean,Seafood",https://talabat.com/eg/alexandria/koshary-abou-tarek-10-735,46,75.78-175.6,75.78,175.6,125.69
+736,Alexandria,Sequoia 10,Anfoushi,"Greek,Mediterranean,Seafood",https://talabat.com/eg/alexandria/sequoia-10-736,74,123.61-566.74,123.61,566.74,345.18
+737,Alexandria,Zooba 10,Anfoushi,"French,European,Fine Dining",https://talabat.com/eg/alexandria/zooba-10-737,16,38.22-136.99,38.22,136.99,87.61
+738,Alexandria,Fasahat Somaya 10,Miami,"Thai,Asian,Vegetarian",https://talabat.com/eg/alexandria/fasahat-somaya-10-738,68,45.75-174.63,45.75,174.63,110.19
+739,Alexandria,El Prince 10,Miami,"Egyptian,Arabic,Middle Eastern",https://talabat.com/eg/alexandria/el-prince-10-739,84,64.76-195.27,64.76,195.27,130.02
+740,Alexandria,Maison Thomas 10,Stanley,"Greek,Mediterranean,Seafood",https://talabat.com/eg/alexandria/maison-thomas-10-740,46,34.87-171.13,34.87,171.13,103.0
+741,Alexandria,Taboula 10,Montaza,"Italian,Pizza,Pasta",https://talabat.com/eg/alexandria/taboula-10-741,37,52.23-116.03,52.23,116.03,84.13
+742,Alexandria,Cairo Kitchen 10,Raml Station,"American,Burgers,Fast Food",https://talabat.com/eg/alexandria/cairo-kitchen-10-742,51,92.55-291.43,92.55,291.43,191.99
+743,Alexandria,Kazouza 10,Mandara,"Greek,Mediterranean,Seafood",https://talabat.com/eg/alexandria/kazouza-10-743,94,119.92-540.05,119.92,540.05,329.98
+744,Alexandria,Andrea El Mariouteya 10,Anfoushi,"Vegetarian,Vegan,Healthy",https://talabat.com/eg/alexandria/andrea-el-mariouteya-10-744,71,147.01-535.37,147.01,535.37,341.19
+745,Alexandria,Sea Gull 10,Raml Station,"Thai,Asian,Vegetarian",https://talabat.com/eg/alexandria/sea-gull-10-745,61,93.4-414.72,93.4,414.72,254.06
+746,Alexandria,Samakmak 10,Corniche,"Korean,Asian,BBQ",https://talabat.com/eg/alexandria/samakmak-10-746,45,147.22-728.63,147.22,728.63,437.93
+747,Alexandria,Fish Market 10,Smouha,"Korean,Asian,BBQ",https://talabat.com/eg/alexandria/fish-market-10-747,64,45.29-114.85,45.29,114.85,80.07
+748,Alexandria,Gad 10,Smouha,"Italian,Pizza,Pasta",https://talabat.com/eg/alexandria/gad-10-748,48,42.73-121.96,42.73,121.96,82.34
+749,Alexandria,Felfela 10,Anfoushi,"Vegetarian,Vegan,Healthy",https://talabat.com/eg/alexandria/felfela-10-749,102,32.14-132.52,32.14,132.52,82.33
+750,Alexandria,Tikka Grill 10,Camp Caesar,"Thai,Asian,Vegetarian",https://talabat.com/eg/alexandria/tikka-grill-10-750,33,145.77-230.2,145.77,230.2,187.99
+751,Alexandria,El Shabrawy 10,Mandara,"Chinese,Asian,Dim Sum",https://talabat.com/eg/alexandria/el-shabrawy-10-751,57,34.37-51.98,34.37,51.98,43.17
+752,Alexandria,Mori Sushi 10,Camp Caesar,"Vegetarian,Vegan,Healthy",https://talabat.com/eg/alexandria/mori-sushi-10-752,108,97.37-310.35,97.37,310.35,203.86
+753,Alexandria,Crimson Bar & Grill 10,Anfoushi,"Italian,Pizza,Pasta",https://talabat.com/eg/alexandria/crimson-bar-&-grill-10-753,16,59.74-141.03,59.74,141.03,100.39
+754,Alexandria,Naguib Mahfouz Cafe 10,Corniche,"Seafood,Mediterranean",https://talabat.com/eg/alexandria/naguib-mahfouz-cafe-10-754,26,112.03-207.81,112.03,207.81,159.92
+755,Alexandria,El Tabbala 10,Roushdy,"American,Burgers,Fast Food",https://talabat.com/eg/alexandria/el-tabbala-10-755,44,74.09-149.82,74.09,149.82,111.95
+756,Alexandria,Osmanly 10,Mandara,"Lebanese,Middle Eastern,Arabic",https://talabat.com/eg/alexandria/osmanly-10-756,33,103.25-362.65,103.25,362.65,232.95
+757,Alexandria,Sabaya 10,Anfoushi,"Thai,Asian,Vegetarian",https://talabat.com/eg/alexandria/sabaya-10-757,119,100.63-199.19,100.63,199.19,149.91
+758,Alexandria,Le Deck 10,Stanley,"Seafood,Mediterranean",https://talabat.com/eg/alexandria/le-deck-10-758,79,102.83-345.05,102.83,345.05,223.94
+759,Alexandria,Birdcage 10,Roushdy,"Mexican,Latin,Tacos",https://talabat.com/eg/alexandria/birdcage-10-759,75,103.13-437.29,103.13,437.29,270.21
+760,Alexandria,Crimson 10,Gleem,"French,European,Fine Dining",https://talabat.com/eg/alexandria/crimson-10-760,55,85.17-419.86,85.17,419.86,252.52
+761,Alexandria,Pier 88 10,Bahary,"Korean,Asian,BBQ",https://talabat.com/eg/alexandria/pier-88-10-761,49,70.34-160.59,70.34,160.59,115.47
+762,Alexandria,The Blue Restaurant 10,Camp Caesar,"Thai,Asian,Vegetarian",https://talabat.com/eg/alexandria/the-blue-restaurant-10-762,105,71.42-200.74,71.42,200.74,136.08
+763,Alexandria,Nile Maxim 10,Corniche,"Egyptian,Arabic,Middle Eastern",https://talabat.com/eg/alexandria/nile-maxim-10-763,115,119.05-258.81,119.05,258.81,188.93
+764,Alexandria,Abou Tarek 11,Smouha,"Japanese,Sushi,Asian",https://talabat.com/eg/alexandria/abou-tarek-11-764,103,40.28-85.6,40.28,85.6,62.94
+765,Alexandria,Koshary Abou Tarek 11,Miami,"Thai,Asian,Vegetarian",https://talabat.com/eg/alexandria/koshary-abou-tarek-11-765,115,79.01-182.94,79.01,182.94,130.97
+766,Alexandria,Sequoia 11,Camp Caesar,"Korean,Asian,BBQ",https://talabat.com/eg/alexandria/sequoia-11-766,95,105.78-500.49,105.78,500.49,303.13
+767,Alexandria,Zooba 11,Corniche,"Italian,Pizza,Pasta",https://talabat.com/eg/alexandria/zooba-11-767,93,114.2-177.9,114.2,177.9,146.05
+768,Alexandria,Fasahat Somaya 11,Gleem,"Japanese,Sushi,Asian",https://talabat.com/eg/alexandria/fasahat-somaya-11-768,116,107.47-298.2,107.47,298.2,202.83
+769,Alexandria,El Prince 11,Gleem,"Italian,Pizza,Pasta",https://talabat.com/eg/alexandria/el-prince-11-769,96,131.1-613.66,131.1,613.66,372.38
+770,Alexandria,Maison Thomas 11,Stanley,"Greek,Mediterranean,Seafood",https://talabat.com/eg/alexandria/maison-thomas-11-770,23,65.25-321.3,65.25,321.3,193.28
+771,Alexandria,Taboula 11,Roushdy,"Korean,Asian,BBQ",https://talabat.com/eg/alexandria/taboula-11-771,77,89.83-412.71,89.83,412.71,251.27
+772,Alexandria,Cairo Kitchen 11,Anfoushi,"American,Burgers,Fast Food",https://talabat.com/eg/alexandria/cairo-kitchen-11-772,114,125.8-599.66,125.8,599.66,362.73
+773,Alexandria,Kazouza 11,Camp Caesar,"Egyptian,Arabic,Middle Eastern",https://talabat.com/eg/alexandria/kazouza-11-773,82,143.9-693.89,143.9,693.89,418.89
+774,Alexandria,Andrea El Mariouteya 11,Bahary,"American,Burgers,Fast Food",https://talabat.com/eg/alexandria/andrea-el-mariouteya-11-774,51,112.15-499.72,112.15,499.72,305.94
+775,Alexandria,Sea Gull 11,Montaza,"Japanese,Sushi,Asian",https://talabat.com/eg/alexandria/sea-gull-11-775,41,64.66-156.78,64.66,156.78,110.72
+776,Alexandria,Samakmak 11,Mandara,"American,Burgers,Fast Food",https://talabat.com/eg/alexandria/samakmak-11-776,106,134.14-244.97,134.14,244.97,189.56
+777,Alexandria,Fish Market 11,Mandara,"Thai,Asian,Vegetarian",https://talabat.com/eg/alexandria/fish-market-11-777,77,135.47-248.3,135.47,248.3,191.88
+778,Alexandria,Gad 11,Mandara,"Lebanese,Middle Eastern,Arabic",https://talabat.com/eg/alexandria/gad-11-778,33,130.54-224.78,130.54,224.78,177.66
+779,Alexandria,Felfela 11,Gleem,"Vegetarian,Vegan,Healthy",https://talabat.com/eg/alexandria/felfela-11-779,46,113.48-416.59,113.48,416.59,265.03
+780,Alexandria,Tikka Grill 11,Bahary,"Korean,Asian,BBQ",https://talabat.com/eg/alexandria/tikka-grill-11-780,107,122.01-518.68,122.01,518.68,320.34
+781,Alexandria,El Shabrawy 11,Gleem,"Japanese,Sushi,Asian",https://talabat.com/eg/alexandria/el-shabrawy-11-781,51,46.63-149.4,46.63,149.4,98.02
+782,Alexandria,Mori Sushi 11,Miami,"Egyptian,Arabic,Middle Eastern",https://talabat.com/eg/alexandria/mori-sushi-11-782,33,146.68-317.66,146.68,317.66,232.17
+783,Alexandria,Crimson Bar & Grill 11,Gleem,"Turkish,Kebab,Middle Eastern",https://talabat.com/eg/alexandria/crimson-bar-&-grill-11-783,54,52.17-174.75,52.17,174.75,113.46
+784,Alexandria,Naguib Mahfouz Cafe 11,Roushdy,"Chinese,Asian,Dim Sum",https://talabat.com/eg/alexandria/naguib-mahfouz-cafe-11-784,103,85.2-313.82,85.2,313.82,199.51
+785,Alexandria,El Tabbala 11,Mandara,"Seafood,Mediterranean",https://talabat.com/eg/alexandria/el-tabbala-11-785,42,127.84-481.2,127.84,481.2,304.52
+786,Alexandria,Osmanly 11,Mandara,"Seafood,Mediterranean",https://talabat.com/eg/alexandria/osmanly-11-786,89,131.75-267.3,131.75,267.3,199.53
+787,Alexandria,Sabaya 11,Stanley,"Turkish,Kebab,Middle Eastern",https://talabat.com/eg/alexandria/sabaya-11-787,95,76.91-181.29,76.91,181.29,129.1
+788,Alexandria,Le Deck 11,Camp Caesar,"American,Burgers,Fast Food",https://talabat.com/eg/alexandria/le-deck-11-788,112,86.5-331.77,86.5,331.77,209.13
+789,Alexandria,Birdcage 11,Corniche,"Vegetarian,Vegan,Healthy",https://talabat.com/eg/alexandria/birdcage-11-789,115,92.76-304.39,92.76,304.39,198.57
+790,Alexandria,Crimson 11,Gleem,"Mexican,Latin,Tacos",https://talabat.com/eg/alexandria/crimson-11-790,79,49.87-129.74,49.87,129.74,89.81
+791,Alexandria,Pier 88 11,Anfoushi,"American,Burgers,Fast Food",https://talabat.com/eg/alexandria/pier-88-11-791,66,131.41-649.04,131.41,649.04,390.22
+792,Alexandria,The Blue Restaurant 11,Anfoushi,"Thai,Asian,Vegetarian",https://talabat.com/eg/alexandria/the-blue-restaurant-11-792,119,36.55-127.26,36.55,127.26,81.91
+793,Alexandria,Nile Maxim 11,Bahary,"Korean,Asian,BBQ",https://talabat.com/eg/alexandria/nile-maxim-11-793,39,105.21-482.46,105.21,482.46,293.83
+794,Alexandria,Abou Tarek 12,Corniche,"Egyptian,Arabic,Middle Eastern",https://talabat.com/eg/alexandria/abou-tarek-12-794,16,40.16-144.62,40.16,144.62,92.39
+795,Alexandria,Koshary Abou Tarek 12,Bahary,"Korean,Asian,BBQ",https://talabat.com/eg/alexandria/koshary-abou-tarek-12-795,91,122.97-377.49,122.97,377.49,250.23
+796,Alexandria,Sequoia 12,Gleem,"Japanese,Sushi,Asian",https://talabat.com/eg/alexandria/sequoia-12-796,119,81.26-286.19,81.26,286.19,183.72
+797,Alexandria,Zooba 12,Gleem,"Mexican,Latin,Tacos",https://talabat.com/eg/alexandria/zooba-12-797,85,91.96-169.07,91.96,169.07,130.51
+798,Alexandria,Fasahat Somaya 12,Gleem,"Lebanese,Middle Eastern,Arabic",https://talabat.com/eg/alexandria/fasahat-somaya-12-798,21,87.93-290.49,87.93,290.49,189.21
+799,Alexandria,El Prince 12,Mandara,"Seafood,Mediterranean",https://talabat.com/eg/alexandria/el-prince-12-799,46,131.04-353.36,131.04,353.36,242.2
+800,Alexandria,Maison Thomas 12,Mandara,"Japanese,Sushi,Asian",https://talabat.com/eg/alexandria/maison-thomas-12-800,53,30.55-110.44,30.55,110.44,70.5
+801,Alexandria,Taboula 12,Gleem,"French,European,Fine Dining",https://talabat.com/eg/alexandria/taboula-12-801,112,95.27-201.91,95.27,201.91,148.59
+802,Alexandria,Cairo Kitchen 12,Bahary,"Chinese,Asian,Dim Sum",https://talabat.com/eg/alexandria/cairo-kitchen-12-802,85,90.6-285.53,90.6,285.53,188.06
+803,Alexandria,Kazouza 12,Smouha,"French,European,Fine Dining",https://talabat.com/eg/alexandria/kazouza-12-803,98,75.75-252.16,75.75,252.16,163.95
+804,Alexandria,Andrea El Mariouteya 12,Roushdy,"Vegetarian,Vegan,Healthy",https://talabat.com/eg/alexandria/andrea-el-mariouteya-12-804,64,55.57-252.07,55.57,252.07,153.82
+805,Alexandria,Sea Gull 12,Bahary,"French,European,Fine Dining",https://talabat.com/eg/alexandria/sea-gull-12-805,102,108.52-496.24,108.52,496.24,302.38
+806,Alexandria,Samakmak 12,Roushdy,"French,European,Fine Dining",https://talabat.com/eg/alexandria/samakmak-12-806,39,67.41-145.06,67.41,145.06,106.23
+807,Alexandria,Fish Market 12,Miami,"Turkish,Kebab,Middle Eastern",https://talabat.com/eg/alexandria/fish-market-12-807,91,137.44-475.51,137.44,475.51,306.48
+808,Alexandria,Gad 12,Stanley,"American,Burgers,Fast Food",https://talabat.com/eg/alexandria/gad-12-808,79,51.77-141.55,51.77,141.55,96.66
+809,Alexandria,Felfela 12,Gleem,"Vegetarian,Vegan,Healthy",https://talabat.com/eg/alexandria/felfela-12-809,77,139.37-620.08,139.37,620.08,379.73
+810,Alexandria,Tikka Grill 12,Miami,"American,Burgers,Fast Food",https://talabat.com/eg/alexandria/tikka-grill-12-810,100,133.9-365.87,133.9,365.87,249.88
+811,Alexandria,El Shabrawy 12,Camp Caesar,"Turkish,Kebab,Middle Eastern",https://talabat.com/eg/alexandria/el-shabrawy-12-811,61,73.23-170.19,73.23,170.19,121.71
+812,Alexandria,Mori Sushi 12,Stanley,"Lebanese,Middle Eastern,Arabic",https://talabat.com/eg/alexandria/mori-sushi-12-812,110,106.59-210.91,106.59,210.91,158.75
+813,Alexandria,Crimson Bar & Grill 12,Bahary,"Chinese,Asian,Dim Sum",https://talabat.com/eg/alexandria/crimson-bar-&-grill-12-813,40,103.96-197.99,103.96,197.99,150.97
+814,Alexandria,Naguib Mahfouz Cafe 12,Camp Caesar,"Indian,Asian,Vegetarian",https://talabat.com/eg/alexandria/naguib-mahfouz-cafe-12-814,63,73.96-228.38,73.96,228.38,151.17
+815,Alexandria,El Tabbala 12,Anfoushi,"Mexican,Latin,Tacos",https://talabat.com/eg/alexandria/el-tabbala-12-815,119,65.69-306.77,65.69,306.77,186.23
+816,Alexandria,Osmanly 12,Raml Station,"Chinese,Asian,Dim Sum",https://talabat.com/eg/alexandria/osmanly-12-816,32,120.55-471.49,120.55,471.49,296.02
+817,Alexandria,Sabaya 12,Miami,"Mexican,Latin,Tacos",https://talabat.com/eg/alexandria/sabaya-12-817,57,123.7-280.27,123.7,280.27,201.98
+818,Alexandria,Le Deck 12,San Stefano,"French,European,Fine Dining",https://talabat.com/eg/alexandria/le-deck-12-818,53,123.86-452.75,123.86,452.75,288.31
+819,Alexandria,Birdcage 12,Corniche,"Vegetarian,Vegan,Healthy",https://talabat.com/eg/alexandria/birdcage-12-819,30,111.56-358.71,111.56,358.71,235.13
+820,Alexandria,Crimson 12,Miami,"Japanese,Sushi,Asian",https://talabat.com/eg/alexandria/crimson-12-820,36,112.32-405.38,112.32,405.38,258.85
+821,Alexandria,Pier 88 12,Roushdy,"Italian,Pizza,Pasta",https://talabat.com/eg/alexandria/pier-88-12-821,30,46.18-183.63,46.18,183.63,114.91
+822,Alexandria,The Blue Restaurant 12,Bahary,"French,European,Fine Dining",https://talabat.com/eg/alexandria/the-blue-restaurant-12-822,38,51.4-240.43,51.4,240.43,145.91
+823,Alexandria,Nile Maxim 12,Montaza,"Egyptian,Arabic,Middle Eastern",https://talabat.com/eg/alexandria/nile-maxim-12-823,62,124.72-230.53,124.72,230.53,177.62
+824,Alexandria,Abou Tarek 13,Smouha,"Egyptian,Arabic,Middle Eastern",https://talabat.com/eg/alexandria/abou-tarek-13-824,28,30.33-84.32,30.33,84.32,57.32
+825,Alexandria,Koshary Abou Tarek 13,Montaza,"French,European,Fine Dining",https://talabat.com/eg/alexandria/koshary-abou-tarek-13-825,115,119.5-214.58,119.5,214.58,167.04
+826,Alexandria,Sequoia 13,San Stefano,"Lebanese,Middle Eastern,Arabic",https://talabat.com/eg/alexandria/sequoia-13-826,113,55.16-261.34,55.16,261.34,158.25
+827,Alexandria,Zooba 13,Smouha,"Vegetarian,Vegan,Healthy",https://talabat.com/eg/alexandria/zooba-13-827,15,59.99-261.45,59.99,261.45,160.72
+828,Alexandria,Fasahat Somaya 13,Smouha,"Turkish,Kebab,Middle Eastern",https://talabat.com/eg/alexandria/fasahat-somaya-13-828,36,146.0-363.03,146.0,363.03,254.51
+829,Alexandria,El Prince 13,Camp Caesar,"American,Burgers,Fast Food",https://talabat.com/eg/alexandria/el-prince-13-829,65,44.01-71.58,44.01,71.58,57.8
+830,Alexandria,Maison Thomas 13,Corniche,"Lebanese,Middle Eastern,Arabic",https://talabat.com/eg/alexandria/maison-thomas-13-830,65,114.16-254.63,114.16,254.63,184.39
+831,Alexandria,Taboula 13,Mandara,"Thai,Asian,Vegetarian",https://talabat.com/eg/alexandria/taboula-13-831,44,71.28-296.64,71.28,296.64,183.96
+832,Alexandria,Cairo Kitchen 13,Montaza,"American,Burgers,Fast Food",https://talabat.com/eg/alexandria/cairo-kitchen-13-832,64,54.35-255.14,54.35,255.14,154.75
+833,Alexandria,Kazouza 13,Gleem,"Seafood,Mediterranean",https://talabat.com/eg/alexandria/kazouza-13-833,64,144.5-692.42,144.5,692.42,418.46
+834,Alexandria,Andrea El Mariouteya 13,Miami,"Greek,Mediterranean,Seafood",https://talabat.com/eg/alexandria/andrea-el-mariouteya-13-834,45,47.41-197.55,47.41,197.55,122.48
+835,Alexandria,Sea Gull 13,Smouha,"Seafood,Mediterranean",https://talabat.com/eg/alexandria/sea-gull-13-835,79,79.36-308.88,79.36,308.88,194.12
+836,Alexandria,Samakmak 13,Bahary,"Italian,Pizza,Pasta",https://talabat.com/eg/alexandria/samakmak-13-836,56,75.69-250.08,75.69,250.08,162.88
+837,Alexandria,Fish Market 13,Camp Caesar,"American,Burgers,Fast Food",https://talabat.com/eg/alexandria/fish-market-13-837,47,141.38-378.18,141.38,378.18,259.78
+838,Alexandria,Gad 13,Camp Caesar,"Greek,Mediterranean,Seafood",https://talabat.com/eg/alexandria/gad-13-838,58,81.48-395.8,81.48,395.8,238.64
+839,Alexandria,Felfela 13,Smouha,"Korean,Asian,BBQ",https://talabat.com/eg/alexandria/felfela-13-839,43,86.91-400.1,86.91,400.1,243.5
+840,Alexandria,Tikka Grill 13,Gleem,"Japanese,Sushi,Asian",https://talabat.com/eg/alexandria/tikka-grill-13-840,23,91.32-347.85,91.32,347.85,219.59
+841,Alexandria,El Shabrawy 13,Montaza,"Greek,Mediterranean,Seafood",https://talabat.com/eg/alexandria/el-shabrawy-13-841,69,81.31-157.57,81.31,157.57,119.44
+842,Alexandria,Mori Sushi 13,Corniche,"Japanese,Sushi,Asian",https://talabat.com/eg/alexandria/mori-sushi-13-842,51,141.88-363.8,141.88,363.8,252.84
+843,Alexandria,Crimson Bar & Grill 13,Anfoushi,"Mexican,Latin,Tacos",https://talabat.com/eg/alexandria/crimson-bar-&-grill-13-843,55,57.52-172.88,57.52,172.88,115.2
+844,Alexandria,Naguib Mahfouz Cafe 13,Raml Station,"Vegetarian,Vegan,Healthy",https://talabat.com/eg/alexandria/naguib-mahfouz-cafe-13-844,79,135.85-222.91,135.85,222.91,179.38
+845,Alexandria,El Tabbala 13,Smouha,"Indian,Asian,Vegetarian",https://talabat.com/eg/alexandria/el-tabbala-13-845,87,136.88-384.9,136.88,384.9,260.89
+846,Alexandria,Osmanly 13,Anfoushi,"French,European,Fine Dining",https://talabat.com/eg/alexandria/osmanly-13-846,44,38.46-80.82,38.46,80.82,59.64
+847,Alexandria,Sabaya 13,Stanley,"Chinese,Asian,Dim Sum",https://talabat.com/eg/alexandria/sabaya-13-847,79,59.3-257.93,59.3,257.93,158.62
+848,Alexandria,Le Deck 13,Mandara,"French,European,Fine Dining",https://talabat.com/eg/alexandria/le-deck-13-848,105,136.5-467.1,136.5,467.1,301.8
+849,Alexandria,Birdcage 13,Bahary,"Chinese,Asian,Dim Sum",https://talabat.com/eg/alexandria/birdcage-13-849,103,46.08-116.4,46.08,116.4,81.24
+850,Alexandria,Crimson 13,Mandara,"American,Burgers,Fast Food",https://talabat.com/eg/alexandria/crimson-13-850,92,124.16-469.93,124.16,469.93,297.05
+851,Alexandria,Pier 88 13,Anfoushi,"Chinese,Asian,Dim Sum",https://talabat.com/eg/alexandria/pier-88-13-851,81,51.71-160.43,51.71,160.43,106.07
+852,Alexandria,The Blue Restaurant 13,Roushdy,"Indian,Asian,Vegetarian",https://talabat.com/eg/alexandria/the-blue-restaurant-13-852,59,32.01-103.61,32.01,103.61,67.81
+853,Alexandria,Nile Maxim 13,Stanley,"Lebanese,Middle Eastern,Arabic",https://talabat.com/eg/alexandria/nile-maxim-13-853,91,82.47-400.14,82.47,400.14,241.31
+854,Alexandria,Abou Tarek 14,Gleem,"Indian,Asian,Vegetarian",https://talabat.com/eg/alexandria/abou-tarek-14-854,98,113.6-264.57,113.6,264.57,189.08
+855,Alexandria,Koshary Abou Tarek 14,Roushdy,"Seafood,Mediterranean",https://talabat.com/eg/alexandria/koshary-abou-tarek-14-855,57,69.88-201.07,69.88,201.07,135.47
+856,Alexandria,Sequoia 14,Smouha,"Egyptian,Arabic,Middle Eastern",https://talabat.com/eg/alexandria/sequoia-14-856,110,110.03-528.86,110.03,528.86,319.44
+857,Alexandria,Zooba 14,San Stefano,"American,Burgers,Fast Food",https://talabat.com/eg/alexandria/zooba-14-857,92,106.06-425.35,106.06,425.35,265.71
+858,Alexandria,Fasahat Somaya 14,Raml Station,"French,European,Fine Dining",https://talabat.com/eg/alexandria/fasahat-somaya-14-858,94,73.14-149.35,73.14,149.35,111.25
+859,Alexandria,El Prince 14,Roushdy,"Chinese,Asian,Dim Sum",https://talabat.com/eg/alexandria/el-prince-14-859,19,145.16-504.48,145.16,504.48,324.82
+860,Alexandria,Maison Thomas 14,San Stefano,"Chinese,Asian,Dim Sum",https://talabat.com/eg/alexandria/maison-thomas-14-860,68,109.9-447.7,109.9,447.7,278.8
+861,Alexandria,Taboula 14,Montaza,"Lebanese,Middle Eastern,Arabic",https://talabat.com/eg/alexandria/taboula-14-861,96,91.9-457.51,91.9,457.51,274.7
+862,Alexandria,Cairo Kitchen 14,Stanley,"Korean,Asian,BBQ",https://talabat.com/eg/alexandria/cairo-kitchen-14-862,25,147.04-729.17,147.04,729.17,438.1
+863,Alexandria,Kazouza 14,Mandara,"Greek,Mediterranean,Seafood",https://talabat.com/eg/alexandria/kazouza-14-863,47,109.18-262.78,109.18,262.78,185.98
+864,Alexandria,Andrea El Mariouteya 14,Stanley,"Italian,Pizza,Pasta",https://talabat.com/eg/alexandria/andrea-el-mariouteya-14-864,79,143.37-373.9,143.37,373.9,258.63
+865,Alexandria,Sea Gull 14,Roushdy,"Greek,Mediterranean,Seafood",https://talabat.com/eg/alexandria/sea-gull-14-865,50,40.6-198.82,40.6,198.82,119.71
+866,Alexandria,Samakmak 14,Stanley,"Vegetarian,Vegan,Healthy",https://talabat.com/eg/alexandria/samakmak-14-866,52,146.54-686.32,146.54,686.32,416.43
+867,Alexandria,Fish Market 14,Roushdy,"Chinese,Asian,Dim Sum",https://talabat.com/eg/alexandria/fish-market-14-867,70,105.22-343.58,105.22,343.58,224.4
+868,Alexandria,Gad 14,Sidi Gaber,"Lebanese,Middle Eastern,Arabic",https://talabat.com/eg/alexandria/gad-14-868,87,33.73-165.38,33.73,165.38,99.55
+869,Alexandria,Felfela 14,Gleem,"Korean,Asian,BBQ",https://talabat.com/eg/alexandria/felfela-14-869,42,46.97-189.35,46.97,189.35,118.16
+870,Alexandria,Tikka Grill 14,Mandara,"Mexican,Latin,Tacos",https://talabat.com/eg/alexandria/tikka-grill-14-870,83,80.15-138.81,80.15,138.81,109.48
+871,Alexandria,El Shabrawy 14,Anfoushi,"Chinese,Asian,Dim Sum",https://talabat.com/eg/alexandria/el-shabrawy-14-871,55,122.32-574.37,122.32,574.37,348.35
+872,Alexandria,Mori Sushi 14,Raml Station,"French,European,Fine Dining",https://talabat.com/eg/alexandria/mori-sushi-14-872,68,117.31-432.19,117.31,432.19,274.75
+873,Alexandria,Crimson Bar & Grill 14,Stanley,"Indian,Asian,Vegetarian",https://talabat.com/eg/alexandria/crimson-bar-&-grill-14-873,56,113.74-184.18,113.74,184.18,148.96
+874,Alexandria,Naguib Mahfouz Cafe 14,Anfoushi,"Italian,Pizza,Pasta",https://talabat.com/eg/alexandria/naguib-mahfouz-cafe-14-874,114,74.37-143.67,74.37,143.67,109.02
+875,Alexandria,El Tabbala 14,Stanley,"Turkish,Kebab,Middle Eastern",https://talabat.com/eg/alexandria/el-tabbala-14-875,89,101.04-454.37,101.04,454.37,277.7
+876,Alexandria,Osmanly 14,Raml Station,"Chinese,Asian,Dim Sum",https://talabat.com/eg/alexandria/osmanly-14-876,24,87.74-373.89,87.74,373.89,230.81
+877,Alexandria,Sabaya 14,San Stefano,"Turkish,Kebab,Middle Eastern",https://talabat.com/eg/alexandria/sabaya-14-877,115,38.45-179.02,38.45,179.02,108.74
+878,Alexandria,Le Deck 14,Camp Caesar,"Indian,Asian,Vegetarian",https://talabat.com/eg/alexandria/le-deck-14-878,85,35.17-72.03,35.17,72.03,53.6
+879,Alexandria,Birdcage 14,Montaza,"Thai,Asian,Vegetarian",https://talabat.com/eg/alexandria/birdcage-14-879,102,121.63-484.88,121.63,484.88,303.25
+880,Alexandria,Crimson 14,Anfoushi,"Egyptian,Arabic,Middle Eastern",https://talabat.com/eg/alexandria/crimson-14-880,84,87.78-225.26,87.78,225.26,156.52
+881,Alexandria,Pier 88 14,Camp Caesar,"Greek,Mediterranean,Seafood",https://talabat.com/eg/alexandria/pier-88-14-881,78,143.26-385.89,143.26,385.89,264.57
+882,Alexandria,The Blue Restaurant 14,Stanley,"French,European,Fine Dining",https://talabat.com/eg/alexandria/the-blue-restaurant-14-882,35,56.73-253.12,56.73,253.12,154.93
+883,Alexandria,Nile Maxim 14,Corniche,"Mexican,Latin,Tacos",https://talabat.com/eg/alexandria/nile-maxim-14-883,20,100.63-241.75,100.63,241.75,171.19
+884,Alexandria,Abou Tarek 15,San Stefano,"Indian,Asian,Vegetarian",https://talabat.com/eg/alexandria/abou-tarek-15-884,72,147.83-634.19,147.83,634.19,391.01
+885,Alexandria,Koshary Abou Tarek 15,Miami,"Seafood,Mediterranean",https://talabat.com/eg/alexandria/koshary-abou-tarek-15-885,29,52.93-173.56,52.93,173.56,113.25
+886,Alexandria,Sequoia 15,Roushdy,"Indian,Asian,Vegetarian",https://talabat.com/eg/alexandria/sequoia-15-886,100,87.67-327.52,87.67,327.52,207.59
+887,Alexandria,Zooba 15,Mandara,"American,Burgers,Fast Food",https://talabat.com/eg/alexandria/zooba-15-887,89,148.35-741.7,148.35,741.7,445.03
+888,Alexandria,Fasahat Somaya 15,Gleem,"Greek,Mediterranean,Seafood",https://talabat.com/eg/alexandria/fasahat-somaya-15-888,56,47.41-213.52,47.41,213.52,130.47
+889,Alexandria,El Prince 15,Roushdy,"Chinese,Asian,Dim Sum",https://talabat.com/eg/alexandria/el-prince-15-889,103,32.81-110.99,32.81,110.99,71.9
+890,Alexandria,Maison Thomas 15,Gleem,"Vegetarian,Vegan,Healthy",https://talabat.com/eg/alexandria/maison-thomas-15-890,53,85.97-302.2,85.97,302.2,194.08
+891,Alexandria,Taboula 15,Camp Caesar,"Greek,Mediterranean,Seafood",https://talabat.com/eg/alexandria/taboula-15-891,58,82.08-403.04,82.08,403.04,242.56
+892,Alexandria,Cairo Kitchen 15,Roushdy,"Mexican,Latin,Tacos",https://talabat.com/eg/alexandria/cairo-kitchen-15-892,118,40.17-197.38,40.17,197.38,118.78
+893,Alexandria,Kazouza 15,Smouha,"Seafood,Mediterranean",https://talabat.com/eg/alexandria/kazouza-15-893,78,114.52-333.77,114.52,333.77,224.14
+894,Alexandria,Andrea El Mariouteya 15,Stanley,"Mexican,Latin,Tacos",https://talabat.com/eg/alexandria/andrea-el-mariouteya-15-894,54,115.23-425.89,115.23,425.89,270.56
+895,Alexandria,Sea Gull 15,Camp Caesar,"Turkish,Kebab,Middle Eastern",https://talabat.com/eg/alexandria/sea-gull-15-895,54,46.75-178.7,46.75,178.7,112.72
+896,Alexandria,Samakmak 15,Mandara,"French,European,Fine Dining",https://talabat.com/eg/alexandria/samakmak-15-896,22,41.65-204.63,41.65,204.63,123.14
+897,Alexandria,Fish Market 15,Miami,"Mexican,Latin,Tacos",https://talabat.com/eg/alexandria/fish-market-15-897,84,139.57-595.89,139.57,595.89,367.73
+898,Alexandria,Gad 15,Camp Caesar,"Thai,Asian,Vegetarian",https://talabat.com/eg/alexandria/gad-15-898,87,61.09-270.52,61.09,270.52,165.81
+899,Alexandria,Felfela 15,Camp Caesar,"Mexican,Latin,Tacos",https://talabat.com/eg/alexandria/felfela-15-899,31,134.4-420.77,134.4,420.77,277.58
+900,Alexandria,Tikka Grill 15,Bahary,"Indian,Asian,Vegetarian",https://talabat.com/eg/alexandria/tikka-grill-15-900,64,53.34-117.36,53.34,117.36,85.35
+901,Alexandria,El Shabrawy 15,Corniche,"Greek,Mediterranean,Seafood",https://talabat.com/eg/alexandria/el-shabrawy-15-901,113,123.01-509.85,123.01,509.85,316.43
+902,Alexandria,Mori Sushi 15,Sidi Gaber,"Greek,Mediterranean,Seafood",https://talabat.com/eg/alexandria/mori-sushi-15-902,74,118.68-347.51,118.68,347.51,233.09
+903,Alexandria,Crimson Bar & Grill 15,Raml Station,"Indian,Asian,Vegetarian",https://talabat.com/eg/alexandria/crimson-bar-&-grill-15-903,86,84.94-313.62,84.94,313.62,199.28
+904,Alexandria,Naguib Mahfouz Cafe 15,Bahary,"Greek,Mediterranean,Seafood",https://talabat.com/eg/alexandria/naguib-mahfouz-cafe-15-904,83,109.64-364.63,109.64,364.63,237.13
+905,Alexandria,El Tabbala 15,Corniche,"Turkish,Kebab,Middle Eastern",https://talabat.com/eg/alexandria/el-tabbala-15-905,19,139.52-216.89,139.52,216.89,178.2
+906,Alexandria,Osmanly 15,Mandara,"Seafood,Mediterranean",https://talabat.com/eg/alexandria/osmanly-15-906,51,149.87-529.87,149.87,529.87,339.87
+907,Alexandria,Sabaya 15,Smouha,"Indian,Asian,Vegetarian",https://talabat.com/eg/alexandria/sabaya-15-907,98,126.28-313.96,126.28,313.96,220.12
+908,Alexandria,Le Deck 15,Gleem,"Chinese,Asian,Dim Sum",https://talabat.com/eg/alexandria/le-deck-15-908,45,115.9-299.44,115.9,299.44,207.67
+909,Alexandria,Birdcage 15,Sidi Gaber,"Korean,Asian,BBQ",https://talabat.com/eg/alexandria/birdcage-15-909,42,131.58-353.29,131.58,353.29,242.44
+910,Alexandria,Crimson 15,Corniche,"French,European,Fine Dining",https://talabat.com/eg/alexandria/crimson-15-910,98,51.03-145.66,51.03,145.66,98.34
+911,Alexandria,Pier 88 15,Gleem,"Vegetarian,Vegan,Healthy",https://talabat.com/eg/alexandria/pier-88-15-911,113,82.84-312.07,82.84,312.07,197.45
+912,Alexandria,The Blue Restaurant 15,Roushdy,"Seafood,Mediterranean",https://talabat.com/eg/alexandria/the-blue-restaurant-15-912,107,131.22-381.51,131.22,381.51,256.37
+913,Alexandria,Nile Maxim 15,Camp Caesar,"Seafood,Mediterranean",https://talabat.com/eg/alexandria/nile-maxim-15-913,25,32.46-137.68,32.46,137.68,85.07
+914,Alexandria,Abou Tarek 16,Montaza,"Greek,Mediterranean,Seafood",https://talabat.com/eg/alexandria/abou-tarek-16-914,93,49.0-106.21,49.0,106.21,77.6
+915,Alexandria,Koshary Abou Tarek 16,Sidi Gaber,"Korean,Asian,BBQ",https://talabat.com/eg/alexandria/koshary-abou-tarek-16-915,23,115.9-194.52,115.9,194.52,155.21
+916,Alexandria,Sequoia 16,Miami,"Thai,Asian,Vegetarian",https://talabat.com/eg/alexandria/sequoia-16-916,85,141.42-551.82,141.42,551.82,346.62
+917,Alexandria,Zooba 16,Anfoushi,"Indian,Asian,Vegetarian",https://talabat.com/eg/alexandria/zooba-16-917,63,127.36-490.19,127.36,490.19,308.77
+918,Alexandria,Fasahat Somaya 16,Camp Caesar,"Italian,Pizza,Pasta",https://talabat.com/eg/alexandria/fasahat-somaya-16-918,95,149.62-242.05,149.62,242.05,195.84
+919,Alexandria,El Prince 16,Anfoushi,"Turkish,Kebab,Middle Eastern",https://talabat.com/eg/alexandria/el-prince-16-919,69,55.98-158.92,55.98,158.92,107.45
+920,Alexandria,Maison Thomas 16,Roushdy,"American,Burgers,Fast Food",https://talabat.com/eg/alexandria/maison-thomas-16-920,80,84.88-191.39,84.88,191.39,138.13
+921,Alexandria,Taboula 16,Montaza,"Italian,Pizza,Pasta",https://talabat.com/eg/alexandria/taboula-16-921,32,123.07-266.57,123.07,266.57,194.82
+922,Alexandria,Cairo Kitchen 16,San Stefano,"Italian,Pizza,Pasta",https://talabat.com/eg/alexandria/cairo-kitchen-16-922,78,50.5-250.57,50.5,250.57,150.53
+923,Alexandria,Kazouza 16,Smouha,"Korean,Asian,BBQ",https://talabat.com/eg/alexandria/kazouza-16-923,16,114.45-336.78,114.45,336.78,225.61
+924,Alexandria,Andrea El Mariouteya 16,Smouha,"Korean,Asian,BBQ",https://talabat.com/eg/alexandria/andrea-el-mariouteya-16-924,55,115.01-381.35,115.01,381.35,248.18
+925,Alexandria,Sea Gull 16,Sidi Gaber,"American,Burgers,Fast Food",https://talabat.com/eg/alexandria/sea-gull-16-925,112,138.88-517.84,138.88,517.84,328.36
+926,Alexandria,Samakmak 16,Sidi Gaber,"Greek,Mediterranean,Seafood",https://talabat.com/eg/alexandria/samakmak-16-926,59,66.12-315.24,66.12,315.24,190.68
+927,Alexandria,Fish Market 16,Camp Caesar,"Vegetarian,Vegan,Healthy",https://talabat.com/eg/alexandria/fish-market-16-927,35,86.78-300.77,86.78,300.77,193.77
+928,Alexandria,Gad 16,Sidi Gaber,"Greek,Mediterranean,Seafood",https://talabat.com/eg/alexandria/gad-16-928,85,49.46-98.26,49.46,98.26,73.86
+929,Alexandria,Felfela 16,Roushdy,"Thai,Asian,Vegetarian",https://talabat.com/eg/alexandria/felfela-16-929,90,40.42-63.69,40.42,63.69,52.05
+930,Alexandria,Tikka Grill 16,Stanley,"Thai,Asian,Vegetarian",https://talabat.com/eg/alexandria/tikka-grill-16-930,116,79.14-247.77,79.14,247.77,163.46
+931,Alexandria,El Shabrawy 16,Miami,"Japanese,Sushi,Asian",https://talabat.com/eg/alexandria/el-shabrawy-16-931,65,113.95-458.79,113.95,458.79,286.37
+932,Alexandria,Mori Sushi 16,Corniche,"Greek,Mediterranean,Seafood",https://talabat.com/eg/alexandria/mori-sushi-16-932,46,41.71-139.16,41.71,139.16,90.44
+933,Alexandria,Crimson Bar & Grill 16,Bahary,"Lebanese,Middle Eastern,Arabic",https://talabat.com/eg/alexandria/crimson-bar-&-grill-16-933,82,142.01-388.01,142.01,388.01,265.01
+934,Alexandria,Naguib Mahfouz Cafe 16,Miami,"Thai,Asian,Vegetarian",https://talabat.com/eg/alexandria/naguib-mahfouz-cafe-16-934,17,145.2-449.79,145.2,449.79,297.5
+935,Alexandria,El Tabbala 16,Raml Station,"Italian,Pizza,Pasta",https://talabat.com/eg/alexandria/el-tabbala-16-935,118,60.35-261.7,60.35,261.7,161.03
+936,Alexandria,Osmanly 16,Miami,"Indian,Asian,Vegetarian",https://talabat.com/eg/alexandria/osmanly-16-936,22,144.46-444.63,144.46,444.63,294.55
+937,Alexandria,Sabaya 16,Raml Station,"Korean,Asian,BBQ",https://talabat.com/eg/alexandria/sabaya-16-937,115,109.11-282.87,109.11,282.87,195.99
+938,Alexandria,Le Deck 16,Camp Caesar,"Japanese,Sushi,Asian",https://talabat.com/eg/alexandria/le-deck-16-938,101,121.98-559.81,121.98,559.81,340.89
+939,Alexandria,Birdcage 16,Montaza,"Italian,Pizza,Pasta",https://talabat.com/eg/alexandria/birdcage-16-939,32,112.77-173.39,112.77,173.39,143.08
+940,Alexandria,Crimson 16,Smouha,"Korean,Asian,BBQ",https://talabat.com/eg/alexandria/crimson-16-940,117,128.76-552.92,128.76,552.92,340.84
+941,Alexandria,Pier 88 16,Camp Caesar,"American,Burgers,Fast Food",https://talabat.com/eg/alexandria/pier-88-16-941,55,72.28-234.64,72.28,234.64,153.46
+942,Alexandria,The Blue Restaurant 16,Bahary,"Chinese,Asian,Dim Sum",https://talabat.com/eg/alexandria/the-blue-restaurant-16-942,89,56.96-178.0,56.96,178.0,117.48
+943,Alexandria,Nile Maxim 16,Smouha,"Turkish,Kebab,Middle Eastern",https://talabat.com/eg/alexandria/nile-maxim-16-943,76,70.56-248.13,70.56,248.13,159.34
+944,Alexandria,Abou Tarek 17,Camp Caesar,"American,Burgers,Fast Food",https://talabat.com/eg/alexandria/abou-tarek-17-944,119,59.71-108.87,59.71,108.87,84.29
+945,Alexandria,Koshary Abou Tarek 17,Miami,"Japanese,Sushi,Asian",https://talabat.com/eg/alexandria/koshary-abou-tarek-17-945,48,120.18-513.14,120.18,513.14,316.66
+946,Alexandria,Sequoia 17,Raml Station,"Greek,Mediterranean,Seafood",https://talabat.com/eg/alexandria/sequoia-17-946,106,74.73-355.86,74.73,355.86,215.3
+947,Alexandria,Zooba 17,Sidi Gaber,"Turkish,Kebab,Middle Eastern",https://talabat.com/eg/alexandria/zooba-17-947,83,90.59-180.92,90.59,180.92,135.75
+948,Alexandria,Fasahat Somaya 17,Corniche,"Mexican,Latin,Tacos",https://talabat.com/eg/alexandria/fasahat-somaya-17-948,33,146.74-496.16,146.74,496.16,321.45
+949,Alexandria,El Prince 17,Montaza,"Thai,Asian,Vegetarian",https://talabat.com/eg/alexandria/el-prince-17-949,22,106.05-378.23,106.05,378.23,242.14
+950,Alexandria,Maison Thomas 17,Anfoushi,"Indian,Asian,Vegetarian",https://talabat.com/eg/alexandria/maison-thomas-17-950,111,87.31-407.96,87.31,407.96,247.63
+951,Alexandria,Taboula 17,Corniche,"Turkish,Kebab,Middle Eastern",https://talabat.com/eg/alexandria/taboula-17-951,89,55.0-135.67,55.0,135.67,95.33
+952,Alexandria,Cairo Kitchen 17,San Stefano,"Turkish,Kebab,Middle Eastern",https://talabat.com/eg/alexandria/cairo-kitchen-17-952,92,131.49-333.3,131.49,333.3,232.4
+953,Alexandria,Kazouza 17,Mandara,"Lebanese,Middle Eastern,Arabic",https://talabat.com/eg/alexandria/kazouza-17-953,119,73.32-336.5,73.32,336.5,204.91
+954,Alexandria,Andrea El Mariouteya 17,Stanley,"Vegetarian,Vegan,Healthy",https://talabat.com/eg/alexandria/andrea-el-mariouteya-17-954,108,144.81-374.52,144.81,374.52,259.66
+955,Alexandria,Sea Gull 17,Miami,"Thai,Asian,Vegetarian",https://talabat.com/eg/alexandria/sea-gull-17-955,27,126.82-312.58,126.82,312.58,219.7
+956,Alexandria,Samakmak 17,Sidi Gaber,"French,European,Fine Dining",https://talabat.com/eg/alexandria/samakmak-17-956,71,115.77-287.39,115.77,287.39,201.58
+957,Alexandria,Fish Market 17,Montaza,"Indian,Asian,Vegetarian",https://talabat.com/eg/alexandria/fish-market-17-957,28,45.46-187.97,45.46,187.97,116.72
+958,Alexandria,Gad 17,Bahary,"Thai,Asian,Vegetarian",https://talabat.com/eg/alexandria/gad-17-958,25,42.64-187.13,42.64,187.13,114.88
+959,Alexandria,Felfela 17,Raml Station,"Turkish,Kebab,Middle Eastern",https://talabat.com/eg/alexandria/felfela-17-959,19,128.33-440.61,128.33,440.61,284.47
+960,Alexandria,Tikka Grill 17,Mandara,"Chinese,Asian,Dim Sum",https://talabat.com/eg/alexandria/tikka-grill-17-960,80,126.55-502.71,126.55,502.71,314.63
+961,Alexandria,El Shabrawy 17,Camp Caesar,"Turkish,Kebab,Middle Eastern",https://talabat.com/eg/alexandria/el-shabrawy-17-961,60,50.05-208.13,50.05,208.13,129.09
+962,Alexandria,Mori Sushi 17,Raml Station,"American,Burgers,Fast Food",https://talabat.com/eg/alexandria/mori-sushi-17-962,18,71.22-348.74,71.22,348.74,209.98
+963,Alexandria,Crimson Bar & Grill 17,Smouha,"Indian,Asian,Vegetarian",https://talabat.com/eg/alexandria/crimson-bar-&-grill-17-963,43,93.7-458.29,93.7,458.29,276.0
+964,Alexandria,Naguib Mahfouz Cafe 17,Miami,"Vegetarian,Vegan,Healthy",https://talabat.com/eg/alexandria/naguib-mahfouz-cafe-17-964,85,138.68-404.26,138.68,404.26,271.47
+965,Alexandria,El Tabbala 17,Smouha,"Greek,Mediterranean,Seafood",https://talabat.com/eg/alexandria/el-tabbala-17-965,30,59.79-280.06,59.79,280.06,169.93
+966,Alexandria,Osmanly 17,Stanley,"Indian,Asian,Vegetarian",https://talabat.com/eg/alexandria/osmanly-17-966,109,112.33-177.27,112.33,177.27,144.8
+967,Alexandria,Sabaya 17,Camp Caesar,"French,European,Fine Dining",https://talabat.com/eg/alexandria/sabaya-17-967,65,105.9-363.52,105.9,363.52,234.71
+968,Alexandria,Le Deck 17,Anfoushi,"Korean,Asian,BBQ",https://talabat.com/eg/alexandria/le-deck-17-968,67,138.28-540.48,138.28,540.48,339.38
+969,Alexandria,Birdcage 17,Roushdy,"Korean,Asian,BBQ",https://talabat.com/eg/alexandria/birdcage-17-969,62,130.61-450.77,130.61,450.77,290.69
+970,Alexandria,Crimson 17,Smouha,"Turkish,Kebab,Middle Eastern",https://talabat.com/eg/alexandria/crimson-17-970,58,59.73-246.01,59.73,246.01,152.87
+971,Alexandria,Pier 88 17,Anfoushi,"Lebanese,Middle Eastern,Arabic",https://talabat.com/eg/alexandria/pier-88-17-971,101,47.88-195.28,47.88,195.28,121.58
+972,Alexandria,The Blue Restaurant 17,Mandara,"Mexican,Latin,Tacos",https://talabat.com/eg/alexandria/the-blue-restaurant-17-972,104,54.82-268.62,54.82,268.62,161.72
+973,Alexandria,Nile Maxim 17,San Stefano,"Lebanese,Middle Eastern,Arabic",https://talabat.com/eg/alexandria/nile-maxim-17-973,112,71.28-179.33,71.28,179.33,125.31
+974,Alexandria,Abou Tarek 18,Smouha,"Turkish,Kebab,Middle Eastern",https://talabat.com/eg/alexandria/abou-tarek-18-974,55,110.42-551.46,110.42,551.46,330.94
+975,Alexandria,Koshary Abou Tarek 18,Miami,"Turkish,Kebab,Middle Eastern",https://talabat.com/eg/alexandria/koshary-abou-tarek-18-975,56,65.33-218.89,65.33,218.89,142.11
+976,Alexandria,Sequoia 18,Anfoushi,"Japanese,Sushi,Asian",https://talabat.com/eg/alexandria/sequoia-18-976,57,133.51-332.78,133.51,332.78,233.14
+977,Alexandria,Zooba 18,San Stefano,"Japanese,Sushi,Asian",https://talabat.com/eg/alexandria/zooba-18-977,100,55.37-227.47,55.37,227.47,141.42
+978,Alexandria,Fasahat Somaya 18,Raml Station,"Korean,Asian,BBQ",https://talabat.com/eg/alexandria/fasahat-somaya-18-978,114,134.33-252.98,134.33,252.98,193.66
+979,Alexandria,El Prince 18,Roushdy,"French,European,Fine Dining",https://talabat.com/eg/alexandria/el-prince-18-979,66,97.84-335.75,97.84,335.75,216.8
+980,Alexandria,Maison Thomas 18,Raml Station,"Mexican,Latin,Tacos",https://talabat.com/eg/alexandria/maison-thomas-18-980,45,98.93-152.92,98.93,152.92,125.92
+981,Alexandria,Taboula 18,Gleem,"American,Burgers,Fast Food",https://talabat.com/eg/alexandria/taboula-18-981,97,119.22-196.8,119.22,196.8,158.01
+982,Alexandria,Cairo Kitchen 18,Stanley,"Indian,Asian,Vegetarian",https://talabat.com/eg/alexandria/cairo-kitchen-18-982,81,92.77-435.67,92.77,435.67,264.22
+983,Alexandria,Kazouza 18,Mandara,"Japanese,Sushi,Asian",https://talabat.com/eg/alexandria/kazouza-18-983,91,66.83-201.25,66.83,201.25,134.04
+984,Alexandria,Andrea El Mariouteya 18,Raml Station,"Chinese,Asian,Dim Sum",https://talabat.com/eg/alexandria/andrea-el-mariouteya-18-984,43,117.67-215.35,117.67,215.35,166.51
+985,Alexandria,Sea Gull 18,Bahary,"Seafood,Mediterranean",https://talabat.com/eg/alexandria/sea-gull-18-985,43,144.17-500.02,144.17,500.02,322.09
+986,Alexandria,Samakmak 18,Anfoushi,"Italian,Pizza,Pasta",https://talabat.com/eg/alexandria/samakmak-18-986,110,45.43-117.56,45.43,117.56,81.5
+987,Alexandria,Fish Market 18,Camp Caesar,"Thai,Asian,Vegetarian",https://talabat.com/eg/alexandria/fish-market-18-987,79,126.34-525.31,126.34,525.31,325.82
+988,Alexandria,Gad 18,Stanley,"French,European,Fine Dining",https://talabat.com/eg/alexandria/gad-18-988,55,46.76-104.6,46.76,104.6,75.68
+989,Alexandria,Felfela 18,Gleem,"Mexican,Latin,Tacos",https://talabat.com/eg/alexandria/felfela-18-989,101,56.75-169.45,56.75,169.45,113.1
+990,Alexandria,Tikka Grill 18,Sidi Gaber,"Indian,Asian,Vegetarian",https://talabat.com/eg/alexandria/tikka-grill-18-990,72,49.22-207.95,49.22,207.95,128.58
+991,Alexandria,El Shabrawy 18,Bahary,"Vegetarian,Vegan,Healthy",https://talabat.com/eg/alexandria/el-shabrawy-18-991,60,133.41-253.72,133.41,253.72,193.56
+992,Alexandria,Mori Sushi 18,Smouha,"Korean,Asian,BBQ",https://talabat.com/eg/alexandria/mori-sushi-18-992,89,88.0-242.65,88.0,242.65,165.32
+993,Alexandria,Crimson Bar & Grill 18,Corniche,"Japanese,Sushi,Asian",https://talabat.com/eg/alexandria/crimson-bar-&-grill-18-993,117,115.51-341.48,115.51,341.48,228.5
+994,Alexandria,Naguib Mahfouz Cafe 18,Mandara,"Greek,Mediterranean,Seafood",https://talabat.com/eg/alexandria/naguib-mahfouz-cafe-18-994,30,50.01-175.9,50.01,175.9,112.95
+995,Alexandria,El Tabbala 18,Raml Station,"Indian,Asian,Vegetarian",https://talabat.com/eg/alexandria/el-tabbala-18-995,79,89.56-228.52,89.56,228.52,159.04
+996,Alexandria,Osmanly 18,Camp Caesar,"Italian,Pizza,Pasta",https://talabat.com/eg/alexandria/osmanly-18-996,43,90.86-210.28,90.86,210.28,150.57
+997,Alexandria,Sabaya 18,Bahary,"Korean,Asian,BBQ",https://talabat.com/eg/alexandria/sabaya-18-997,80,117.45-219.0,117.45,219.0,168.22
+998,Alexandria,Le Deck 18,Smouha,"Egyptian,Arabic,Middle Eastern",https://talabat.com/eg/alexandria/le-deck-18-998,67,73.39-166.66,73.39,166.66,120.03
+999,Alexandria,Birdcage 18,Bahary,"Japanese,Sushi,Asian",https://talabat.com/eg/alexandria/birdcage-18-999,103,119.6-480.89,119.6,480.89,300.25
+1000,Alexandria,Crimson 18,San Stefano,"Chinese,Asian,Dim Sum",https://talabat.com/eg/alexandria/crimson-18-1000,16,89.71-401.5,89.71,401.5,245.6
+1001,Alexandria,Pier 88 18,Smouha,"Turkish,Kebab,Middle Eastern",https://talabat.com/eg/alexandria/pier-88-18-1001,87,32.19-89.58,32.19,89.58,60.88
+1002,Alexandria,The Blue Restaurant 18,Anfoushi,"Greek,Mediterranean,Seafood",https://talabat.com/eg/alexandria/the-blue-restaurant-18-1002,64,71.35-293.87,71.35,293.87,182.61
+1003,Alexandria,Nile Maxim 18,Sidi Gaber,"Lebanese,Middle Eastern,Arabic",https://talabat.com/eg/alexandria/nile-maxim-18-1003,110,73.18-203.9,73.18,203.9,138.54
+1004,Alexandria,Abou Tarek 19,Corniche,"Indian,Asian,Vegetarian",https://talabat.com/eg/alexandria/abou-tarek-19-1004,42,60.8-95.67,60.8,95.67,78.23
+1005,Alexandria,Koshary Abou Tarek 19,Smouha,"Egyptian,Arabic,Middle Eastern",https://talabat.com/eg/alexandria/koshary-abou-tarek-19-1005,94,149.28-296.5,149.28,296.5,222.89
+1006,Alexandria,Sequoia 19,Stanley,"French,European,Fine Dining",https://talabat.com/eg/alexandria/sequoia-19-1006,36,142.41-521.65,142.41,521.65,332.03
+1007,Alexandria,Zooba 19,Camp Caesar,"Indian,Asian,Vegetarian",https://talabat.com/eg/alexandria/zooba-19-1007,87,144.43-588.55,144.43,588.55,366.49
+1008,Alexandria,Fasahat Somaya 19,Gleem,"Italian,Pizza,Pasta",https://talabat.com/eg/alexandria/fasahat-somaya-19-1008,113,117.1-565.78,117.1,565.78,341.44
+1009,Alexandria,El Prince 19,Stanley,"Mexican,Latin,Tacos",https://talabat.com/eg/alexandria/el-prince-19-1009,50,81.37-375.5,81.37,375.5,228.44
+1010,Alexandria,Maison Thomas 19,San Stefano,"Turkish,Kebab,Middle Eastern",https://talabat.com/eg/alexandria/maison-thomas-19-1010,115,138.59-359.55,138.59,359.55,249.07
+1011,Alexandria,Taboula 19,Bahary,"Lebanese,Middle Eastern,Arabic",https://talabat.com/eg/alexandria/taboula-19-1011,75,113.58-215.14,113.58,215.14,164.36
+1012,Alexandria,Cairo Kitchen 19,Mandara,"Lebanese,Middle Eastern,Arabic",https://talabat.com/eg/alexandria/cairo-kitchen-19-1012,111,136.17-533.81,136.17,533.81,334.99
+1013,Alexandria,Kazouza 19,Corniche,"Japanese,Sushi,Asian",https://talabat.com/eg/alexandria/kazouza-19-1013,52,121.43-263.77,121.43,263.77,192.6
+1014,Alexandria,Andrea El Mariouteya 19,Smouha,"Japanese,Sushi,Asian",https://talabat.com/eg/alexandria/andrea-el-mariouteya-19-1014,55,102.04-325.29,102.04,325.29,213.67
+1015,Alexandria,Sea Gull 19,Camp Caesar,"American,Burgers,Fast Food",https://talabat.com/eg/alexandria/sea-gull-19-1015,101,44.79-202.47,44.79,202.47,123.63
+1016,Alexandria,Samakmak 19,Stanley,"Indian,Asian,Vegetarian",https://talabat.com/eg/alexandria/samakmak-19-1016,68,53.82-101.51,53.82,101.51,77.67
+1017,Alexandria,Fish Market 19,Gleem,"Thai,Asian,Vegetarian",https://talabat.com/eg/alexandria/fish-market-19-1017,74,95.6-213.0,95.6,213.0,154.3
+1018,Alexandria,Gad 19,Sidi Gaber,"French,European,Fine Dining",https://talabat.com/eg/alexandria/gad-19-1018,95,125.98-362.91,125.98,362.91,244.45
+1019,Alexandria,Felfela 19,Mandara,"Greek,Mediterranean,Seafood",https://talabat.com/eg/alexandria/felfela-19-1019,99,140.25-264.67,140.25,264.67,202.46
+1020,Alexandria,Tikka Grill 19,Stanley,"Indian,Asian,Vegetarian",https://talabat.com/eg/alexandria/tikka-grill-19-1020,16,90.56-321.29,90.56,321.29,205.93
+1021,Alexandria,El Shabrawy 19,Stanley,"Vegetarian,Vegan,Healthy",https://talabat.com/eg/alexandria/el-shabrawy-19-1021,42,56.9-202.45,56.9,202.45,129.67
+1022,Alexandria,Mori Sushi 19,Camp Caesar,"American,Burgers,Fast Food",https://talabat.com/eg/alexandria/mori-sushi-19-1022,77,139.19-621.14,139.19,621.14,380.16
+1023,Alexandria,Crimson Bar & Grill 19,Gleem,"Japanese,Sushi,Asian",https://talabat.com/eg/alexandria/crimson-bar-&-grill-19-1023,118,95.26-368.0,95.26,368.0,231.63
+1024,Alexandria,Naguib Mahfouz Cafe 19,Miami,"Egyptian,Arabic,Middle Eastern",https://talabat.com/eg/alexandria/naguib-mahfouz-cafe-19-1024,74,129.74-544.3,129.74,544.3,337.02
+1025,Alexandria,El Tabbala 19,Montaza,"Vegetarian,Vegan,Healthy",https://talabat.com/eg/alexandria/el-tabbala-19-1025,75,58.89-273.93,58.89,273.93,166.41
+1026,Alexandria,Osmanly 19,Corniche,"Mexican,Latin,Tacos",https://talabat.com/eg/alexandria/osmanly-19-1026,110,66.04-317.79,66.04,317.79,191.92
+1027,Alexandria,Sabaya 19,Sidi Gaber,"Lebanese,Middle Eastern,Arabic",https://talabat.com/eg/alexandria/sabaya-19-1027,41,41.21-110.76,41.21,110.76,75.98
+1028,Alexandria,Le Deck 19,San Stefano,"Egyptian,Arabic,Middle Eastern",https://talabat.com/eg/alexandria/le-deck-19-1028,21,66.02-262.8,66.02,262.8,164.41
+1029,Alexandria,Birdcage 19,Raml Station,"French,European,Fine Dining",https://talabat.com/eg/alexandria/birdcage-19-1029,96,36.42-179.54,36.42,179.54,107.98
+1030,Alexandria,Crimson 19,San Stefano,"Chinese,Asian,Dim Sum",https://talabat.com/eg/alexandria/crimson-19-1030,50,118.58-501.18,118.58,501.18,309.88
+1031,Alexandria,Pier 88 19,Camp Caesar,"Lebanese,Middle Eastern,Arabic",https://talabat.com/eg/alexandria/pier-88-19-1031,30,141.6-522.47,141.6,522.47,332.04
+1032,Alexandria,The Blue Restaurant 19,Montaza,"American,Burgers,Fast Food",https://talabat.com/eg/alexandria/the-blue-restaurant-19-1032,80,132.26-408.61,132.26,408.61,270.44
+1033,Alexandria,Nile Maxim 19,Anfoushi,"Japanese,Sushi,Asian",https://talabat.com/eg/alexandria/nile-maxim-19-1033,32,107.82-382.0,107.82,382.0,244.91
+1034,Alexandria,Abou Tarek 20,Sidi Gaber,"Greek,Mediterranean,Seafood",https://talabat.com/eg/alexandria/abou-tarek-20-1034,26,103.74-191.2,103.74,191.2,147.47
+1035,Alexandria,Koshary Abou Tarek 20,Stanley,"French,European,Fine Dining",https://talabat.com/eg/alexandria/koshary-abou-tarek-20-1035,64,108.63-503.41,108.63,503.41,306.02
+1036,Alexandria,Sequoia 20,Camp Caesar,"Korean,Asian,BBQ",https://talabat.com/eg/alexandria/sequoia-20-1036,55,80.53-271.38,80.53,271.38,175.95
+1037,Alexandria,Zooba 20,Mandara,"Chinese,Asian,Dim Sum",https://talabat.com/eg/alexandria/zooba-20-1037,89,117.31-206.92,117.31,206.92,162.12
+1038,Alexandria,Fasahat Somaya 20,Smouha,"Turkish,Kebab,Middle Eastern",https://talabat.com/eg/alexandria/fasahat-somaya-20-1038,104,140.93-579.08,140.93,579.08,360.0
+1039,Alexandria,El Prince 20,Miami,"Greek,Mediterranean,Seafood",https://talabat.com/eg/alexandria/el-prince-20-1039,37,92.84-421.95,92.84,421.95,257.39
+1040,Alexandria,Maison Thomas 20,Mandara,"American,Burgers,Fast Food",https://talabat.com/eg/alexandria/maison-thomas-20-1040,51,133.38-570.27,133.38,570.27,351.82
+1041,Alexandria,Taboula 20,Sidi Gaber,"Greek,Mediterranean,Seafood",https://talabat.com/eg/alexandria/taboula-20-1041,101,137.59-645.69,137.59,645.69,391.64
+1042,Alexandria,Cairo Kitchen 20,Sidi Gaber,"Korean,Asian,BBQ",https://talabat.com/eg/alexandria/cairo-kitchen-20-1042,117,41.46-90.34,41.46,90.34,65.9
+1043,Alexandria,Kazouza 20,Miami,"Turkish,Kebab,Middle Eastern",https://talabat.com/eg/alexandria/kazouza-20-1043,66,65.66-125.37,65.66,125.37,95.52
+1044,Alexandria,Andrea El Mariouteya 20,Miami,"American,Burgers,Fast Food",https://talabat.com/eg/alexandria/andrea-el-mariouteya-20-1044,49,30.82-113.96,30.82,113.96,72.39
+1045,Alexandria,Sea Gull 20,Camp Caesar,"Turkish,Kebab,Middle Eastern",https://talabat.com/eg/alexandria/sea-gull-20-1045,49,80.97-286.93,80.97,286.93,183.95
+1046,Alexandria,Samakmak 20,Raml Station,"Japanese,Sushi,Asian",https://talabat.com/eg/alexandria/samakmak-20-1046,63,38.02-58.19,38.02,58.19,48.11
+1047,Alexandria,Fish Market 20,Montaza,"Japanese,Sushi,Asian",https://talabat.com/eg/alexandria/fish-market-20-1047,50,52.56-117.46,52.56,117.46,85.01
+1048,Alexandria,Gad 20,Stanley,"Turkish,Kebab,Middle Eastern",https://talabat.com/eg/alexandria/gad-20-1048,109,145.5-380.89,145.5,380.89,263.19
+1049,Alexandria,Felfela 20,Mandara,"Indian,Asian,Vegetarian",https://talabat.com/eg/alexandria/felfela-20-1049,115,33.15-159.69,33.15,159.69,96.42
+1050,Alexandria,Tikka Grill 20,Corniche,"Thai,Asian,Vegetarian",https://talabat.com/eg/alexandria/tikka-grill-20-1050,16,87.13-320.67,87.13,320.67,203.9
+1051,Alexandria,El Shabrawy 20,Smouha,"Egyptian,Arabic,Middle Eastern",https://talabat.com/eg/alexandria/el-shabrawy-20-1051,28,136.09-522.15,136.09,522.15,329.12
+1052,Alexandria,Mori Sushi 20,Montaza,"Lebanese,Middle Eastern,Arabic",https://talabat.com/eg/alexandria/mori-sushi-20-1052,33,146.25-604.08,146.25,604.08,375.17
+1053,Alexandria,Crimson Bar & Grill 20,Corniche,"Seafood,Mediterranean",https://talabat.com/eg/alexandria/crimson-bar-&-grill-20-1053,72,73.06-250.66,73.06,250.66,161.86
+1054,Alexandria,Naguib Mahfouz Cafe 20,Mandara,"Thai,Asian,Vegetarian",https://talabat.com/eg/alexandria/naguib-mahfouz-cafe-20-1054,111,138.7-658.77,138.7,658.77,398.74
+1055,Alexandria,El Tabbala 20,Raml Station,"Korean,Asian,BBQ",https://talabat.com/eg/alexandria/el-tabbala-20-1055,30,73.21-232.1,73.21,232.1,152.66
+1056,Alexandria,Osmanly 20,Anfoushi,"Italian,Pizza,Pasta",https://talabat.com/eg/alexandria/osmanly-20-1056,34,62.1-143.87,62.1,143.87,102.98
+1057,Alexandria,Sabaya 20,Bahary,"Mexican,Latin,Tacos",https://talabat.com/eg/alexandria/sabaya-20-1057,76,123.07-210.83,123.07,210.83,166.95
+1058,Alexandria,Le Deck 20,Camp Caesar,"Lebanese,Middle Eastern,Arabic",https://talabat.com/eg/alexandria/le-deck-20-1058,44,109.3-168.9,109.3,168.9,139.1
+1059,Alexandria,Birdcage 20,Mandara,"American,Burgers,Fast Food",https://talabat.com/eg/alexandria/birdcage-20-1059,38,50.16-187.52,50.16,187.52,118.84
+1060,Alexandria,Crimson 20,Bahary,"Mexican,Latin,Tacos",https://talabat.com/eg/alexandria/crimson-20-1060,119,51.33-256.32,51.33,256.32,153.82
+1061,Alexandria,Pier 88 20,Anfoushi,"Seafood,Mediterranean",https://talabat.com/eg/alexandria/pier-88-20-1061,30,75.47-165.88,75.47,165.88,120.67
+1062,Alexandria,The Blue Restaurant 20,Bahary,"Turkish,Kebab,Middle Eastern",https://talabat.com/eg/alexandria/the-blue-restaurant-20-1062,18,75.69-313.59,75.69,313.59,194.64
+1063,Alexandria,Nile Maxim 20,Bahary,"Korean,Asian,BBQ",https://talabat.com/eg/alexandria/nile-maxim-20-1063,68,36.47-180.06,36.47,180.06,108.27
+1064,Alexandria,Abou Tarek 21,Mandara,"Thai,Asian,Vegetarian",https://talabat.com/eg/alexandria/abou-tarek-21-1064,107,36.1-162.78,36.1,162.78,99.44
+1065,Alexandria,Koshary Abou Tarek 21,Anfoushi,"Mexican,Latin,Tacos",https://talabat.com/eg/alexandria/koshary-abou-tarek-21-1065,54,88.06-271.34,88.06,271.34,179.7
+1066,Alexandria,Sequoia 21,Anfoushi,"Japanese,Sushi,Asian",https://talabat.com/eg/alexandria/sequoia-21-1066,32,77.22-344.4,77.22,344.4,210.81
+1067,Alexandria,Zooba 21,Raml Station,"Indian,Asian,Vegetarian",https://talabat.com/eg/alexandria/zooba-21-1067,86,64.33-207.54,64.33,207.54,135.94
+1068,Alexandria,Fasahat Somaya 21,Bahary,"Vegetarian,Vegan,Healthy",https://talabat.com/eg/alexandria/fasahat-somaya-21-1068,55,31.06-124.96,31.06,124.96,78.01
+1069,Alexandria,El Prince 21,Bahary,"Indian,Asian,Vegetarian",https://talabat.com/eg/alexandria/el-prince-21-1069,22,122.22-354.43,122.22,354.43,238.32
+1070,Alexandria,Maison Thomas 21,Miami,"Mexican,Latin,Tacos",https://talabat.com/eg/alexandria/maison-thomas-21-1070,19,124.34-288.62,124.34,288.62,206.48
+1071,Alexandria,Taboula 21,Gleem,"Greek,Mediterranean,Seafood",https://talabat.com/eg/alexandria/taboula-21-1071,36,130.63-648.28,130.63,648.28,389.45
+1072,Alexandria,Cairo Kitchen 21,Stanley,"Seafood,Mediterranean",https://talabat.com/eg/alexandria/cairo-kitchen-21-1072,36,35.96-87.47,35.96,87.47,61.72
+1073,Alexandria,Kazouza 21,Bahary,"Vegetarian,Vegan,Healthy",https://talabat.com/eg/alexandria/kazouza-21-1073,117,108.91-250.97,108.91,250.97,179.94
+1074,Alexandria,Andrea El Mariouteya 21,Mandara,"American,Burgers,Fast Food",https://talabat.com/eg/alexandria/andrea-el-mariouteya-21-1074,86,33.14-100.86,33.14,100.86,67.0
+1075,Alexandria,Sea Gull 21,San Stefano,"French,European,Fine Dining",https://talabat.com/eg/alexandria/sea-gull-21-1075,29,65.13-322.02,65.13,322.02,193.57
+1076,Alexandria,Samakmak 21,Montaza,"Seafood,Mediterranean",https://talabat.com/eg/alexandria/samakmak-21-1076,84,118.94-300.9,118.94,300.9,209.92
+1077,Alexandria,Fish Market 21,Miami,"Egyptian,Arabic,Middle Eastern",https://talabat.com/eg/alexandria/fish-market-21-1077,68,99.16-270.58,99.16,270.58,184.87
+1078,Alexandria,Gad 21,Montaza,"French,European,Fine Dining",https://talabat.com/eg/alexandria/gad-21-1078,77,31.99-141.98,31.99,141.98,86.98
+1079,Alexandria,Felfela 21,San Stefano,"Vegetarian,Vegan,Healthy",https://talabat.com/eg/alexandria/felfela-21-1079,31,67.29-229.0,67.29,229.0,148.15
+1080,Alexandria,Tikka Grill 21,Mandara,"Thai,Asian,Vegetarian",https://talabat.com/eg/alexandria/tikka-grill-21-1080,95,93.15-255.54,93.15,255.54,174.34
+1081,Alexandria,El Shabrawy 21,Anfoushi,"Chinese,Asian,Dim Sum",https://talabat.com/eg/alexandria/el-shabrawy-21-1081,54,87.07-341.35,87.07,341.35,214.21
+1082,Alexandria,Mori Sushi 21,Smouha,"Greek,Mediterranean,Seafood",https://talabat.com/eg/alexandria/mori-sushi-21-1082,104,107.44-298.66,107.44,298.66,203.05
+1083,Alexandria,Crimson Bar & Grill 21,Sidi Gaber,"Egyptian,Arabic,Middle Eastern",https://talabat.com/eg/alexandria/crimson-bar-&-grill-21-1083,90,106.06-169.56,106.06,169.56,137.81
+1084,Alexandria,Naguib Mahfouz Cafe 21,San Stefano,"Mexican,Latin,Tacos",https://talabat.com/eg/alexandria/naguib-mahfouz-cafe-21-1084,119,92.77-198.39,92.77,198.39,145.58
+1085,Alexandria,El Tabbala 21,Miami,"French,European,Fine Dining",https://talabat.com/eg/alexandria/el-tabbala-21-1085,37,93.42-277.93,93.42,277.93,185.68
+1086,Alexandria,Osmanly 21,Sidi Gaber,"French,European,Fine Dining",https://talabat.com/eg/alexandria/osmanly-21-1086,89,60.28-282.63,60.28,282.63,171.45
+1087,Alexandria,Sabaya 21,Smouha,"Korean,Asian,BBQ",https://talabat.com/eg/alexandria/sabaya-21-1087,37,114.85-340.65,114.85,340.65,227.75
+1088,Alexandria,Le Deck 21,Stanley,"Korean,Asian,BBQ",https://talabat.com/eg/alexandria/le-deck-21-1088,73,122.02-348.28,122.02,348.28,235.15
+1089,Alexandria,Birdcage 21,Smouha,"Japanese,Sushi,Asian",https://talabat.com/eg/alexandria/birdcage-21-1089,99,33.8-160.36,33.8,160.36,97.08
+1090,Alexandria,Crimson 21,Stanley,"Indian,Asian,Vegetarian",https://talabat.com/eg/alexandria/crimson-21-1090,33,101.81-305.86,101.81,305.86,203.84
+1091,Alexandria,Pier 88 21,Anfoushi,"Greek,Mediterranean,Seafood",https://talabat.com/eg/alexandria/pier-88-21-1091,48,70.41-262.79,70.41,262.79,166.6
+1092,Alexandria,The Blue Restaurant 21,Montaza,"Indian,Asian,Vegetarian",https://talabat.com/eg/alexandria/the-blue-restaurant-21-1092,40,67.68-136.44,67.68,136.44,102.06
+1093,Alexandria,Nile Maxim 21,Mandara,"Vegetarian,Vegan,Healthy",https://talabat.com/eg/alexandria/nile-maxim-21-1093,90,116.21-325.38,116.21,325.38,220.79
+1094,Alexandria,Abou Tarek 22,Bahary,"Turkish,Kebab,Middle Eastern",https://talabat.com/eg/alexandria/abou-tarek-22-1094,51,102.95-359.38,102.95,359.38,231.16
+1095,Alexandria,Koshary Abou Tarek 22,Montaza,"Korean,Asian,BBQ",https://talabat.com/eg/alexandria/koshary-abou-tarek-22-1095,38,87.16-135.0,87.16,135.0,111.08
+1096,Alexandria,Sequoia 22,Miami,"Italian,Pizza,Pasta",https://talabat.com/eg/alexandria/sequoia-22-1096,76,131.67-559.39,131.67,559.39,345.53
+1097,Alexandria,Zooba 22,Roushdy,"Mexican,Latin,Tacos",https://talabat.com/eg/alexandria/zooba-22-1097,110,68.61-228.56,68.61,228.56,148.59
+1098,Alexandria,Fasahat Somaya 22,Anfoushi,"Egyptian,Arabic,Middle Eastern",https://talabat.com/eg/alexandria/fasahat-somaya-22-1098,95,79.95-310.52,79.95,310.52,195.23
+1099,Alexandria,El Prince 22,Sidi Gaber,"French,European,Fine Dining",https://talabat.com/eg/alexandria/el-prince-22-1099,68,73.53-367.56,73.53,367.56,220.55
+1100,Alexandria,Maison Thomas 22,Roushdy,"Japanese,Sushi,Asian",https://talabat.com/eg/alexandria/maison-thomas-22-1100,49,38.4-146.85,38.4,146.85,92.62
+1101,Alexandria,Taboula 22,Smouha,"Vegetarian,Vegan,Healthy",https://talabat.com/eg/alexandria/taboula-22-1101,97,88.63-262.26,88.63,262.26,175.44
+1102,Alexandria,Cairo Kitchen 22,Anfoushi,"Mexican,Latin,Tacos",https://talabat.com/eg/alexandria/cairo-kitchen-22-1102,74,114.46-488.84,114.46,488.84,301.65
+1103,Alexandria,Kazouza 22,Bahary,"Indian,Asian,Vegetarian",https://talabat.com/eg/alexandria/kazouza-22-1103,109,80.45-308.71,80.45,308.71,194.58
+1104,Alexandria,Andrea El Mariouteya 22,San Stefano,"Korean,Asian,BBQ",https://talabat.com/eg/alexandria/andrea-el-mariouteya-22-1104,78,88.5-167.15,88.5,167.15,127.83
+1105,Alexandria,Sea Gull 22,Smouha,"Thai,Asian,Vegetarian",https://talabat.com/eg/alexandria/sea-gull-22-1105,86,66.4-272.17,66.4,272.17,169.29
+1106,Alexandria,Samakmak 22,Anfoushi,"Korean,Asian,BBQ",https://talabat.com/eg/alexandria/samakmak-22-1106,81,106.96-264.58,106.96,264.58,185.77
+1107,Alexandria,Fish Market 22,Bahary,"Korean,Asian,BBQ",https://talabat.com/eg/alexandria/fish-market-22-1107,35,108.19-393.07,108.19,393.07,250.63
+1108,Alexandria,Gad 22,Miami,"Korean,Asian,BBQ",https://talabat.com/eg/alexandria/gad-22-1108,43,46.01-216.85,46.01,216.85,131.43
+1109,Alexandria,Felfela 22,Raml Station,"Italian,Pizza,Pasta",https://talabat.com/eg/alexandria/felfela-22-1109,115,43.9-138.14,43.9,138.14,91.02
+1110,Alexandria,Tikka Grill 22,Sidi Gaber,"Greek,Mediterranean,Seafood",https://talabat.com/eg/alexandria/tikka-grill-22-1110,38,113.18-355.33,113.18,355.33,234.25
+1111,Alexandria,El Shabrawy 22,Sidi Gaber,"Indian,Asian,Vegetarian",https://talabat.com/eg/alexandria/el-shabrawy-22-1111,41,39.77-154.6,39.77,154.6,97.19
+1112,Alexandria,Mori Sushi 22,Raml Station,"Egyptian,Arabic,Middle Eastern",https://talabat.com/eg/alexandria/mori-sushi-22-1112,29,149.08-609.94,149.08,609.94,379.51
+1113,Alexandria,Crimson Bar & Grill 22,Anfoushi,"Thai,Asian,Vegetarian",https://talabat.com/eg/alexandria/crimson-bar-&-grill-22-1113,46,89.69-300.39,89.69,300.39,195.04
+1114,Alexandria,Naguib Mahfouz Cafe 22,Camp Caesar,"Egyptian,Arabic,Middle Eastern",https://talabat.com/eg/alexandria/naguib-mahfouz-cafe-22-1114,107,144.68-432.79,144.68,432.79,288.74
+1115,Alexandria,El Tabbala 22,San Stefano,"Mexican,Latin,Tacos",https://talabat.com/eg/alexandria/el-tabbala-22-1115,49,34.05-112.57,34.05,112.57,73.31
+1116,Alexandria,Osmanly 22,Miami,"Chinese,Asian,Dim Sum",https://talabat.com/eg/alexandria/osmanly-22-1116,38,109.23-444.84,109.23,444.84,277.03
+1117,Alexandria,Sabaya 22,Anfoushi,"Turkish,Kebab,Middle Eastern",https://talabat.com/eg/alexandria/sabaya-22-1117,32,144.65-217.6,144.65,217.6,181.12
+1118,Alexandria,Le Deck 22,Miami,"Mexican,Latin,Tacos",https://talabat.com/eg/alexandria/le-deck-22-1118,114,55.85-251.92,55.85,251.92,153.88
+1119,Alexandria,Birdcage 22,Corniche,"Chinese,Asian,Dim Sum",https://talabat.com/eg/alexandria/birdcage-22-1119,25,108.34-283.8,108.34,283.8,196.07
+1120,Alexandria,Crimson 22,Corniche,"American,Burgers,Fast Food",https://talabat.com/eg/alexandria/crimson-22-1120,114,125.6-446.13,125.6,446.13,285.87
+1121,Alexandria,Pier 88 22,Bahary,"Indian,Asian,Vegetarian",https://talabat.com/eg/alexandria/pier-88-22-1121,49,36.57-144.35,36.57,144.35,90.46
+1122,Alexandria,The Blue Restaurant 22,Stanley,"Thai,Asian,Vegetarian",https://talabat.com/eg/alexandria/the-blue-restaurant-22-1122,106,45.12-200.69,45.12,200.69,122.91
+1123,Alexandria,Nile Maxim 22,San Stefano,"Chinese,Asian,Dim Sum",https://talabat.com/eg/alexandria/nile-maxim-22-1123,30,144.73-694.87,144.73,694.87,419.8
+1124,Alexandria,Abou Tarek 23,Roushdy,"Vegetarian,Vegan,Healthy",https://talabat.com/eg/alexandria/abou-tarek-23-1124,46,116.29-293.22,116.29,293.22,204.76
+1125,Alexandria,Koshary Abou Tarek 23,Montaza,"Turkish,Kebab,Middle Eastern",https://talabat.com/eg/alexandria/koshary-abou-tarek-23-1125,92,51.54-253.22,51.54,253.22,152.38
+1126,Alexandria,Sequoia 23,Corniche,"Greek,Mediterranean,Seafood",https://talabat.com/eg/alexandria/sequoia-23-1126,63,136.31-204.61,136.31,204.61,170.46
+1127,Alexandria,Zooba 23,Gleem,"Thai,Asian,Vegetarian",https://talabat.com/eg/alexandria/zooba-23-1127,93,70.12-160.77,70.12,160.77,115.45
+1128,Alexandria,Fasahat Somaya 23,Bahary,"Lebanese,Middle Eastern,Arabic",https://talabat.com/eg/alexandria/fasahat-somaya-23-1128,76,131.69-247.4,131.69,247.4,189.55
+1129,Alexandria,El Prince 23,Montaza,"Mexican,Latin,Tacos",https://talabat.com/eg/alexandria/el-prince-23-1129,61,110.77-309.55,110.77,309.55,210.16
+1130,Alexandria,Maison Thomas 23,Smouha,"Egyptian,Arabic,Middle Eastern",https://talabat.com/eg/alexandria/maison-thomas-23-1130,92,96.05-352.62,96.05,352.62,224.34
+1131,Alexandria,Taboula 23,Camp Caesar,"American,Burgers,Fast Food",https://talabat.com/eg/alexandria/taboula-23-1131,47,132.81-482.63,132.81,482.63,307.72
+1132,Alexandria,Cairo Kitchen 23,Raml Station,"Lebanese,Middle Eastern,Arabic",https://talabat.com/eg/alexandria/cairo-kitchen-23-1132,116,63.46-248.02,63.46,248.02,155.74
+1133,Alexandria,Kazouza 23,Mandara,"French,European,Fine Dining",https://talabat.com/eg/alexandria/kazouza-23-1133,28,113.91-563.76,113.91,563.76,338.83
+1134,Alexandria,Andrea El Mariouteya 23,Montaza,"Turkish,Kebab,Middle Eastern",https://talabat.com/eg/alexandria/andrea-el-mariouteya-23-1134,50,145.43-432.91,145.43,432.91,289.17
+1135,Alexandria,Sea Gull 23,Roushdy,"Chinese,Asian,Dim Sum",https://talabat.com/eg/alexandria/sea-gull-23-1135,59,145.96-451.17,145.96,451.17,298.56
+1136,Alexandria,Samakmak 23,Stanley,"Seafood,Mediterranean",https://talabat.com/eg/alexandria/samakmak-23-1136,71,47.09-77.16,47.09,77.16,62.12
+1137,Alexandria,Fish Market 23,Roushdy,"Thai,Asian,Vegetarian",https://talabat.com/eg/alexandria/fish-market-23-1137,40,45.24-97.55,45.24,97.55,71.39
+1138,Alexandria,Gad 23,Raml Station,"Turkish,Kebab,Middle Eastern",https://talabat.com/eg/alexandria/gad-23-1138,28,80.64-196.06,80.64,196.06,138.35
+1139,Alexandria,Felfela 23,Anfoushi,"Lebanese,Middle Eastern,Arabic",https://talabat.com/eg/alexandria/felfela-23-1139,49,52.93-157.3,52.93,157.3,105.12
+1140,Alexandria,Tikka Grill 23,Raml Station,"Chinese,Asian,Dim Sum",https://talabat.com/eg/alexandria/tikka-grill-23-1140,79,65.04-307.13,65.04,307.13,186.09
+1141,Alexandria,El Shabrawy 23,Roushdy,"Egyptian,Arabic,Middle Eastern",https://talabat.com/eg/alexandria/el-shabrawy-23-1141,107,82.12-325.09,82.12,325.09,203.6
+1142,Alexandria,Mori Sushi 23,Mandara,"Vegetarian,Vegan,Healthy",https://talabat.com/eg/alexandria/mori-sushi-23-1142,46,122.31-301.71,122.31,301.71,212.01
+1143,Alexandria,Crimson Bar & Grill 23,Sidi Gaber,"Greek,Mediterranean,Seafood",https://talabat.com/eg/alexandria/crimson-bar-&-grill-23-1143,46,84.98-331.64,84.98,331.64,208.31
+1144,Alexandria,Naguib Mahfouz Cafe 23,San Stefano,"Turkish,Kebab,Middle Eastern",https://talabat.com/eg/alexandria/naguib-mahfouz-cafe-23-1144,29,74.97-313.09,74.97,313.09,194.03
+1145,Alexandria,El Tabbala 23,Mandara,"Mexican,Latin,Tacos",https://talabat.com/eg/alexandria/el-tabbala-23-1145,83,123.95-548.17,123.95,548.17,336.06
+1146,Alexandria,Osmanly 23,Sidi Gaber,"Indian,Asian,Vegetarian",https://talabat.com/eg/alexandria/osmanly-23-1146,74,107.36-501.83,107.36,501.83,304.59
+1147,Alexandria,Sabaya 23,San Stefano,"Seafood,Mediterranean",https://talabat.com/eg/alexandria/sabaya-23-1147,53,90.43-240.81,90.43,240.81,165.62
+1148,Alexandria,Le Deck 23,San Stefano,"Japanese,Sushi,Asian",https://talabat.com/eg/alexandria/le-deck-23-1148,98,34.5-96.97,34.5,96.97,65.73
+1149,Alexandria,Birdcage 23,Montaza,"Turkish,Kebab,Middle Eastern",https://talabat.com/eg/alexandria/birdcage-23-1149,94,126.13-406.57,126.13,406.57,266.35
+1150,Alexandria,Crimson 23,Stanley,"Thai,Asian,Vegetarian",https://talabat.com/eg/alexandria/crimson-23-1150,38,119.35-354.06,119.35,354.06,236.7
+1151,Alexandria,Pier 88 23,Gleem,"Turkish,Kebab,Middle Eastern",https://talabat.com/eg/alexandria/pier-88-23-1151,61,65.55-120.54,65.55,120.54,93.05
+1152,Alexandria,The Blue Restaurant 23,Sidi Gaber,"American,Burgers,Fast Food",https://talabat.com/eg/alexandria/the-blue-restaurant-23-1152,116,74.99-170.99,74.99,170.99,122.99
+1153,Alexandria,Nile Maxim 23,Smouha,"Greek,Mediterranean,Seafood",https://talabat.com/eg/alexandria/nile-maxim-23-1153,40,131.68-415.99,131.68,415.99,273.84
+1154,Alexandria,Abou Tarek 24,Raml Station,"Egyptian,Arabic,Middle Eastern",https://talabat.com/eg/alexandria/abou-tarek-24-1154,31,115.49-384.15,115.49,384.15,249.82
+1155,Alexandria,Koshary Abou Tarek 24,Stanley,"Vegetarian,Vegan,Healthy",https://talabat.com/eg/alexandria/koshary-abou-tarek-24-1155,27,100.21-404.67,100.21,404.67,252.44
+1156,Alexandria,Sequoia 24,Sidi Gaber,"Korean,Asian,BBQ",https://talabat.com/eg/alexandria/sequoia-24-1156,78,81.5-329.81,81.5,329.81,205.66
+1157,Alexandria,Zooba 24,Mandara,"Greek,Mediterranean,Seafood",https://talabat.com/eg/alexandria/zooba-24-1157,54,74.25-282.53,74.25,282.53,178.39
+1158,Alexandria,Fasahat Somaya 24,Miami,"Egyptian,Arabic,Middle Eastern",https://talabat.com/eg/alexandria/fasahat-somaya-24-1158,72,126.18-292.42,126.18,292.42,209.3
+1159,Alexandria,El Prince 24,Anfoushi,"Korean,Asian,BBQ",https://talabat.com/eg/alexandria/el-prince-24-1159,73,52.8-212.12,52.8,212.12,132.46
+1160,Alexandria,Maison Thomas 24,Miami,"Mexican,Latin,Tacos",https://talabat.com/eg/alexandria/maison-thomas-24-1160,88,140.45-420.65,140.45,420.65,280.55
+1161,Alexandria,Taboula 24,Gleem,"Mexican,Latin,Tacos",https://talabat.com/eg/alexandria/taboula-24-1161,100,85.81-238.8,85.81,238.8,162.31
+1162,Alexandria,Cairo Kitchen 24,Anfoushi,"Lebanese,Middle Eastern,Arabic",https://talabat.com/eg/alexandria/cairo-kitchen-24-1162,16,140.44-435.11,140.44,435.11,287.77
+1163,Alexandria,Kazouza 24,Bahary,"Chinese,Asian,Dim Sum",https://talabat.com/eg/alexandria/kazouza-24-1163,66,140.48-289.98,140.48,289.98,215.23
+1164,Alexandria,Andrea El Mariouteya 24,Anfoushi,"American,Burgers,Fast Food",https://talabat.com/eg/alexandria/andrea-el-mariouteya-24-1164,108,53.82-81.38,53.82,81.38,67.6
+1165,Alexandria,Sea Gull 24,Bahary,"Italian,Pizza,Pasta",https://talabat.com/eg/alexandria/sea-gull-24-1165,90,75.45-135.83,75.45,135.83,105.64
+1166,Alexandria,Samakmak 24,Sidi Gaber,"Vegetarian,Vegan,Healthy",https://talabat.com/eg/alexandria/samakmak-24-1166,119,144.77-227.17,144.77,227.17,185.97
+1167,Alexandria,Fish Market 24,Mandara,"Japanese,Sushi,Asian",https://talabat.com/eg/alexandria/fish-market-24-1167,31,69.07-162.52,69.07,162.52,115.8
+1168,Alexandria,Gad 24,Stanley,"Thai,Asian,Vegetarian",https://talabat.com/eg/alexandria/gad-24-1168,89,128.31-264.63,128.31,264.63,196.47
+1169,Alexandria,Felfela 24,San Stefano,"Korean,Asian,BBQ",https://talabat.com/eg/alexandria/felfela-24-1169,94,80.01-341.04,80.01,341.04,210.53
+1170,Alexandria,Tikka Grill 24,Gleem,"Egyptian,Arabic,Middle Eastern",https://talabat.com/eg/alexandria/tikka-grill-24-1170,119,61.37-180.88,61.37,180.88,121.12
+1171,Alexandria,El Shabrawy 24,Miami,"Turkish,Kebab,Middle Eastern",https://talabat.com/eg/alexandria/el-shabrawy-24-1171,94,103.3-414.85,103.3,414.85,259.07
+1172,Alexandria,Mori Sushi 24,Smouha,"Seafood,Mediterranean",https://talabat.com/eg/alexandria/mori-sushi-24-1172,98,97.06-276.46,97.06,276.46,186.76
+1173,Alexandria,Crimson Bar & Grill 24,Corniche,"Vegetarian,Vegan,Healthy",https://talabat.com/eg/alexandria/crimson-bar-&-grill-24-1173,37,67.89-305.62,67.89,305.62,186.75
+1174,Alexandria,Naguib Mahfouz Cafe 24,Camp Caesar,"Japanese,Sushi,Asian",https://talabat.com/eg/alexandria/naguib-mahfouz-cafe-24-1174,38,108.38-227.6,108.38,227.6,167.99
+1175,Alexandria,El Tabbala 24,Anfoushi,"Indian,Asian,Vegetarian",https://talabat.com/eg/alexandria/el-tabbala-24-1175,22,83.09-358.03,83.09,358.03,220.56
+1176,Alexandria,Osmanly 24,Sidi Gaber,"Italian,Pizza,Pasta",https://talabat.com/eg/alexandria/osmanly-24-1176,110,139.77-451.98,139.77,451.98,295.88
+1177,Alexandria,Sabaya 24,Anfoushi,"French,European,Fine Dining",https://talabat.com/eg/alexandria/sabaya-24-1177,95,127.49-564.8,127.49,564.8,346.14
+1178,Alexandria,Le Deck 24,Gleem,"Korean,Asian,BBQ",https://talabat.com/eg/alexandria/le-deck-24-1178,23,54.47-86.28,54.47,86.28,70.38
+1179,Alexandria,Birdcage 24,Corniche,"Korean,Asian,BBQ",https://talabat.com/eg/alexandria/birdcage-24-1179,23,57.91-281.9,57.91,281.9,169.9
+1180,Alexandria,Crimson 24,Sidi Gaber,"Seafood,Mediterranean",https://talabat.com/eg/alexandria/crimson-24-1180,37,45.83-220.32,45.83,220.32,133.07
+1181,Alexandria,Pier 88 24,Sidi Gaber,"Korean,Asian,BBQ",https://talabat.com/eg/alexandria/pier-88-24-1181,116,71.98-185.49,71.98,185.49,128.74
+1182,Alexandria,The Blue Restaurant 24,Montaza,"Italian,Pizza,Pasta",https://talabat.com/eg/alexandria/the-blue-restaurant-24-1182,41,106.85-504.11,106.85,504.11,305.48
+1183,Alexandria,Nile Maxim 24,Camp Caesar,"Japanese,Sushi,Asian",https://talabat.com/eg/alexandria/nile-maxim-24-1183,32,45.16-126.48,45.16,126.48,85.82
+1184,Alexandria,Abou Tarek 25,Roushdy,"American,Burgers,Fast Food",https://talabat.com/eg/alexandria/abou-tarek-25-1184,109,64.91-234.02,64.91,234.02,149.47
+1185,Alexandria,Koshary Abou Tarek 25,Montaza,"Korean,Asian,BBQ",https://talabat.com/eg/alexandria/koshary-abou-tarek-25-1185,50,104.07-392.19,104.07,392.19,248.13
+1186,Alexandria,Sequoia 25,San Stefano,"Mexican,Latin,Tacos",https://talabat.com/eg/alexandria/sequoia-25-1186,71,49.8-248.54,49.8,248.54,149.17
+1187,Alexandria,Zooba 25,Raml Station,"Japanese,Sushi,Asian",https://talabat.com/eg/alexandria/zooba-25-1187,42,35.52-88.84,35.52,88.84,62.18
+1188,Alexandria,Fasahat Somaya 25,Sidi Gaber,"Turkish,Kebab,Middle Eastern",https://talabat.com/eg/alexandria/fasahat-somaya-25-1188,108,104.91-220.94,104.91,220.94,162.93
+1189,Alexandria,El Prince 25,Anfoushi,"Indian,Asian,Vegetarian",https://talabat.com/eg/alexandria/el-prince-25-1189,68,54.23-258.93,54.23,258.93,156.58
+1190,Alexandria,Maison Thomas 25,Mandara,"Mexican,Latin,Tacos",https://talabat.com/eg/alexandria/maison-thomas-25-1190,51,139.54-486.74,139.54,486.74,313.14
+1191,Alexandria,Taboula 25,Camp Caesar,"Japanese,Sushi,Asian",https://talabat.com/eg/alexandria/taboula-25-1191,84,88.71-202.81,88.71,202.81,145.76
+1192,Alexandria,Cairo Kitchen 25,Bahary,"Egyptian,Arabic,Middle Eastern",https://talabat.com/eg/alexandria/cairo-kitchen-25-1192,105,114.64-366.57,114.64,366.57,240.6
+1193,Alexandria,Kazouza 25,Roushdy,"Indian,Asian,Vegetarian",https://talabat.com/eg/alexandria/kazouza-25-1193,79,69.44-295.73,69.44,295.73,182.59
+1194,Alexandria,Andrea El Mariouteya 25,Gleem,"Turkish,Kebab,Middle Eastern",https://talabat.com/eg/alexandria/andrea-el-mariouteya-25-1194,103,131.44-524.14,131.44,524.14,327.79
+1195,Alexandria,Sea Gull 25,Camp Caesar,"American,Burgers,Fast Food",https://talabat.com/eg/alexandria/sea-gull-25-1195,117,78.88-237.91,78.88,237.91,158.39
+1196,Alexandria,Samakmak 25,Montaza,"Turkish,Kebab,Middle Eastern",https://talabat.com/eg/alexandria/samakmak-25-1196,55,59.72-128.25,59.72,128.25,93.98
+1197,Alexandria,Fish Market 25,Corniche,"Mexican,Latin,Tacos",https://talabat.com/eg/alexandria/fish-market-25-1197,93,76.72-176.83,76.72,176.83,126.78
+1198,Alexandria,Gad 25,Sidi Gaber,"American,Burgers,Fast Food",https://talabat.com/eg/alexandria/gad-25-1198,69,76.48-282.03,76.48,282.03,179.25
+1199,Alexandria,Felfela 25,Miami,"Korean,Asian,BBQ",https://talabat.com/eg/alexandria/felfela-25-1199,113,39.82-77.29,39.82,77.29,58.56
+1200,Alexandria,Tikka Grill 25,Mandara,"French,European,Fine Dining",https://talabat.com/eg/alexandria/tikka-grill-25-1200,72,36.77-109.54,36.77,109.54,73.16
+1201,Alexandria,El Shabrawy 25,Roushdy,"Greek,Mediterranean,Seafood",https://talabat.com/eg/alexandria/el-shabrawy-25-1201,59,99.36-330.85,99.36,330.85,215.11
+1202,Alexandria,Mori Sushi 25,Smouha,"Indian,Asian,Vegetarian",https://talabat.com/eg/alexandria/mori-sushi-25-1202,19,46.54-190.74,46.54,190.74,118.64
+1203,Alexandria,Crimson Bar & Grill 25,Smouha,"French,European,Fine Dining",https://talabat.com/eg/alexandria/crimson-bar-&-grill-25-1203,71,141.16-238.15,141.16,238.15,189.66
+1204,Alexandria,Naguib Mahfouz Cafe 25,Montaza,"Chinese,Asian,Dim Sum",https://talabat.com/eg/alexandria/naguib-mahfouz-cafe-25-1204,40,99.31-236.39,99.31,236.39,167.85
+1205,Alexandria,El Tabbala 25,Bahary,"Greek,Mediterranean,Seafood",https://talabat.com/eg/alexandria/el-tabbala-25-1205,39,72.1-302.18,72.1,302.18,187.14
+1206,Alexandria,Osmanly 25,Anfoushi,"Korean,Asian,BBQ",https://talabat.com/eg/alexandria/osmanly-25-1206,116,79.56-183.52,79.56,183.52,131.54
+1207,Alexandria,Sabaya 25,Camp Caesar,"Vegetarian,Vegan,Healthy",https://talabat.com/eg/alexandria/sabaya-25-1207,65,35.37-141.66,35.37,141.66,88.52
+1208,Alexandria,Le Deck 25,San Stefano,"Indian,Asian,Vegetarian",https://talabat.com/eg/alexandria/le-deck-25-1208,29,50.15-110.99,50.15,110.99,80.57
+1209,Alexandria,Birdcage 25,Smouha,"American,Burgers,Fast Food",https://talabat.com/eg/alexandria/birdcage-25-1209,15,51.14-223.02,51.14,223.02,137.08
+1210,Alexandria,Crimson 25,Montaza,"Chinese,Asian,Dim Sum",https://talabat.com/eg/alexandria/crimson-25-1210,72,115.09-488.95,115.09,488.95,302.02
+1211,Alexandria,Pier 88 25,Bahary,"Korean,Asian,BBQ",https://talabat.com/eg/alexandria/pier-88-25-1211,66,88.09-328.66,88.09,328.66,208.38
+1212,Alexandria,The Blue Restaurant 25,Stanley,"Mexican,Latin,Tacos",https://talabat.com/eg/alexandria/the-blue-restaurant-25-1212,81,80.85-211.33,80.85,211.33,146.09
+1213,Alexandria,Nile Maxim 25,Bahary,"American,Burgers,Fast Food",https://talabat.com/eg/alexandria/nile-maxim-25-1213,70,41.05-136.16,41.05,136.16,88.6
+1214,Alexandria,Abou Tarek 26,Bahary,"Italian,Pizza,Pasta",https://talabat.com/eg/alexandria/abou-tarek-26-1214,101,42.85-178.66,42.85,178.66,110.75
+1215,Alexandria,Koshary Abou Tarek 26,Anfoushi,"Vegetarian,Vegan,Healthy",https://talabat.com/eg/alexandria/koshary-abou-tarek-26-1215,42,49.35-76.65,49.35,76.65,63.0
+1216,Alexandria,Sequoia 26,Stanley,"Turkish,Kebab,Middle Eastern",https://talabat.com/eg/alexandria/sequoia-26-1216,77,58.53-241.55,58.53,241.55,150.04
+1217,Alexandria,Zooba 26,Smouha,"Egyptian,Arabic,Middle Eastern",https://talabat.com/eg/alexandria/zooba-26-1217,77,44.94-215.26,44.94,215.26,130.1
+1218,Alexandria,Fasahat Somaya 26,Bahary,"Thai,Asian,Vegetarian",https://talabat.com/eg/alexandria/fasahat-somaya-26-1218,102,115.9-321.37,115.9,321.37,218.63
+1219,Alexandria,El Prince 26,Miami,"Mexican,Latin,Tacos",https://talabat.com/eg/alexandria/el-prince-26-1219,55,65.71-327.89,65.71,327.89,196.8
+1220,Alexandria,Maison Thomas 26,Anfoushi,"Greek,Mediterranean,Seafood",https://talabat.com/eg/alexandria/maison-thomas-26-1220,102,126.52-512.95,126.52,512.95,319.74
+1221,Alexandria,Taboula 26,Sidi Gaber,"French,European,Fine Dining",https://talabat.com/eg/alexandria/taboula-26-1221,47,87.9-385.21,87.9,385.21,236.56
+1222,Alexandria,Cairo Kitchen 26,Raml Station,"Japanese,Sushi,Asian",https://talabat.com/eg/alexandria/cairo-kitchen-26-1222,60,88.53-366.41,88.53,366.41,227.47
+1223,Alexandria,Kazouza 26,Bahary,"Turkish,Kebab,Middle Eastern",https://talabat.com/eg/alexandria/kazouza-26-1223,44,43.76-194.67,43.76,194.67,119.21
+1224,Alexandria,Andrea El Mariouteya 26,Stanley,"French,European,Fine Dining",https://talabat.com/eg/alexandria/andrea-el-mariouteya-26-1224,71,112.51-459.07,112.51,459.07,285.79
+1225,Alexandria,Sea Gull 26,Anfoushi,"Japanese,Sushi,Asian",https://talabat.com/eg/alexandria/sea-gull-26-1225,81,115.3-255.2,115.3,255.2,185.25

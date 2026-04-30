@@ -1,0 +1,150 @@
+@page
+@model eg_travil.Pages.RegisterModel
+@{
+    ViewData["Title"] = "Create Account";
+}
+
+<div class="min-h-screen bg-slate-50 dark:bg-[#0F172A] flex items-center justify-center px-4 py-12 transition-colors duration-300">
+    <div class="max-w-md w-full bg-white dark:bg-white/5 backdrop-blur-xl border border-gray-200 dark:border-white/10 p-8 rounded-2xl shadow-xl dark:shadow-2xl transition-all duration-300">
+        <h2 class="text-3xl font-bold text-navy dark:text-white mb-6 text-center">Join EGTrip</h2>
+        <form id="registerForm" class="space-y-4">
+            <input type="text" id="fullName" required class="w-full bg-gray-50 dark:bg-white/10 border border-gray-300 dark:border-white/20 rounded-lg px-4 py-3 text-navy dark:text-white focus:outline-none focus:border-orange transition-colors" placeholder="Full Name">
+            <input type="email" id="email" required class="w-full bg-gray-50 dark:bg-white/10 border border-gray-300 dark:border-white/20 rounded-lg px-4 py-3 text-navy dark:text-white focus:outline-none focus:border-orange transition-colors" placeholder="Email Address">
+            <div class="grid grid-cols-2 gap-4">
+                <input type="number" id="age" required class="w-full bg-gray-50 dark:bg-white/10 border border-gray-300 dark:border-white/20 rounded-lg px-4 py-3 text-navy dark:text-white focus:outline-none focus:border-orange transition-colors" placeholder="Age">
+                <input type="tel" id="phoneNumber" required class="w-full bg-gray-50 dark:bg-white/10 border border-gray-300 dark:border-white/20 rounded-lg px-4 py-3 text-navy dark:text-white focus:outline-none focus:border-orange transition-colors" placeholder="Phone Number">
+            </div>
+            <div>
+                <input type="password" id="password" required class="w-full bg-gray-50 dark:bg-white/10 border border-gray-300 dark:border-white/20 rounded-lg px-4 py-3 text-navy dark:text-white focus:outline-none focus:border-orange transition-colors" placeholder="Password">
+                <ul class="text-gray-500 dark:text-gray-400 text-xs mt-2 list-disc pl-5 space-y-1">
+                    <li>At least 8 characters long</li>
+                    <li>Requires at least one non-alphanumeric character (e.g., !, @@, #)</li>
+                    <li>Requires at least one lowercase letter</li>
+                    <li>Requires at least one uppercase letter</li>
+                </ul>
+            </div>
+            <div id="registerError" class="hidden text-red-600 dark:text-red-500 text-sm mt-1 whitespace-pre-line"></div>
+            <button type="submit" class="w-full bg-orange py-3 rounded-lg text-white font-bold hover:scale-105 transition-all">Create Account</button>
+        </form>
+
+        <div class="mt-6 flex items-center justify-center space-x-3">
+            <div class="h-px bg-gray-300 dark:bg-white/20 w-full"></div>
+            <span class="text-gray-500 dark:text-gray-400 text-sm">or</span>
+            <div class="h-px bg-gray-300 dark:bg-white/20 w-full"></div>
+        </div>
+
+        <div class="mt-6 flex justify-center">
+            <div id="g_id_onload"
+                 data-client_id="@Model.GoogleClientId"
+                 data-context="use"
+                 data-ux_mode="popup"
+                 data-callback="handleGoogleLogin"
+                 data-auto_prompt="false">
+            </div>
+            <div class="g_id_signin"
+                 data-type="standard"
+                 data-shape="rectangular"
+                 data-theme="outline"
+                 data-text="signup_with"
+                 data-size="large"
+                 data-logo_alignment="left">
+            </div>
+        </div>
+
+        <p class="mt-6 text-center text-gray-500 dark:text-gray-400 text-sm">
+            Already have an account?
+            <a href="/Login" class="text-orange hover:underline font-medium">Sign In</a>
+        </p>
+    </div>
+</div>
+
+@section Scripts {
+    <script src="https://accounts.google.com/gsi/client" async defer></script>
+    <script>
+        async function handleGoogleLogin(response) {
+            try {
+                const res = await fetch('/api/auth/google-login', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ idToken: response.credential })
+                });
+
+                if (res.ok) {
+                    const result = await res.json();
+                    localStorage.setItem('token', result.token);
+                    localStorage.setItem('fullName', result.fullName);
+                    localStorage.setItem('isProfileComplete', result.isProfileComplete);
+
+                    const redirectTo = result.isProfileComplete === false ? '/Profile' : (localStorage.getItem('redirectAfterAuth') || '/');
+                    localStorage.removeItem('redirectAfterAuth');
+                    window.location.href = redirectTo;
+                } else {
+                    let errorMessage = "Google sign-in failed.";
+                    try {
+                        const result = await res.json();
+                        errorMessage = result.message || errorMessage;
+                        if (result.detail) errorMessage += "\n" + result.detail;
+                    } catch (e) { }
+
+                    const errorDiv = document.getElementById('registerError');
+                    if (errorDiv) {
+                        errorDiv.textContent = errorMessage;
+                        errorDiv.classList.remove('hidden');
+                    }
+                }
+            } catch (err) {
+                console.error("Google sign-in error:", err);
+                const errorDiv = document.getElementById('registerError');
+                if (errorDiv) {
+                    errorDiv.textContent = "Network error: " + err.message;
+                    errorDiv.classList.remove('hidden');
+                }
+            }
+        }
+
+
+        document.getElementById('registerForm').addEventListener('submit', async (e) => {
+            e.preventDefault();
+            
+            const errorDiv = document.getElementById('registerError');
+            if (errorDiv) {
+                errorDiv.classList.add('hidden');
+            }
+
+            const userData = {
+                fullName: document.getElementById('fullName').value,
+                email: document.getElementById('email').value,
+                password: document.getElementById('password').value,
+                age: parseInt(document.getElementById('age').value),
+                phoneNumber: document.getElementById('phoneNumber').value
+            };
+
+            try {
+                const response = await fetch('/api/auth/signup', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify(userData)
+                });
+
+                if (response.ok) {
+                    alert("Account created successfully! Now sign in to continue.");
+                    window.location.href = '/Login';
+                } else {
+                    const res = await response.json();
+                    
+                    // Format error message to be more user friendly if it's an array of identity errors
+                    let errorMsg = res.message || "Failed to create account";
+                    if (res.errors && Array.isArray(res.errors)) {
+                        errorMsg = res.errors.map(err => err.description || err).join('\n');
+                    }
+                    if (errorDiv) {
+                        errorDiv.textContent = errorMsg;
+                        errorDiv.classList.remove('hidden');
+                    }
+                }
+            } catch (err) {
+                console.error("Signup error:", err);
+            }
+        });
+    </script>
+}

@@ -1,0 +1,30 @@
+@page
+@model eg_travil.views.IndexModel
+@{
+    ViewData["Title"] = "Home";
+}
+
+<div class="flex flex-col w-full">
+    <section class="relative h-screen w-full flex items-center justify-center overflow-hidden">
+        <div class="absolute inset-0 w-full h-full">
+            <video autoPlay loop muted playsInline class="object-cover w-full h-full scale-105" poster="https://images.unsplash.com/photo-1503177119275-0aa32b3a9368?w=1920&q=80">
+                <source src="https://cdn.pixabay.com/video/2021/11/27/99066-650422964_large.mp4" type="video/mp4" />
+            </video>
+            <div class="absolute inset-0 bg-black/40"></div>
+        </div>
+
+        <div class="relative z-10 text-center px-4 max-w-5xl mx-auto">
+            <h1 class="font-display font-bold text-5xl md:text-7xl text-white mb-6 tracking-tight drop-shadow-2xl">
+                Plan Your Egypt Trip <br /> with AI — EGTrip
+            </h1>
+            <p class="text-gray-100 text-lg md:text-xl mb-10 max-w-2xl mx-auto font-light leading-relaxed">
+                Create a personalized itinerary in minutes. AI-powered planning tailored for the modern traveler.
+            </p>
+
+            <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+                <button onclick="handleBrowsePlans()" class="px-8 py-4 bg-white text-navy font-bold rounded-full hover:scale-105 transition-all">Browse Plans</button>
+                <button onclick="handleStartPlanning()" class="px-8 py-4 bg-orange text-white font-bold rounded-full shadow-xl hover:scale-105 transition-all">✨ Create My AI Plan</button>
+            </div>
+        </div>
+    </section>
+</div>

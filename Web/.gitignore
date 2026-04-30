@@ -1,0 +1,9 @@
+.vs/
+[Bb]in/
+[Oo]bj/
+*.user
+# Python ML Service
+ML_Service/.venv/
+ML_Service/__pycache__/
+ML_Service/.env
+ML_Service_Config/
