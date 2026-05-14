@@ -6,4 +6,7 @@
 ML_Service/.venv/
 ML_Service/__pycache__/
 ML_Service/.env
-ML_Service_Config/
+# ML_Service_Config
+ML_Service_Config/.venv/
+ML_Service_Config/__pycache__/
+ML_Service_Config/.env
