@@ -458,6 +458,7 @@
                                 <div>
                                     <label class="block font-bold mb-2 text-lg">Trip Pace</label>
                                     <select asp-for="Preferences.Intensity" class="form-select" required>
+                                        <option value="">Select Pace</option>
                                         <option value="Relaxed">Relaxed (Easy going)</option>
                                         <option value="Moderate">Moderate (Active)</option>
                                         <option value="Fast">Intensive (Pack Everything)</option>
@@ -658,6 +659,11 @@
             } else if (currentStep === 7) {
                 const acc = document.querySelector('input[name="Preferences.Accommodation"]:checked');
                 if (!acc) { showError("Please select your preferred accommodation."); return false; }
+            } else if (currentStep === 8) {
+                const trans = document.getElementById('Preferences_TransportationPreference').value;
+                const pace = document.getElementById('Preferences_Intensity').value;
+                if (!trans) { showError("Please select your transportation preference."); return false; }
+                if (!pace) { showError("Please select your trip pace."); return false; }
             }
             return true;
         }
@@ -917,7 +923,7 @@
         }
 
         function showLoading() {
-            if (!validateCurrentStep(8)) return; // Wait, step 8 validation wasn't strictly checked above. Actually, HTML5 'required' will handle step 8 natively before this fires. Let's just trust HTML5.
+            if (!validateCurrentStep(8)) return;
             
             document.getElementById('plannerForm').style.display = 'none';
             document.getElementById('loadingOverlay').style.display = 'block';
