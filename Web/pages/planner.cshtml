@@ -143,14 +143,6 @@
     /* Loading Overlay Styles */
     #loadingOverlay {
         display: none;
-        text-align: center;
-        padding: 50px;
-    }
-    
-    #loadingOverlay .spinner-border {
-        width: 4rem;
-        height: 4rem;
-        border-width: 0.25em;
     }
 
     /* Dark Mode Overrides */
@@ -490,10 +482,41 @@
                         <span id="validation-error-text" class="font-medium text-lg leading-relaxed"></span>
                     </div>
 
-                    <div id="loadingOverlay" style="display: none;" class="text-center py-10">
-                        <div class="spinner-border text-orange-500" role="status" style="width: 4rem; height: 4rem;"></div>
-                        <h2 class="font-bold text-navy mt-6 text-2xl">Creating your Egyptian adventure...</h2>
-                        <p class="text-gray-500 mt-2 text-lg">Our AI is crafting your personalized itinerary.</p>
+                    <div id="loadingOverlay" style="display: none;" class="text-center py-16 px-4">
+                        <div class="relative w-24 h-24 mx-auto mb-8">
+                            <!-- Outer pulsing ring -->
+                            <div class="absolute inset-0 rounded-full border-4 border-orange/20 animate-[ping_1.5s_cubic-bezier(0,0,0.2,1)_infinite]"></div>
+                            <!-- Inner spinning ring -->
+                            <div class="absolute inset-2 rounded-full border-4 border-transparent border-t-orange border-r-amber-500 animate-spin"></div>
+                            <!-- Center icon -->
+                            <div class="absolute inset-0 flex items-center justify-center text-4xl transform hover:scale-110 transition-transform">🏜️</div>
+                        </div>
+                        <h2 class="font-bold text-navy dark:text-white mt-6 text-3xl animate-pulse">Creating your Egyptian adventure...</h2>
+                        <p class="text-gray-600 dark:text-gray-400 mt-4 text-lg max-w-md mx-auto leading-relaxed">
+                            Our AI is analyzing top destinations, matching your preferences, and crafting your perfect personalized itinerary.
+                        </p>
+                        
+                        <!-- Progress bar mock -->
+                        <div class="mt-8 max-w-xs mx-auto h-2.5 bg-gray-200 dark:bg-slate-700 rounded-full overflow-hidden shadow-inner">
+                            <div class="h-full bg-gradient-to-r from-orange to-amber-500 rounded-full relative w-0" style="animation: loadProgress 12s cubic-bezier(0.4, 0, 0.2, 1) forwards;">
+                                <div class="absolute top-0 right-0 bottom-0 w-10 bg-white/30 blur-[2px] animate-[shimmer_1s_infinite]"></div>
+                            </div>
+                        </div>
+                        
+                        <style>
+                            @@keyframes loadProgress {
+                                0% { width: 0%; }
+                                15% { width: 25%; }
+                                40% { width: 45%; }
+                                65% { width: 75%; }
+                                85% { width: 88%; }
+                                100% { width: 96%; } /* Stays at 96% until real reload */
+                            }
+                            @@keyframes shimmer {
+                                0% { transform: translateX(-100%); }
+                                100% { transform: translateX(200%); }
+                            }
+                        </style>
                     </div>
                 </div>
             </div>
