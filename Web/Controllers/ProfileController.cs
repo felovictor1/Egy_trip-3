@@ -66,8 +66,8 @@ namespace eg_travil.Controllers
                 return Unauthorized();
 
             var plans = await _context.SavedPlans
+                .AsNoTracking()
                 .Where(p => p.UserId == userId)
-                .Include(p => p.Activities)
                 .OrderByDescending(p => p.CreatedAt)
                 .Select(p => new {
                     p.Id,
