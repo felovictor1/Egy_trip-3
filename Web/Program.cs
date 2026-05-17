@@ -66,6 +66,9 @@ using (var scope = app.Services.CreateScope())
     var context = scope.ServiceProvider.GetRequiredService<ApplicationDbContext>();
     try
     {
+        // Automatically apply migrations and create database if it doesn't exist
+        context.Database.Migrate();
+
         if (!context.Users.Any(u => u.Email == "felopater@gmail.com"))
         {
             context.Users.Add(new User 
