@@ -1,8 +1,9 @@
 import sys
 import os
 
-# Add the cloned ML repo path here so Python can find the modules
-ML_REPO_PATH = r"C:\Users\Felo\Documents\GitHub\Egy_Trip"
+# Calculate the path to the ML folder relative to this script so it works anywhere
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+ML_REPO_PATH = os.path.join(BASE_DIR, "ML")
 sys.path.insert(0, ML_REPO_PATH)
 
 
