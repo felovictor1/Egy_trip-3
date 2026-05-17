@@ -6,8 +6,7 @@ from datetime import datetime
 import json
 import re
 
-sys.path.insert(0, os.path.join(os.path.dirname(__file__), "src"))
-from vector_search import search
+from src.vector_search import search
 from orchestrator import TripOrchestrator
 from src.pexels_service import get_place_image_url
 
