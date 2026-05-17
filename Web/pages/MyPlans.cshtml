@@ -171,8 +171,13 @@
                 if (response.ok) {
                     savedPlans = await response.json();
                     renderPlans();
+                } else if (response.status === 401) {
+                    // Token expired or invalid
+                    localStorage.removeItem('token');
+                    window.location.href = '/Login';
+                    return;
                 } else {
-                    document.getElementById('plansList').innerHTML = '<p class="text-red-500">Failed to load plans.</p>';
+                    document.getElementById('plansList').innerHTML = `<p class="text-red-500">Failed to load plans (Error: ${response.status}).</p>`;
                 }
             } catch (err) {
                 console.error("Error fetching plans:", err);
