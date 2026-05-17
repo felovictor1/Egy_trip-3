@@ -1,9 +1,9 @@
 import sys
 import os
 
-# Add the cloned ML repo path here so Python can find the modules
-# Replace this path with the actual path where you clone 'https://github.com/seifkhalled/not_final_project'
-ML_REPO_PATH = r"c:\Users\Felo\Documents\GitHub\not_final_project"
+# Add the ML path dynamically so it works on any machine
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+ML_REPO_PATH = os.path.join(BASE_DIR, "ML")
 sys.path.insert(0, ML_REPO_PATH)
 
 

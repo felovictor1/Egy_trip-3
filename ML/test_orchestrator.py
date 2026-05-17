@@ -2,10 +2,11 @@ import sys
 import os
 from dotenv import load_dotenv
 
-env_path = r"c:\Users\Felo\Documents\GitHub\Egy_Trip\ML_Service_Config\.env"
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+env_path = os.path.join(BASE_DIR, "..", "Web", "ML_Service_Config", ".env")
 load_dotenv(env_path, override=True)
 
-sys.path.insert(0, r"c:\Users\Felo\Documents\GitHub\not_final_project")
+sys.path.insert(0, BASE_DIR)
 
 from ai.orchestrator import TripOrchestrator
 
