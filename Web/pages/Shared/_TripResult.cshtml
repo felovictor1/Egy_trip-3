@@ -232,6 +232,38 @@
                 }
 
 
+                @* ── LOCK OVERLAY FOR UNPAID HOTELS ── *@
+                @{
+                    bool requiresPayment = !string.IsNullOrEmpty(hotelNameStr) && !Model.IsPaid;
+                }
+
+                @if (requiresPayment)
+                {
+                    @Html.Raw("<div class=\"mt-8 relative\">")
+                    <div class="absolute inset-0 z-10 flex flex-col items-center justify-center rounded-2xl border border-white/20 p-8" style="background: rgba(255,255,255,0.4); backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px);">
+                        <div class="text-6xl mb-4">🔒</div>
+                        <h3 class="text-2xl font-bold text-navy dark:text-white mb-2 text-center">Itinerary Locked</h3>
+                        <p class="text-navy dark:text-gray-100 mb-6 text-center max-w-md font-bold text-lg" style="text-shadow: 0 1px 4px rgba(255,255,255,1);">
+                            Please complete your hotel payment to unlock your full detailed itinerary, restaurant recommendations, and expert tips.
+                        </p>
+                        @if (Model.SavedPlanId.HasValue)
+                        {
+                            <a href="/Payment/CreateCheckoutSession?savedPlanId=@Model.SavedPlanId"
+                               class="inline-flex items-center gap-2 bg-gradient-to-r from-orange to-amber-500 hover:from-amber-500 hover:to-orange text-white font-bold px-8 py-3 rounded-xl shadow-lg shadow-orange/30 transition-all hover:shadow-xl hover:scale-105 active:scale-100">
+                                Pay for Hotel to Unlock
+                            </a>
+                        }
+                        else
+                        {
+                            <a href="/Identity/Account/Login?ReturnUrl=%2Fplanner"
+                               class="inline-flex items-center gap-2 bg-navy hover:bg-navy/90 text-white font-bold px-8 py-3 rounded-xl shadow-lg transition-all hover:scale-105">
+                                Login to Save & Pay
+                            </a>
+                        }
+                    </div>
+                    @Html.Raw("<div class=\"opacity-30 pointer-events-none select-none blur-[6px]\">")
+                }
+
                 @* Restaurants Section *@
                 @{
                     var restaurants = new List<dynamic>();
@@ -632,6 +664,11 @@
                 </div>
             </div>
         </div>
+
+        @if (requiresPayment)
+        {
+            @Html.Raw("</div></div>")
+        }
 
         @* Only show raw AI output if we have NO structured activities to display *@
         @if ((trip.itinerary == null) && (Model.Activities == null || !Model.Activities.Any()))
