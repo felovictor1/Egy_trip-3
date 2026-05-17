@@ -325,8 +325,9 @@
 
                 Object.keys(days).sort((a,b)=>+a-+b).forEach(dayNum => {
                     html += `<div class="day-card mb-4">
-                        <div class="flex items-center mb-4 pb-3 border-b border-gray-100 dark:border-white/10">
+                        <div class="flex justify-between items-center mb-4 pb-3 border-b border-gray-100 dark:border-white/10">
                             <h4 class="text-lg font-bold text-navy dark:text-white m-0">Day ${dayNum}</h4>
+                            <span class="weather-badge" data-day="${dayNum}" style="display:none" class="flex items-center gap-2 text-sm font-medium text-gray-600 dark:text-gray-300 bg-blue-50 dark:bg-blue-900/30 px-3 py-1 rounded-full"></span>
                         </div>`;
 
                     days[dayNum].forEach(act => {
@@ -524,6 +525,60 @@
             addBtn.onclick = addTodo;
             input.onkeydown = e => { if (e.key === 'Enter') addTodo(); };
             renderTodos();
+
+            // ── Weather Widget ────────────────────────────────────────────────────────
+            (async function loadWeather() {
+                // Infer destination from title or first activity
+                let destination = plan.title.replace(' Trip', '').split(',')[0].trim();
+                if (plan.activities && plan.activities.length > 0 && destination === 'My Custom') {
+                    destination = plan.activities[0].place;
+                }
+                
+                const endDate = plan.tripEndDate ? new Date(plan.tripEndDate) : new Date();
+                const nights = plan.nights || 3;
+                const startDateObj = new Date(endDate);
+                startDateObj.setDate(startDateObj.getDate() - nights);
+                const startDate = startDateObj.toISOString().split('T')[0];
+
+                try {
+                    const params = new URLSearchParams({
+                        handler:     'Weather',
+                        destination: destination,
+                        startDate:   startDate,
+                        days:        Math.min(nights + 1, 14)
+                    });
+
+                    const res  = await fetch(`/Planner?${params}`);
+                    if (!res.ok) return;
+                    const data = await res.json();
+                    if (!Array.isArray(data) || data.length === 0) return;
+
+                    // Update weather badges in the modal
+                    document.querySelectorAll('#modalContent .weather-badge').forEach(badge => {
+                        const dayNum = parseInt(badge.dataset.day);
+                        const w      = data.find(d => d.dayNumber === dayNum);
+                        if (!w) return;
+
+                        const rainHtml = w.rainChance > 20
+                            ? `<span class="text-blue-500">💧${w.rainChance}%</span>`
+                            : '';
+
+                        badge.innerHTML = `
+                            <img src="${w.iconUrl}" alt="${w.condition}" class="w-7 h-7" />
+                            <span class="font-semibold">${Math.round(w.maxTempC)}°C</span>
+                            <span class="text-xs text-gray-400">/ ${Math.round(w.minTempC)}°C</span>
+                            <span class="text-xs hidden sm:inline">${w.condition}</span>
+                            ${rainHtml}
+                        `;
+                        badge.style.display        = 'flex';
+                        badge.style.alignItems     = 'center';
+                        badge.style.gap            = '6px';
+                        badge.style.fontSize       = '0.85rem';
+                    });
+                } catch (e) {
+                    console.error("Weather load failed", e);
+                }
+            })();
         }
 
         // ── Review modal ───────────────────────────────────────────────
