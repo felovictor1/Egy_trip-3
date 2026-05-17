@@ -434,43 +434,39 @@ def generate_trip():
             hotels = search(query=query, entity_type="hotel", city=city, max_price=budget_max, k=5)
             results_hotels.extend(hotels)
 
-        try:
-            summary = orchestrator.generate_summary(
+        import concurrent.futures
+
+        with concurrent.futures.ThreadPoolExecutor(max_workers=10) as executor:
+            # 1. Generate summary and trip plan in parallel
+            future_summary = executor.submit(
+                orchestrator.generate_summary,
                 results_places, results_restaurants, results_hotels, destinations,
                 model=model, provider=provider
             )
-        except Exception as e:
-            summary = f"Your trip to {', '.join(destinations)} is ready!"
+            
+            try:
+                start_dt = datetime.fromisoformat(start_date) if start_date else datetime.now()
+                end_dt = datetime.fromisoformat(end_date) if end_date else datetime.now()
+            except:
+                start_dt = datetime.now()
+                end_dt = datetime.now()
 
-        try:
-            start_dt = datetime.fromisoformat(start_date) if start_date else datetime.now()
-            end_dt = datetime.fromisoformat(end_date) if end_date else datetime.now()
-        except:
-            start_dt = datetime.now()
-            end_dt = datetime.now()
+            future_plan = executor.submit(
+                orchestrator.generate_trip_plan,
+                destinations, budget, group_size, start_dt, end_dt,
+                travel_styles, historical_knowledge, preferred_time_periods,
+                museum_visits, water_activities, accommodation_type,
+                transportation, food_preferences, trip_pace, must_visit,
+                results_places, results_restaurants, results_hotels,
+                model, provider
+            )
 
-        trip_plan_text = orchestrator.generate_trip_plan(
-            destinations=destinations,
-            budget=budget,
-            group_size=group_size,
-            start_date=start_dt,
-            end_date=end_dt,
-            travel_styles=travel_styles,
-            historical_knowledge=historical_knowledge,
-            preferred_time_periods=preferred_time_periods,
-            museum_visits=museum_visits,
-            water_activities=water_activities,
-            accommodation_type=accommodation_type,
-            transportation=transportation,
-            food_preferences=food_preferences,
-            trip_pace=trip_pace,
-            must_visit=must_visit,
-            places=results_places,
-            restaurants=results_restaurants,
-            hotels=results_hotels,
-            model=model,
-            provider=provider
-        )
+            try:
+                summary = future_summary.result()
+            except Exception:
+                summary = f"Your trip to {', '.join(destinations)} is ready!"
+            
+            trip_plan_text = future_plan.result()
 
         if not trip_plan_text:
             return jsonify({"error": "LLM returned an empty response"}), 500
@@ -490,37 +486,47 @@ def generate_trip():
             llm_json = None
 
         if llm_json and "activities" in llm_json:
-            # Enrich sightseeing activities (sequenceOrder 1 & 3) with Pexels images
-            for act in llm_json.get("activities", []):
-                if act.get("sequenceOrder") in (1, 3) and not act.get("imageUrl"):
-                    act["imageUrl"] = get_place_image_url(act.get("place", ""), ", ".join(destinations))
+            with concurrent.futures.ThreadPoolExecutor(max_workers=15) as executor:
+                futures = []
+                
+                # Schedule activity images
+                for act in llm_json.get("activities", []):
+                    if act.get("sequenceOrder") in (1, 3) and not act.get("imageUrl"):
+                        def fetch_img(a=act): a["imageUrl"] = get_place_image_url(a.get("place", ""), ", ".join(destinations))
+                        futures.append(executor.submit(fetch_img))
 
-            # Enrich places and restaurants with metadata
-            enriched_places = []
-            for place in llm_json.get("places", []):
-                place_name = place.get("name", "")
-                match = next((p for p in results_places if normalize(p.get("metadata", {}).get("name", p.get("name", ""))) == normalize(place_name)), None)
-                if match:
-                    meta = match.get("metadata", {})
-                    place["address"] = place.get("address") or meta.get("address", "")
-                    place["rating"] = place.get("rating") or str(meta.get("rating", ""))
-                    place["timings"] = place.get("timings") or meta.get("timings", "")
+                # Enrich places and schedule images
+                enriched_places = []
+                for place in llm_json.get("places", []):
+                    place_name = place.get("name", "")
+                    match = next((p for p in results_places if normalize(p.get("metadata", {}).get("name", p.get("name", ""))) == normalize(place_name)), None)
+                    if match:
+                        meta = match.get("metadata", {})
+                        place["address"] = place.get("address") or meta.get("address", "")
+                        place["rating"] = place.get("rating") or str(meta.get("rating", ""))
+                        place["timings"] = place.get("timings") or meta.get("timings", "")
                     if not place.get("imageUrl"):
-                        place["imageUrl"] = get_place_image_url(place_name, ", ".join(destinations))
-                enriched_places.append(place)
+                        def fetch_img_p(p=place, n=place_name): p["imageUrl"] = get_place_image_url(n, ", ".join(destinations))
+                        futures.append(executor.submit(fetch_img_p))
+                    enriched_places.append(place)
 
-            enriched_restaurants = []
-            for rest in llm_json.get("restaurants", []):
-                rest_name = rest.get("name", "")
-                match = next((r for r in results_restaurants if normalize(r.get("metadata", {}).get("name", r.get("name", ""))) == normalize(rest_name)), None)
-                if match:
-                    meta = match.get("metadata", {})
-                    rest["cuisines"] = rest.get("cuisines") or meta.get("cuisines", "")
-                    rest["avgPrice"] = rest.get("avgPrice") or str(meta.get("avg_price", ""))
-                    rest["location"] = rest.get("location") or meta.get("location", "")
+                # Enrich restaurants and schedule images
+                enriched_restaurants = []
+                for rest in llm_json.get("restaurants", []):
+                    rest_name = rest.get("name", "")
+                    match = next((r for r in results_restaurants if normalize(r.get("metadata", {}).get("name", r.get("name", ""))) == normalize(rest_name)), None)
+                    if match:
+                        meta = match.get("metadata", {})
+                        rest["cuisines"] = rest.get("cuisines") or meta.get("cuisines", "")
+                        rest["avgPrice"] = rest.get("avgPrice") or str(meta.get("avg_price", ""))
+                        rest["location"] = rest.get("location") or meta.get("location", "")
                     if not rest.get("imageUrl"):
-                        rest["imageUrl"] = get_place_image_url(rest_name, ", ".join(destinations))
-                enriched_restaurants.append(rest)
+                        def fetch_img_r(r=rest, n=rest_name): r["imageUrl"] = get_place_image_url(n, ", ".join(destinations))
+                        futures.append(executor.submit(fetch_img_r))
+                    enriched_restaurants.append(rest)
+
+                # Wait for all image fetching to complete
+                concurrent.futures.wait(futures)
 
             # Build the response the C# backend expects when JSON mode works
             response_payload = {
