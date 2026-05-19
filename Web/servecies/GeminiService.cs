@@ -261,6 +261,12 @@ namespace eg_travil.servecies
             string modelId = "google/gemini-1.5-flash"; // fallback if not found in .env
             try {
                 string envPath = Path.Combine(Directory.GetCurrentDirectory(), "ML_Service_Config", ".env");
+                if (!File.Exists(envPath))
+                {
+                    // Fallback if running from the solution root instead of the Web folder
+                    envPath = Path.Combine(Directory.GetCurrentDirectory(), "Web", "ML_Service_Config", ".env");
+                }
+
                 if (File.Exists(envPath))
                 {
                     var lines = File.ReadAllLines(envPath);
