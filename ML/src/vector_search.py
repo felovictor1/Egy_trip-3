@@ -19,7 +19,10 @@ client = chromadb.PersistentClient(path=CHROMA_PATH)
 collection = client.get_collection("travel")
 
 print(f"Loading embedding model: {EMBEDDING_MODEL}...")
-model = SentenceTransformer(EMBEDDING_MODEL, trust_remote_code=True)
+try:
+    model = SentenceTransformer(EMBEDDING_MODEL, trust_remote_code=True, local_files_only=True)
+except Exception:
+    model = SentenceTransformer(EMBEDDING_MODEL, trust_remote_code=True)
 print("Ready.")
 
 

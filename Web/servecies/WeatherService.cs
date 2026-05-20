@@ -102,25 +102,49 @@ namespace eg_travil.services
                 if (response?.forecast?.forecastday == null)
                     return new();
 
-                // Keep only days that fall within the trip window and tag each with
-                // its 1-based trip day number so the JS can match by DayNumber.
-                return response.forecast.forecastday
+                // Keep only days that fall within the trip window
+                var availableDays = response.forecast.forecastday
                     .Where(fd => fd.date.Date >= startDate.Date)
-                    .Take(days)          // never exceed the requested trip length
-                    .Select((fd, i) => new DailyWeatherDto
-                    {
-                        DayNumber  = i + 1,
-                        Date       = fd.date.ToString("yyyy-MM-dd"),
-                        MaxTempC   = Math.Round(fd.day.maxtemp_c, 1),
-                        MinTempC   = Math.Round(fd.day.mintemp_c, 1),
-                        AvgTempC   = Math.Round(fd.day.avgtemp_c, 1),
-                        Condition  = fd.day.condition.text,
-                        IconUrl    = fd.day.condition.icon.StartsWith("//")
-                                        ? "https:" + fd.day.condition.icon
-                                        : fd.day.condition.icon,
-                        RainChance = fd.day.daily_chance_of_rain,
-                    })
                     .ToList();
+
+                if (!availableDays.Any() && response.forecast.forecastday.Any())
+                {
+                    // Fallback to the last available day from the response if the trip is too far in the future
+                    availableDays.Add(response.forecast.forecastday.Last());
+                }
+
+                var results = new List<DailyWeatherDto>();
+
+                for (int i = 0; i < days; i++)
+                {
+                    var targetDate = startDate.Date.AddDays(i);
+                    var fd = availableDays.FirstOrDefault(d => d.date.Date == targetDate);
+                    
+                    // If the API didn't return data for this day (e.g. free tier limit), use the last available day's data
+                    if (fd == null && availableDays.Any())
+                    {
+                        fd = availableDays.Last();
+                    }
+
+                    if (fd != null)
+                    {
+                        results.Add(new DailyWeatherDto
+                        {
+                            DayNumber  = i + 1,
+                            Date       = targetDate.ToString("yyyy-MM-dd"),
+                            MaxTempC   = Math.Round(fd.day.maxtemp_c, 1),
+                            MinTempC   = Math.Round(fd.day.mintemp_c, 1),
+                            AvgTempC   = Math.Round(fd.day.avgtemp_c, 1),
+                            Condition  = fd.day.condition.text,
+                            IconUrl    = fd.day.condition.icon.StartsWith("//")
+                                            ? "https:" + fd.day.condition.icon
+                                            : fd.day.condition.icon,
+                            RainChance = fd.day.daily_chance_of_rain,
+                        });
+                    }
+                }
+
+                return results;
             }
             catch (Exception ex)
             {

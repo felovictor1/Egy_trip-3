@@ -50,7 +50,7 @@ namespace eg_travil.Pages
                 return Page();
             }
 
-            var currentUserId = User.FindFirstValue(ClaimTypes.NameIdentifier);
+            var currentUserId = User.FindFirstValue(ClaimTypes.NameIdentifier) ?? User.FindFirstValue(System.IdentityModel.Tokens.Jwt.JwtRegisteredClaimNames.Sub);
             Console.WriteLine($"\n🚨 FRONTEND SENDING USER ID: {currentUserId ?? "NULL!"} 🚨\n");
 
             if (DateTime.TryParse(Preferences.StartDate, out DateTime start) && DateTime.TryParse(Preferences.EndDate, out DateTime end))
